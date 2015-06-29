@@ -1,11 +1,17 @@
+* {
+	font: 14px/24px "Source Code Pro", Inconsolata, "Lucida Console", Terminal, "Courier New", Courier;
+}
+
 body {
 	background-color: #636564;
+	text-align: center;
 }
 
 h1 {
-	padding: 70px;
+	
 	display: inline-block;
 	padding-bottom: 5px;
 	color: #C4A69D;
-	text-shadow: 3px 3px 0 rgba(0,0,0,.6);
+	text-shadow: 2px 2px 0 rgba(0,0,0,.4);
+	background
 }
