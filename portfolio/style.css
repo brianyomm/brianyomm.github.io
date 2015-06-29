@@ -1,0 +1,11 @@
+body {
+	background-color: #636564;
+}
+
+h1 {
+	padding: 70px;
+	display: inline-block;
+	padding-bottom: 5px;
+	color: #C4A69D;
+	text-shadow: 3px 3px 0 rgba(0,0,0,.6);
+}
