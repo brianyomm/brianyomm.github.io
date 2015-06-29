@@ -6,7 +6,12 @@ h1 {
 h3 {
 	color: green;
 	text-align: center;
-	box-sizing: content-box;
-	
+
+}
+
+ol {
+	background-color: red;
+
+
 }
 
