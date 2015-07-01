@@ -1,17 +1,63 @@
 * {
-	font: "Source Code Pro", Inconsolata, "Lucida Console", Terminal, "Courier New", Courier;
+	
 }
 
 body {
 	background-color: #636564;
-	text-align: center;
+}
+
+#main-nav {
+    width: 100%;
+    height: 30px;
+    background-color: #272727;
+    position: fixed;
+    text-align: center;
+    
+}
+
+#main-nav ul {
+    position: fixed;
+    margin-top: 3px;
+
+}
+
+#main-nav ul li {
+    display: inline-block;    
+    
+} 
+
+#main-nav ul li +li {
+    margin-left: 100px;
+}
+
+#main-nav ul li a {
+    color: whitesmoke;
+}
+
+#main-nav ul li a:hover {
+    color: #ffb96c;
+}
+
+
+profile-content {
+    text-align: center;
 }
 
 h1 {
-	
+	font-family: 'Cantarell', sans-serif;
 	display: inline-block;
 	padding-bottom: 5px;
 	color: #C4A69D;
 	text-shadow: 2px 2px 0 rgba(0,0,0,.4);
-	background
+	font-size: 100px;
+}
+
+h2 {
+    font-family: 'Quicksand', sans-serif;
+    text-align: left;
+}
+
+h3 {
+    font-family: 'Source Serif Pro';
+    line-height: 30px;
 }
