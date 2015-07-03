@@ -17,7 +17,8 @@ body {
 
 #main-nav ul {
     position: fixed;
-    margin-top: 3px;
+    margin: 0;
+    padding: 0;
 
 }
 
@@ -39,8 +40,14 @@ body {
 }
 
 
-profile-content {
+#profile-content {
     text-align: center;
+}
+
+.headshot {
+    padding-top: 80px;
+    width: 200px;
+    height: 200px;
 }
 
 h1 {
@@ -54,7 +61,7 @@ h1 {
 
 h2 {
     font-family: 'Quicksand', sans-serif;
-    text-align: left;
+    text-align: center;
 }
 
 h3 {
