@@ -17,8 +17,9 @@ body {
 
 #main-nav ul {
     position: fixed;
-    margin: 0;
-    padding: 0;
+    margin: auto;
+    padding-top: 2px;
+    
     
 
 }
@@ -63,13 +64,16 @@ h1 {
     padding-top: 30px;
     padding-bottom: 5px;
     border: solid 10px;
+    box-shadow: 2px 2px 0 rgba(0,0,0,.4);
 }
 
 #test-text {
     width: 600px;
     height: 200px;
     margin: auto;
+    margin-bottom: 200px;
     border: solid 10px #C4A69D;
+    box-shadow: 2px 2px 0 rgba(0,0,0,.4);
 
 }
 
