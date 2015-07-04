@@ -3,15 +3,15 @@
 }
 
 body {
-	background-color: #636564;
+	background-color: #FFFFFF;
 }
 
 #main-nav {
     width: 100%;
+    padding: 0px;
     height: 30px;
-    background-color: #272727;
+    background-color: #C4A69D;
     position: fixed;
-    text-align: center;
     
 }
 
@@ -19,6 +19,7 @@ body {
     position: fixed;
     margin: 0;
     padding: 0;
+    
 
 }
 
@@ -56,7 +57,20 @@ h1 {
 	padding-bottom: 5px;
 	color: #C4A69D;
 	text-shadow: 2px 2px 0 rgba(0,0,0,.4);
-	font-size: 100px;
+	font-size: 60px;
+    padding-left: 170px;
+    padding-right: 15px;
+    padding-top: 30px;
+    padding-bottom: 5px;
+    border: solid 10px;
+}
+
+#test-text {
+    width: 600px;
+    height: 200px;
+    margin: auto;
+    border: solid 10px #C4A69D;
+
 }
 
 h2 {
@@ -65,6 +79,11 @@ h2 {
 }
 
 h3 {
+    color: #C4A69D;
     font-family: 'Source Serif Pro';
     line-height: 30px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    
 }
