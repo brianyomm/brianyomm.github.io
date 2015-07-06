@@ -36,6 +36,7 @@ body {
 
 #main-nav ul li a {
     color: #FFFFFF;
+    text-decoration: none;
     
 }
 
@@ -58,7 +59,7 @@ body {
     border: solid 5px;
     box-shadow: 4px 4px 1px rgba(0,0,0,.3);
     width: 400px;
-    height: 90px;
+    height: 125px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -66,24 +67,29 @@ body {
 }
 
 
-.name {
+#banner h1 {
 	font-size: 35px;
     display: block;
 }
-.cd {
-    font-size: 15px;
-    display: block;
 
+#banner h4 {
+    font-size: 13px;
+    display: block;
+    margin: -10px;
 }    
 
 #about-content {
     margin: auto;
-    
+    padding-top: 100px;
 }
 
-h2 {
+#about-content h2 {
     font-family: 'Quicksand', sans-serif;
-    text-align: center;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.2);
+    text-align: right;
+    transform: rotate(-90deg);
+    width: 100px
+
 }
 
 .headshot {
@@ -91,26 +97,46 @@ h2 {
     height: 200px;
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     margin: 0 auto;
     display: block;
 }
+/*image hover changes*/
+.headshot:hover {
+filter: grayscale(50%);
+    -webkit-filter: grayscale(50%);
+}
 
-#test-text {
+#about-text {
     width: 600px;
-    height: 200px;
+    height: 150px;
     margin: auto;
-    margin-bottom: 200px;
     border: solid 5px #000000;
     box-shadow: 2px 2px 0 rgba(0,0,0,.4);
-
+    margin-bottom: 100px;
+    
 }
 
 h3 {
     font-family: 'Source Serif Pro';
+    font-size: 12px;
     color: #000000;
     line-height: 30px;
     padding-left: 30px;
     padding-right: 30px;
     
+}
+
+#portfolio-content {
+    height: 450px;
+    width: 100%;
+    background-color: #343838;
+}
+
+#portfolio-content h2 {
+    font-family: 'Quicksand', sans-serif;
+    color: #FFFFFF;
+    text-align: right;
+    transform: rotate(-90deg);
+
 }
