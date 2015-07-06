@@ -9,13 +9,15 @@ body {
 #main-nav {
     width: 100%;
     height: 50px;
-    background-color: #C4A69D;
+    background-color: #343838;
     text-align: center;
     padding: auto;
     margin: auto;
     position: fixed;
     box-shadow: 0px 4px 3px rgba(0,0,0,.3);
-    
+    font-family: 'Cantarell',sans-serif;
+    font-size: 15px;
+    z-index: 999;
 }
 
 #main-nav ul {
@@ -33,7 +35,7 @@ body {
 }
 
 #main-nav ul li a {
-    color: #D5DED9;
+    color: #FFFFFF;
     
 }
 
@@ -43,47 +45,40 @@ body {
 
 
 #banner-content {
+    background-color: #343838;
     text-align: center;
+    height: 500px;
+    position: relative;
 }
 
 #banner {
-    background-color: #D5DED9;
-    width: 100%;
-    height: 400px;
-    padding-top: 100px;
-    margin: auto;
-    
+    font-family: 'Cantarell',sans-serif;
+    text-shadow: 2px 2px 0 rgba(0,0,0,.4);
+    color: #FFFFFF;
+    border: solid 5px;
+    box-shadow: 4px 4px 1px rgba(0,0,0,.3);
+    width: 400px;
+    height: 90px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -40px 0 0 -200px;
 }
 
 
 .name {
-    width: 400px;
-    height: 50px;
-	font-family: 'Cantarell', sans-serif;
-	display: inline-block;
-	color: #C4A69D;
-	text-shadow: 1px 1px 0 rgba(0,0,0,.4);
 	font-size: 35px;
-    border: solid 5px;
-    box-shadow: 2px 2px 0 rgba(0,0,0,.4);
-    
+    display: block;
 }
-.description {
+.cd {
+    font-size: 15px;
+    display: block;
 
-}
+}    
 
-banner-container {
-}
-    
-
-#test-text {
-    width: 600px;
-    height: 200px;
+#about-content {
     margin: auto;
-    margin-bottom: 200px;
-    border: solid 10px #C4A69D;
-    box-shadow: 2px 2px 0 rgba(0,0,0,.4);
-
+    
 }
 
 h2 {
@@ -92,16 +87,29 @@ h2 {
 }
 
 .headshot {
-    padding-top: 80px;
     width: 200px;
     height: 200px;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    padding-bottom: 100px;
+    margin: 0 auto;
+    display: block;
+}
+
+#test-text {
+    width: 600px;
+    height: 200px;
+    margin: auto;
+    margin-bottom: 200px;
+    border: solid 5px #000000;
+    box-shadow: 2px 2px 0 rgba(0,0,0,.4);
+
 }
 
 h3 {
-    color: #C4A69D;
     font-family: 'Source Serif Pro';
+    color: #000000;
     line-height: 30px;
-    padding-top: 30px;
     padding-left: 30px;
     padding-right: 30px;
     
