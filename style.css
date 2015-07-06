@@ -8,33 +8,33 @@ body {
 
 #main-nav {
     width: 100%;
-    padding: 0px;
-    height: 30px;
+    height: 50px;
     background-color: #C4A69D;
+    text-align: center;
+    padding: auto;
+    margin: auto;
     position: fixed;
+    box-shadow: 0px 4px 3px rgba(0,0,0,.3);
     
 }
 
 #main-nav ul {
-    position: fixed;
-    margin: auto;
-    padding-top: 2px;
-    
-    
-
+    padding: auto;
 }
 
 #main-nav ul li {
-    display: inline-block;    
+    text-align: center;
+    display: inline-block;
     
 } 
 
 #main-nav ul li +li {
-    margin-left: 100px;
+    margin-left: 80px;
 }
 
 #main-nav ul li a {
-    color: whitesmoke;
+    color: #D5DED9;
+    
 }
 
 #main-nav ul li a:hover {
@@ -42,30 +42,39 @@ body {
 }
 
 
-#profile-content {
+#banner-content {
     text-align: center;
 }
 
-.headshot {
-    padding-top: 80px;
-    width: 200px;
-    height: 200px;
+#banner {
+    background-color: #D5DED9;
+    width: 100%;
+    height: 400px;
+    padding-top: 100px;
+    margin: auto;
+    
 }
 
-h1 {
+
+.name {
+    width: 400px;
+    height: 50px;
 	font-family: 'Cantarell', sans-serif;
 	display: inline-block;
-	padding-bottom: 5px;
 	color: #C4A69D;
-	text-shadow: 2px 2px 0 rgba(0,0,0,.4);
-	font-size: 60px;
-    padding-left: 170px;
-    padding-right: 15px;
-    padding-top: 30px;
-    padding-bottom: 5px;
-    border: solid 10px;
+	text-shadow: 1px 1px 0 rgba(0,0,0,.4);
+	font-size: 35px;
+    border: solid 5px;
     box-shadow: 2px 2px 0 rgba(0,0,0,.4);
+    
 }
+.description {
+
+}
+
+banner-container {
+}
+    
 
 #test-text {
     width: 600px;
@@ -80,6 +89,12 @@ h1 {
 h2 {
     font-family: 'Quicksand', sans-serif;
     text-align: center;
+}
+
+.headshot {
+    padding-top: 80px;
+    width: 200px;
+    height: 200px;
 }
 
 h3 {
