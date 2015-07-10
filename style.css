@@ -127,11 +127,9 @@ name-title-divide{
 #about-content h2 {
     height: 100px;
     width: 100px;
-    margin-left: -40px;
+    margin: auto;
     font-family: 'Quicksand', sans-serif;
     text-shadow: 1px 1px 0 rgba(0,0,0,.2);
-    transform: rotate(-90deg);
-    float: left;
     display: block;
     line-height: 6;
 }
@@ -194,12 +192,10 @@ h3 {
 .portfolio h2 {
     height: 100px;
     width: 100px;
-    margin-left: -40px;
+    margin: auto;
     font-family: 'Quicksand', sans-serif;
-    transform: rotate(-90deg);
     color: #FFFFFF;
     text-shadow: 1px 1px 0 rgba(0,0,0,.2);
-    float: left;
     display: block;
     line-height: 6;
 
@@ -263,6 +259,7 @@ h3 {
 
 #social-footer {
     height: 75px;
+    background-image: url(/img/main-bg.jpg);
     
 }
 
@@ -271,4 +268,5 @@ h3 {
     width: 140px;
     height: 24px;
     margin: auto;
+
 }
