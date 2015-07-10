@@ -6,11 +6,12 @@
     font-family: telegrafico;
     src: local("telegraphico.ttf"),
          url(fonts/telegrafico.ttf);
+}
+
+@font-face {
     font-family: cocomat;
     src: local("cocomat-light.ttf'),
          url(fonts/cocomat-light.ttf);
-         
-    
 }
 
 body {
@@ -83,23 +84,30 @@ body {
     margin: -50px 0 0 -250px;
 }
 
+#banner .name-container {
+    margin: auto;
+    width: 500px;
+    
+}
 
 #banner h1 {
     text-align: center;
     font-family: 'telegrafico';
 	font-size: 50px;
+    height: auto;
+    display: block;
 }
 
-name-title-divide hr{
+name-title-divide{
     width: 10px;
 }
 
 #banner h4 {
     font-family: 'cocomat';
-    font-size: 40px;
-    display: block;
+    font-size: 30px;
+    float: bottom;
     float: right;
-    padding-right: 50px;
+    padding-right: 0px;
 }   
 
 .clearfix {
@@ -251,4 +259,16 @@ h3 {
     float: right;
     background-color: #498c92;
     margin-bottom: 50px;
+}
+
+#social-footer {
+    height: 75px;
+    
+}
+
+#social-footer .social-container {
+    padding-top: 25px;
+    width: 140px;
+    height: 24px;
+    margin: auto;
 }
