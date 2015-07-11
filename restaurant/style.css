@@ -6,8 +6,8 @@
 
 body {
     background-image: url("img/background.jpg");
-    width: 1200px;
-    height: 600px;
+    width: auto;
+    height: auto;
     text-shadow: white 1px 1px 2px;
     background-size: 1000px;
 }
@@ -17,21 +17,21 @@ h1 {
 
 .headercss {
     width: auto;
-    height: 320px;
+    height: 0px;
     background-color: #000000;
     position: relative;
 }
 
 .headerlogo {
     width: auto;
-    height: 250px;
+    height: 0px;
     background-color: #272727;
     position: relative;
 }
 
 .nav {
     width: auto;
-    height: 70px;
+    height: 50px;
     background-color: #272727;
     position: relative;
     overflow: hidden;
