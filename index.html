@@ -26,6 +26,7 @@
     <meta name="robots" content="index, follow">
     
 </head>
+    
 <!-- // BODY \\ -->
 <body>
     
@@ -40,37 +41,40 @@
         <li><a href="www.brianyom.com/restaurant.com/contact">CONTACT</a></li>
         </ul>
 </nav>
+    
 <!-- // BANNER CONTAINER -->
-<div id="banner-content">
-<!-- // BANNER TEXT -->
-    <div id="banner">
-        <div class="name-container">
-        <h1 class="name">BRIAN YOM /</h1>
+<div id="banner-container">
+
+        <div id="banner">
+            <div class="name-container">
+                <h1 class="name">BRIAN YOM /</h1>
+            </div>
+            <hr>
+            <div class="title-container">
+                <h4 class="title"> creative designer</h4>
+            </div>
         </div>
-        <hr class="name-title-divde">
-        <div class="title-container">
-            <h4> creative designer</h4>
-        </div>
-        
-    </div>
 </div>
     
 <!-- // ABOUT CONTAINER \\ -->
 <div id="about-content">
     <h2>about/</h2>
+    <hr class="name-title-divide"> <!-- DIVIDER -->
 <!-- // START PROFILE PICTURE --> 
     <div class="about-container">
         <img class="headshot" src="img/headshot.jpg" alt="profile-image">
-    <div id="about-text">    
-        <h3>Hi!<br>I am a designer with a BFA in Industrial Design from Rhode Island School of Design. (ADD MOAR MEAT)  I am currently enrolled full-time at StartUp Institute in New York for summer 2015. 
+        <div id="about-text">    
+            <h3>Hi!<br>I am a designer with a BFA in Industrial Design from Rhode Island School of Design. (ADD MOAR MEAT)  I am currently enrolled full-time at StartUp Institute in New York for summer 2015. 
         </h3>
+        </div>
     </div>
-    </div>
-    </div>
+</div>
+    
 <!-- // START PORTFOLIO \\ -->
 <div id="portfolio-content">
     <div class="portfolio">
         <h2>portfolio/</h2>
+        <hr class="name-title-divde"> <!-- DIVIDER -->
         <div class="portfolio-container">
             <div class="box1">BOX 1</div>
             <div class="box2">BOX 2</div>
@@ -79,11 +83,57 @@
             <div class="box5">BOX 5</div>
             <div class="box6">BOX 6</div>
         </div>
+    <div id="button">
+        <div class="more">
+            <a class="button-more">MORE...</a>
+        </div>
+    </div>
     </div>
         
     </div>
 
-<!-- // START FOOTER \\ -->
+
+
+    
+<!-- CONTACT FORM -->
+    <div id="section-contact"> 
+  <div class="container"> 
+    <div class="nine columns"><img src="images/contact.png" style="padding-top: 20px;"/> 
+      <div id="contact-warning"></div>
+      <!-- // #contact-warning -->
+<div id="contact-success">Your message was successfuly sent, thank you!</div>
+      <!-- // #contact-warning -->
+      <form name="contactForm" id="contactForm" method="post" action="includes/include.emailSender.php">
+        <fieldset>
+        <label for="contactName">Name <span class="required">*</span></label>
+        <input name="contactName" id="contactName" size="30" value="" type="text"/>
+        <br/>
+        <label for="contactEmail">Email <span class="required">*</span></label>
+        <input name="contactEmail" id="contactEmail" size="30" value="" type="text"/>
+        <br/>
+        <label for="contactMessage">Message <span class="required">*</span></label>
+        <textarea name="contactMessage" id="contactMessage" rows="6" cols="7"></textarea>
+        <br/>
+        <label for="contactCaptcha"><strong>1</strong> + <strong>8</strong> = 
+        <span class="required">*</span></label>
+        <input name="contactCaptcha" id="contactCaptcha" size="30" value="" type="text"/>
+        <input name="contactCaptchaAnswer" id="contactCaptchaAnswer" value="9" type="hidden"/>
+        <br/>
+        <label class="placeholder">&nbsp;</label>
+        <button class="submit">Submit</button>
+        </fieldset>
+      </form>
+    </div>
+    
+
+        
+        
+
+    
+        </div>
+    </div>
+    
+<!-- // START SOCIAL FOOTER \\ -->
     
 <div id="social-footer">
     <div class="social-container">
@@ -103,13 +153,7 @@
     
     </div>
     
-
-        
-        
-
     
-        </div>
-    </div>
     
 </body>
     
