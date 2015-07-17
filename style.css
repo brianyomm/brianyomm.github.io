@@ -9,14 +9,20 @@
 
 @font-face {
     font-family: telegrafico;
-    src: local("telegraphico.ttf"),
+    src: local("telegrafico.ttf"),
          url(fonts/telegrafico.ttf);
 }
 
 @font-face {
     font-family: cocomat;
-    src: local("cocomat-light.ttf'),
+    src: local("cocomat-light.ttf"),
          url(fonts/cocomat-light.ttf);
+}
+
+@font-face {
+    font-family: vevey;
+    src: local("vevey.ttf"),
+         url(fonts/vevey.ttf);
 }
 
 body {
@@ -80,7 +86,7 @@ hr {
     position: relative;
     width: 100%;
     height: 550px;
-    background: url(/img/main-bg-02.jpg) no-repeat center center;
+    background: url(/img/marble_02.jpg) no-repeat center center;
     background-size: contain;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -94,12 +100,10 @@ hr {
     left: 0;
     right: 0;
     color: #FFFFFF;
-    border: solid 12px;
+    border: double 12px;
     width: 800px;
     height: 200px;
-    box-shadow: 10px 10px 0px rgba(0,0,0,.4);
-    font-family: 'telegraphico',sans-serif;
-    text-shadow: 2px 2px 0 rgba(0,0,0,.4);
+    box-shadow: 7px 7px 2px rgba(0,0,0,.4);
     margin: 0 auto;
     margin-top: 200px;
 }
@@ -117,7 +121,7 @@ hr {
 
 #banner .title-container {
     display: inline-block;
-    height: 35px;
+    height: 41px;
     width: 100%;
 }
 
@@ -125,29 +129,31 @@ hr {
     text-align: center;
     font-family: 'telegrafico';
 	font-size: 70px;
+    text-shadow: 2px 2px 0 rgba(0,0,0,.4);
     letter-spacing: 10px;
     display: block;
 }
 
 /*CHANGE FONT*/
 #banner h4 {
-    font-family: 'cocomat';
-    font-size: 30px;
+    font-family: 'vevey';
+    font-size: 25px;
+    text-shadow: 2px 2px 0 rgba(0,0,0,.4);
     text-align: center;
-    margin-right: 30px;
-    letter-spacing: 10px;
+    margin-right: auto;
+    letter-spacing: 15px;
 }   
 
 #about-content {
-    background-image: url(/img/grid-bg.jpg);
+/*    background-image: url(/img/grid-bg.jpg);*/
     background-size: contain;
     opacity: 100%;
     padding: 100px 0;
 }
 
 h2 {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 50px;
+    font-family: 'vevey', sans-serif;
+    font-size: 70px;
     text-align: center;
     text-shadow: 1px 1px 0 rgba(0,0,0,.2);
     margin: 0 auto;
@@ -161,7 +167,7 @@ h3 {
 }
 
 #about-content h2 {
-    width: 100px;
+    width: 140px;
 }
 
 .about-container {
@@ -207,7 +213,7 @@ h3 {
 }
 
 .portfolio h2 {
-    width: 150px;
+    width: 210px;
     color: #FFFFFF;
 /*    margin: 0 auto;*/
 
@@ -273,6 +279,10 @@ h3 {
 
 }
 
+#social-footer .social-container a {
+    outline-color: aqua
+}
+
 /******************************************************/
 /* MEDIA QUERIES
 /******************************************************/
@@ -328,5 +338,13 @@ h3 {
         width: 100%;
         height: auto;
     }
+    
+    .portfolio-container {
+    width: 100%;
+    height: 75%;
+}
+    .box {
+    width: 200px;
+    height: 200px;
     
 }
