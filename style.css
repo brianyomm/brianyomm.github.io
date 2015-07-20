@@ -140,6 +140,7 @@ hr {
     font-size: 25px;
     text-shadow: 2px 2px 0 rgba(0,0,0,.4);
     text-align: center;
+    padding-top: 12px;
     margin-right: auto;
     letter-spacing: 15px;
 }   
