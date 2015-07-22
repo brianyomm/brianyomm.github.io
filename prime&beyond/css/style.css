@@ -44,7 +44,7 @@ html, body {
 
 #menu {
     background-color: #306d9f;
-    background: url(/primeandbeyond/img/PB-SLIDE-02.jpg) no-repeat center center fixed; 
+    background: url(/prime&beyond/img/PB-SLIDE-02.jpg) no-repeat center center fixed; 
     display: table;
     height: 75%;
     position: relative;
@@ -53,6 +53,8 @@ html, body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
     color: #ffffff;
 }
 
