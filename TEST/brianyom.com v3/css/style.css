@@ -1,0 +1,302 @@
+a {
+	color: #000000;
+
+}
+
+/* fadeIn ANIMATION */
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+	opacity:0;  /* make things invisible upon start */
+	-webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	-moz-animation:fadeIn ease-in 1;
+	animation:fadeIn ease-in 1;
+
+	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+
+	-webkit-animation-duration:1s;
+	-moz-animation-duration:1s;
+	animation-duration:1s;
+}
+
+.fade-in.one {
+-webkit-animation-delay: 0.7s;
+-moz-animation-delay: 0.7s;
+animation-delay: 0.7s;
+}
+
+.fade-in.two {
+-webkit-animation-delay: 1.2s;
+-moz-animation-delay:1.2s;
+animation-delay: 1.2s;
+}
+
+.fade-in.three {
+-webkit-animation-delay: 1.6s;
+-moz-animation-delay: 1.6s;
+animation-delay: 1.6s;
+}
+
+/* HIDDEN/VISABLE */
+
+.hidden{
+	opacity: 0;
+}
+
+.visible{
+	opacity: 1;
+}
+
+
+/* FONTS */
+@font-face {
+    font-family: telegrafico;
+    src: local("telegrafico.ttf"),
+         url(fonts/telegrafico.ttf);
+}
+
+@font-face {
+    font-family: cocomat;
+    src: local("cocomat-light.ttf"),
+         url(fonts/cocomat-light.ttf);
+}
+
+@font-face {
+    font-family: vevey;
+    src: local("vevey.ttf"),
+         url(fonts/vevey.ttf);
+}
+
+/* general styles */
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+/* padded section */
+.pad-section {
+  padding: 50px 0;
+}
+.pad-section img {
+  width: 100%;
+}
+
+/* nav bar */
+.navbar {
+	background-color: #1c1708;
+    opacity: 0.9;
+    box-shadow: 0px 4px 3px rgba(0,0,0,.3);
+}
+
+.navbar ul li a {
+    text-align: #FFFFFF;
+    color: #ffffff;
+}
+
+/* nav bar span */
+
+
+/* vertical-centered text */
+.text-vcenter {
+  	display: table-cell;
+  	text-align: center;
+  	vertical-align: middle;
+  	margin: 0 auto;
+}
+
+hr {
+	width: 100%;
+}
+
+.text-vcenter .container {
+	color: #FFFFFF;
+	position: center;
+    border: double 12px;
+    width: 80%;
+    height: 200px;
+ 	box-shadow: 7px 7px 2px rgba(0,0,0,.4);
+ 	margin: 0 auto;
+ 	padding: 0;
+
+}
+
+.text-vcenter h1 {
+	font-family: 'telegrafico';
+    text-shadow: 2px 2px 0 rgba(0,0,0,.4);
+    letter-spacing: 10px;
+    color: #FFFFFF;
+    font-size: 4.5em;
+    font-weight: 700;
+    margin: 0;
+    padding: 10px 0 0 0;
+}
+.text-vcenter h4 {
+	font-family: 'vevey';
+	font-size: 1.9em;
+	color: #FFFFFF;
+    text-shadow: 2px 2px 0 rgba(0,0,0,.4);
+    letter-spacing: 16px;
+}
+
+
+/* additional sections */
+#home {
+  background: url(../img/marble_02.jpg) no-repeat center center fixed; 
+  display: table;
+  height: 75%;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#home .main-logo1 {
+    width: 300px;
+    
+    
+}
+
+#about {
+    background-color: #FFFFFF;
+    height: 700px;
+}
+
+#resume {
+	background-color: #000000;
+	height:700px;
+}
+
+#portfolio {
+	background-color: #FFFFFF;
+    height: 700px;
+}
+
+.title {
+	text-align: center;
+	font-family: 'vevey';
+    font-size: 4.5em;
+    text-shadow: 2px 2px 0 rgba(0,0,0,.4);
+}
+
+#portfolio .projects .project1{
+	border: double 5px;
+	width: 300px;
+	height: 300px;
+	
+}
+
+#portfolio .projects .project2{
+	border: double 5px;
+	width: 300px;
+	height: 300px;
+}
+
+#portfolio .projects .project3{
+	border: double 5px;
+	width: 300px;
+	height: 300px;
+	
+}
+#portfolio .projects .project4{
+	border: double 5px;
+	width: 300px;
+	height: 300px;
+	
+}
+#portfolio .projects .project5{
+	border: double 5px;
+	width: 300px;
+	height: 300px;
+	
+}
+#portfolio .projects .project6{
+	border: double 5px;
+	width: 300px;
+	height: 300px;
+	
+}
+
+#menu {
+    background: url() no-repeat center center fixed; 
+    display: table;
+    height: 75%;
+    position: relative;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    color: #ffffff;
+    background-color: #000000;
+}
+
+#menu .glyphicon {
+  border: 2px solid #FFFFFF;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 60px;
+  height: 140px;
+  line-height: 140px;
+  text-align: center;
+  vertical-align: middle;
+  width: 140px;
+}
+
+#gallery {
+  background: url(/prime&beyond/img/PB-SLIDE-02.jpg) no-repeat center center fixed; 
+  display: table;
+  height: 800px;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#gallery .panel {
+  opacity: 0.85;
+}
+
+#google_map {
+  height: 500px;
+}
+
+footer {
+  padding: 20px 0;
+}
+footer .glyphicon {
+  color: #333333;
+  font-size: 60px;
+}
+footer .glyphicon:hover {
+  color: #306d9f;
+}
+
+
+
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 640px) {
+    
+    #banner-container #banner {
+        width: 100%;
+
+    }
+    
+.text-vcenter h1 {
+	font-size: 3.1em;
+	margin-bottom: 0px;
+}
+.text-vcenter h4 {
+    font-size: 1.2em;
+    }
+
