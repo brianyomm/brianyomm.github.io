@@ -74,4 +74,9 @@ $(document).ready(function() {
     });
     
 });
+
+// add button show more content
+function toggler(divId) {
+    $("#" + divId).toggle();
+}
 	
