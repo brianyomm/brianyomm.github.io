@@ -12,6 +12,19 @@ html, body {
   width: 100%;
 }
 
+/* nav bar */
+.navbar {
+    background-color: #;
+    opacity: 50%;
+}
+
+.navbar ul li a {
+    text-align: #FFFFFF;
+}
+
+/* nav bar span */
+
+
 /* vertical-centered text */
 .text-vcenter {
   display: table-cell;
@@ -39,8 +52,14 @@ html, body {
   background-size: cover;
 }
 
+#home .main-logo1 {
+    width: 300px;
+    
+    
+}
+
 #about {
-    background-color: #FFFFFF;
+    background-color: #c29731;
 }
 
 #about .row .logo {
