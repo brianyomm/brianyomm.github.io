@@ -166,12 +166,26 @@ hr {
 
 #about {
     background-color: #FFFFFF;
-    height: 700px;
+    height: 500px;
 }
 
 #resume {
 	background-color: #000000;
-	height:700px;
+	height: 500px;
+	-webkit-transform: skewY(-7deg);
+	-moz-transform: skewY(-7deg);
+	-ms-transform: skewY(-7deg);
+	-o-transform: skewY(-7deg);
+	transform: skewY(-7deg);
+}
+
+#resume .container {
+	-webkit-transform: skewY(7deg);
+	-moz-transform: skewY(7deg);
+	-ms-transform: skewY(7deg);
+	-o-transform: skewY(7deg);
+	transform: skewY(7deg);
+
 }
 
 #portfolio {
@@ -282,6 +296,7 @@ footer .glyphicon:hover {
   color: #306d9f;
 }
 
+/* BACKGROUND SKEW */
 
 
 
