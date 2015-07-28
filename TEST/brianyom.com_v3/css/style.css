@@ -156,6 +156,7 @@ hr {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  box-shadow: 0px 4px 3px rgba(0,0,0,.3);
 }
 
 #home .main-logo1 {
@@ -167,6 +168,7 @@ hr {
 #about {
     background-color: #FFFFFF;
     height: 500px;
+    box-shadow: 0px 4px 3px rgba(0,0,0,.3);
 }
 
 #resume {
@@ -177,6 +179,7 @@ hr {
 	-ms-transform: skewY(-7deg);
 	-o-transform: skewY(-7deg);
 	transform: skewY(-7deg);
+	box-shadow: 0px 4px 3px rgba(0,0,0,.3);
 }
 
 #resume .container {
@@ -191,6 +194,7 @@ hr {
 #portfolio {
 	background-color: #FFFFFF;
     height: 700px;
+    box-shadow: 0px 4px 3px rgba(0,0,0,.3);
 }
 
 .title {
