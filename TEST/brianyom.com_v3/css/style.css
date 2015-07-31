@@ -58,19 +58,19 @@ animation-delay: 1.6s;
 @font-face {
     font-family: telegrafico;
     src: local("telegrafico.ttf"),
-         url(fonts/telegrafico.ttf);
+         url(../fonts/telegrafico.ttf);
 }
 
 @font-face {
     font-family: cocomat;
     src: local("cocomat-light.ttf"),
-         url(fonts/cocomat-light.ttf);
+         url(../fonts/cocomat-light.ttf);
 }
 
 @font-face {
     font-family: vevey;
     src: local("vevey.ttf"),
-         url(fonts/vevey.ttf);
+         url(../fonts/vevey.ttf);
 }
 
 /* general styles */
@@ -161,8 +161,6 @@ hr {
 
 #home .main-logo1 {
     width: 300px;
-    
-    
 }
 
 #about {
@@ -171,7 +169,7 @@ hr {
 }
 
 #resume {
-	background-color: #000000;
+	background-color: #498c92;
 	height: 500px;
 	-webkit-transform: skewY(-7deg);
 	-moz-transform: skewY(-7deg);
@@ -190,13 +188,13 @@ hr {
 
 }
 
-#resume .container .title {
+/*#resume .container .title {
 	color: #498c92;
-}
+}*/
 
 #portfolio {
 	background-color: #FFFFFF;
-    height: 700px;
+    height: 1200px;
     box-shadow: 0px 4px 3px rgba(0,0,0,.3);
 }
 
@@ -209,41 +207,47 @@ hr {
     margin-top: 100px;
 }
 
-#portfolio .projects .project1{
+/*#portfolio .projects .row .project-box {
 	border: double 5px;
-	width: 100%;
-	height: 100%;
-	
+	width: 250px;
+	height: 250px;
+}*/
+
+#portfolio #project-box {
+	border: double 5px;
+	width: 50%;
+	height: 50%;
+}
+
+#portfolio #project-preview {
+	display: relative;
+	margin: 0 auto;
+}
+
+#portfolio projectcaption {
+	position: absolute;
+	opacity: 1;
+	margin: 0 auto;
+	-webkit-transition: all .5s ease-out;
+	-ms-transition: all .5s ease-out;
+	transition: all .5s ease-out;
 }
 
 #portfolio .projects .project2{
-	border: double 5px;
-	width: 100%;
+	width: 50%;
 	height: 100%;
 }
 
 #portfolio .projects .project3{
 	border: double 5px;
-	width: 100%;
-	height: 100%;
+	width: 300px;
+	height: 300px;
 	
 }
 #portfolio .projects .project4{
 	border: double 5px;
-	width: 100%;
-	height: 100%;
-	
-}
-#portfolio .projects .project5{
-	border: double 5px;
-	width: 100%;
-	height: 100%;
-	
-}
-#portfolio .projects .project6{
-	border: double 5px;
-	width: 100%;
-	height: 100%;
+	width: 300px;
+	height: 300px;
 	
 }
 
@@ -259,6 +263,8 @@ hr {
     padding-top: 30px;
 }
 
+
+/* - FROM PRIME & BEYOND 
 #menu {
     background: url() no-repeat center center fixed; 
     display: table;
@@ -315,19 +321,15 @@ footer .glyphicon {
 }
 footer .glyphicon:hover {
   color: #306d9f;
-}
-
-/* BACKGROUND SKEW */
+}*/
 
 
 
 /* MEDIA QUERIES */
 @media only screen and (max-width: 640px) {
-    
-    #banner-container #banner {
+#banner-container #banner {
         width: 100%;
-
-    }
+}
     
 .text-vcenter h1 {
 	font-size: 3.1em;
@@ -336,4 +338,13 @@ footer .glyphicon:hover {
 .text-vcenter h4 {
     font-size: 1.2em;
     }
+
+.hr {
+	margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 400px) {
+.hr {
+	margin-bottom: 10px;
+}
 

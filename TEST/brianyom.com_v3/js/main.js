@@ -79,4 +79,10 @@ $(document).ready(function() {
 function toggler(divId) {
     $("#" + divId).toggle();
 }
+
+// flip card
+$("#card").flip({
+  axis: 'x',
+  trigger: 'hover'
+});
 	
