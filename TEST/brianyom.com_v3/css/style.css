@@ -156,7 +156,7 @@ hr {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  box-shadow: 0px 4px 3px rgba(0,0,0,.3);
+  /*box-shadow: 0px 4px 3px rgba(0,0,0,.3);*/
 }
 
 #home .main-logo1 {
@@ -168,7 +168,6 @@ hr {
 #about {
     background-color: #FFFFFF;
     height: 500px;
-    box-shadow: 0px 4px 3px rgba(0,0,0,.3);
 }
 
 #resume {
@@ -191,6 +190,10 @@ hr {
 
 }
 
+#resume .container .title {
+	color: #498c92;
+}
+
 #portfolio {
 	background-color: #FFFFFF;
     height: 700px;
@@ -201,7 +204,9 @@ hr {
 	text-align: center;
 	font-family: 'vevey';
     font-size: 4.5em;
-    text-shadow: 2px 2px 0 rgba(0,0,0,.4);
+    text-shadow: #f5f5f1 2px 2px 0, #498c92 3px 3px 0;;
+    letter-spacing: 10px;
+    margin-top: 100px;
 }
 
 #portfolio .projects .project1{
@@ -240,6 +245,18 @@ hr {
 	width: 100%;
 	height: 100%;
 	
+}
+
+#social-footer {
+    height: 75px;
+    background-image: url(../img/marble_02.jpg); 
+}
+
+#social-footer .social-container {
+    width: 140px;
+    height: 24px;
+    margin: auto;
+    padding-top: 30px;
 }
 
 #menu {
