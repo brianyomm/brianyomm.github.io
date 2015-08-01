@@ -1,7 +1,9 @@
+/*
 a {
 	color: #000000;
 
 }
+*/
 
 /* fadeIn ANIMATION */
 /* make keyframes that tell the start state and the end state of our object */
@@ -43,7 +45,6 @@ animation-delay: 1.6s;
 }
 
 /* HIDDEN/VISABLE */
-
 .hidden{
 	/*opacity: 0;*/
 	display:none;
@@ -92,10 +93,14 @@ html, body {
 	background-color: #1c1708;
     opacity: 0.9;
     box-shadow: 0px 4px 3px rgba(0,0,0,.3);
+    font-family: 'telegrafico';
+}
+
+.navbar .navbar-header {
+    
 }
 
 .navbar ul li a {
-/*    text-align: center;*/
     color: #ffffff;
 }
 
