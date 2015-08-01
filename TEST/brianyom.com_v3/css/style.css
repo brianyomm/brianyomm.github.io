@@ -95,8 +95,27 @@ html, body {
 }
 
 .navbar ul li a {
-    text-align: #FFFFFF;
+/*    text-align: center;*/
     color: #ffffff;
+}
+
+/*.navbar .container {*/
+    left: 0;
+    right: 0;
+}
+
+.navbar #bs-example-navbar-collapse-1 .nav {
+    margin: 0 auto;
+    position: absolute;
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
 }
 
 /* nav bar span */
