@@ -98,7 +98,7 @@
       
       <div class="row">
         <div class="col-md-6">
-          <p class="summary">text goes in here text goes in here text goes in here text goes in here text goes in here text goes in here text goes in here text goes in here text goes in here text goes in here text goes in here text goes in here text goes in here </p>
+          <p class="summary">Hi, my name is Brian and I'm a designer with  </p>
         </div> <!-- Close Column -->
         
         <div class="col-md-6">
@@ -203,6 +203,37 @@
 
 </div> <!-- CLOSE CONTAINER -->  
 </div><!-- CLOSE PORTFOLIO -->
+
+
+<!-- CONTACT FORM -->
+    <div id="section-contact"> 
+  <div class="container"> 
+    <div class="nine columns"><img src="images/contact.png"> 
+      <div id="contact-warning"></div>
+      <!-- // #contact-warning -->
+<div id="contact-success">Your message was successfuly sent, thank you!</div>
+      <!-- // #contact-warning -->
+      <form name="contactForm" id="contactForm" method="post" action="includes/include.emailSender.php">
+        <fieldset>
+        <label for="contactName">Name <span class="required">*</span></label>
+        <input name="contactName" id="contactName" size="30" value="" type="text"/>
+        <br/>
+        <label for="contactEmail">Email <span class="required">*</span></label>
+        <input name="contactEmail" id="contactEmail" size="30" value="" type="text"/>
+        <br/>
+        <label for="contactMessage">Message <span class="required">*</span></label>
+        <textarea name="contactMessage" id="contactMessage" rows="6" cols="7"></textarea>
+        <br/>
+        <label for="contactCaptcha"><strong>1</strong> + <strong>8</strong> = 
+        <span class="required">*</span></label>
+        <input name="contactCaptcha" id="contactCaptcha" size="30" value="" type="text"/>
+        <input name="contactCaptchaAnswer" id="contactCaptchaAnswer" value="9" type="hidden"/>
+        <br/>
+        <label class="placeholder">&nbsp;</label>
+        <button class="submit">Submit</button>
+        </fieldset>
+      </form>
+    </div>
 
 
 <!-- // START SOCIAL FOOTER \\ -->
