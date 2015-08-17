@@ -3,12 +3,14 @@
 <head>
     <meta charset="utf-8" />
   <meta name="Brian Yom" content="My Site" />
-  <title>Brian Yom</title>
+  <title>Brian Yom v3</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
 <!-- // CSS \\-->
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/animate.css"/>
+
     
 <!-- // MIX PANEL \\ -->
     <script type="text/javascript">(function(f,b){if(!b.__SV){var a,e,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
@@ -20,11 +22,11 @@
     
 <!-- // FONT AWESOME \\ -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css" media="screen">
     <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
     
-    <!-- // ADDING FONTS || -->
+<!-- // ADDING FONTS || -->
     <link href='http://fonts.googleapis.com/css?family=Cantarell' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Source+Serif+Pro' rel='stylesheet' type='text/css'>
@@ -40,144 +42,169 @@
     
 <!-- // PINTEREST \\-->
     <meta name="p:domain_verify" content="8fb8c38468a36cbe685eb811eb904690"/>
-    
 </head>
-    
-<!-- // BODY \\ -->
+
 <body>
-    
-<!-- // NAV BAR \\ -->
-<!--
-<nav id="main-nav">
-    <ul>
-        <li><a href=#about-content>ABOUT</a></li>
-        
-        <li><a href="#portfolio-content">PORTFOLIO</a></li>
-        
-        <li><a href="resume-content">RESUME</a></li>
-        <li><a href="#contact-content">CONTACT</a></li>
-        </ul>
-</nav>
--->
-    
-<!-- // NAV BAR II \\ -->
+
 <!-- TOP FIXED NAVIGATION BAR -->
-  <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+  <nav class="navbar navbar-fixed-top" role="navigation">
     <div class="container">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"  >
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
         
-        <a class="navbar-brand" href="index.html">by</a>
+        <a class="navbar-brand" href="index.html">^</a>
       </div>
 
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#aboutme">About</a></li>
+        <ul class="nav navbar-nav">
+          <li><a href="#about">About</a></li>
           <li><a href="#resume">Resume</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact-me">Contact</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       
       </div>
     </div> 
   </nav> 
-    
-<!-- // BANNER CONTAINER -->
-<div id="banner-container">
 
-        <div id="banner">
-            <div class="name-container">
-                <h1 class="name">BRIAN YOM /</h1>
-            </div>
-            <hr>
-            <div class="title-container">
-                <h4 class="title"> creative designer</h4>
-            </div>
-        </div>
+<!-- HEADER -->
+<div id="home" class="home">
+  <div class="text-vcenter">
+    <div class="container">
+      <h1 class="name fade-in">BRIAN YOM</h1>
+      <hr class="hr">
+      <h4 class="occupation fade-in one">creative designer</h4>
+    </div>
+  </div>
+
 </div>
-    
-<!-- // ABOUT CONTAINER \\ -->
-<div id="about-content">
-    <h2>about/</h2>
-    <hr class="name-title-divide"> <!-- DIVIDER -->
-<!-- // START PROFILE PICTURE --> 
-    <div class="about-container">
-        <img class="headshot" src="img/headshot.jpg" alt="profile-image">
-        <div id="about-text">    
-            <h3>Hi!<br>I am a designer with a BFA in Industrial Design from Rhode Island School of Design. (ADD MOAR MEAT)  I am currently enrolled full-time at StartUp Institute in New York for summer 2015.
-        </h3>
+
+
+<!-- ABOUT ME -->
+<div id="about" class="about">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="title">ABOUT/</h3> 
+        </div> <!-- Close Column -->
+      </div> <!-- Close Row --> 
+      
+      
+      <div class="row">
+        <div class="col-md-6">
+          <p class="summary">text goes in here text goes in here text goes in here text goes in here text goes in here text goes in here text goes in here text goes in here text goes in here text goes in here text goes in here text goes in here text goes in here </p>
+        </div> <!-- Close Column -->
+        
+        <div class="col-md-6">
+          <p class="summary">text goes in here text goes in here text goes in here text goes in here text goes in here text goes in here text goes in here text goes in here text goes in here text goes in here text goes in here text goes in here text goes in here </p>
         </div>
+
+        <div class="col-md-12">
+          <p class="summary"><a href="mystory/mystory.html" ><button type="button" class="btn btn-inverse btn-s">Read More</button></a>
+          </p>
+        </div>
+
+      </div> <!-- Close ROW -->
+      </div> <!-- Close container -->
+
+
+
+    </div> <!-- End of ABOUT -->
+
+<!-- RESUME -->
+<div id="resume" class="resume">
+  <div class="container">
+  <div id="skew">
+    <div class="row">
+      <div class="col-md-12">
+        <h3 class="title">RESUME/</h3>
+      </div>
     </div>
+    <div class="row">
+      <div class="col-md-3">
+        <h4 class="experience">Experience/</h4>
+          <a class="text-sml">experience information goes here</a>
+      </div>
+    </div>
+  </div>
+  </div>
 </div>
-    
-<!-- // START PORTFOLIO \\ -->
-<div id="portfolio-content">
-    <div class="portfolio">
-        <h2>portfolio/</h2>
-        <hr class="name-title-divde"> <!-- DIVIDER -->
-        <div class="portfolio-container">
-            <div class="box">BOX 1</div>
-            <div class="box">BOX 2</div>
-            <div class="box">BOX 3</div>
-            <div class="box">BOX 4</div>
-            <div class="box">BOX 5</div>
-            <div class="box">BOX 6</div>
+
+<!-- PORTFOLIO -->
+<div id="portfolio" class="portfolio">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h3 class="title">PORTFOLIO/</h3>
+      </div>
+    </div>
+
+    <div class="projects">
+      <div class="row">
+        <div id="project-box" class="col-md-6">
+          <projectcaption>
+          <h2>HOVER TITLE</h2>
+          <p>description</p>
+          </projectcaption>
+          <img id="project-preview" src="img/portfolio_test.jpg">
         </div>
-    <div id="button-container">
-        <div class="more">
-            <a class="button-more">MORE...</a>
+
+        <div id="project-box" class="col-md-6">
+          <img id="project-preview" src="img/portfolio_test.jpg">
         </div>
-    </div>
-    </div>
-        
-    </div>
+      </div><!-- Close Row --> 
 
-
-
-    
-<!-- CONTACT FORM -->
-    <div id="section-contact"> 
-  <div class="container"> 
-    <div class="nine columns"><img src="images/contact.png" style="padding-top: 20px;"/> 
-      <div id="contact-warning"></div>
-      <!-- // #contact-warning -->
-<div id="contact-success">Your message was successfuly sent, thank you!</div>
-      <!-- // #contact-warning -->
-      <form name="contactForm" id="contactForm" method="post" action="includes/include.emailSender.php">
-        <fieldset>
-        <label for="contactName">Name <span class="required">*</span></label>
-        <input name="contactName" id="contactName" size="30" value="" type="text"/>
-        <br/>
-        <label for="contactEmail">Email <span class="required">*</span></label>
-        <input name="contactEmail" id="contactEmail" size="30" value="" type="text"/>
-        <br/>
-        <label for="contactMessage">Message <span class="required">*</span></label>
-        <textarea name="contactMessage" id="contactMessage" rows="6" cols="7"></textarea>
-        <br/>
-        <label for="contactCaptcha"><strong>1</strong> + <strong>8</strong> = 
-        <span class="required">*</span></label>
-        <input name="contactCaptcha" id="contactCaptcha" size="30" value="" type="text"/>
-        <input name="contactCaptchaAnswer" id="contactCaptchaAnswer" value="9" type="hidden"/>
-        <br/>
-        <label class="placeholder">&nbsp;</label>
-        <button class="submit">Submit</button>
-        </fieldset>
-      </form>
-    </div>
-    
-
-        
-        
-
-    
+      <div class="row">
+        <div id="project-box" class="col-md-6">
+          <img id="project-preview" src="img/portfolio_test.jpg">
         </div>
-    </div>
-    
+
+        <div id="project-box" class="col-md-6">
+          <img id="project-preview" src="img/portfolio_test.jpg">
+        </div>
+
+      </div><!-- Close Row --> 
+    </div><!-- CLOSE PROJECTS -->
+
+    <div class="col-md-12">
+        
+        <!-- BUTTON TOGGLE <a href="#portfolio" onclick="toggler('myContent');">click for more</a>
+<div id="myContent" class='hidden'>
+  <div>more content</div> -->
+
+    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#test">MORE</button>
+      <div id="test" class="collapse">
+
+        <div class="row">
+              <div class="col-md-4">
+                <h4 class="project3">Project #4</h4>
+                <img src="">
+              </div>
+
+              <div class="col-md-4">
+                <h4 class="project4">Project #5</h4>
+                <img src="">
+              </div>
+
+              <div class="col-md-4">
+                <h4 class="project4">Project #6</h4>
+                <img src="">
+              </div>
+          </div><!-- Close Row --> 
+      </div>
+</div>
+
+
+</div> <!-- CLOSE CONTAINER -->  
+</div><!-- CLOSE PORTFOLIO -->
+
+
 <!-- // START SOCIAL FOOTER \\ -->
     
 <div id="social-footer">
@@ -194,13 +221,17 @@
         <img src="img/git24.png" alt="GitHub"></a>
     </div>
 </div>
-    
-    
-    
+
+
+
+
+
+<script src="js/jquery-1.11.3.js"></script> <!-- We also need jQuery -->
+<script src="js/viewportchecker.js"></script> 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+
 </body>
-    
-
-    
-
-
-
