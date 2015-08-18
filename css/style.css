@@ -224,12 +224,24 @@ hr {
   overflow: hidden;
 }
 
-#portfolio .container {
+#portfolio .container-fluid {
 	-webkit-transform: skewY(7deg);
 	-moz-transform: skewY(7deg);
 	-ms-transform: skewY(7deg);
 	-o-transform: skewY(7deg);
 	transform: skewY(7deg);
+}
+
+
+
+.container .no-gutter > [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.row .no-gutter > [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0;
 }
 
 /* ADDED */
@@ -239,15 +251,18 @@ hr {
   box-shadow: 0 8px 60px 8px rgba(0,0,0,0.33);
 }
 
-figure.project {
+.col-md-6 .project {
+  display: block;
   position: relative;
   width: 100%;
-  margin: 0;
+  padding-right: -15px;
+  padding-left: -15px;
+  margin: 0 auto;
   cursor: pointer;
   overflow: hidden;
 }
 
-figure.project img {
+.project img {
   display: block;
   margin: 0 auto;
   max-width: 100%;
@@ -255,10 +270,11 @@ figure.project img {
   opacity: 1;
 }
 
-figure.project figcaption {
+.project figcaption {
   position: absolute;
   top: 50%;
   left: 0;
+  right: 0;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -267,13 +283,13 @@ figure.project figcaption {
   width: 100%;
 }
 
-figure.project figcaption::before {
+.project figcaption::before {
   position: absolute;
   content: '';
 }
 
-figure.project h2,
-figure.project p {
+.project h2,
+.project p {
   opacity: 0;
   margin: 0 auto;
   -webkit-transition: all .5s ease-out;
@@ -281,12 +297,12 @@ figure.project p {
   transition: all .5s ease-out;
 }
 
-figure.project h2 {
+.project h2 {
   text-transform: uppercase;
   font-weight: 800;
 }
 
-figure.project p {
+.project p {
   letter-spacing: 1px;
   font-size: .8em;
   padding-top: 1em;
@@ -296,37 +312,37 @@ figure.project p {
   transform: scale(1.5);
 }
 
-figure.project:hover img {
+.project:hover img {
   opacity: .2;
 }
 
-figure.project:hover h2 {
+.project:hover h2 {
   -webkit-transform: scale(0.9);
   -ms-transform: scale(0.9);
   transform: scale(0.9);
   opacity: 1;
 }
 
-figure.project:hover,
-figure.project:hover p {
+.project:hover,
+.project:hover p {
   opacity: 1;
   -webkit-transform: scale3d(1,1,1);
   transform: scale3d(1,1,1);
 }
 
-figure#project-1 {
+#project-1 {
   background: #826159;
 }
 
-figure#project-2 {
+#project-2 {
   background: #5994CE;
 }
 
-figure#project-3 {
+#project-3 {
   background: #BBBBBB;
 }
 
-figure#project-4 {
+#project-4 {
   background: #E5726B;
 }
 
