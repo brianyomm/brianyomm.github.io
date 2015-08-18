@@ -1,10 +1,3 @@
-/*
-a {
-	color: #000000;
-
-}
-*/
-
 /* fadeIn ANIMATION */
 /* make keyframes that tell the start state and the end state of our object */
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
@@ -57,9 +50,9 @@ animation-delay: 1.6s;
 
 /* FONTS */
 @font-face {
-    font-family: telegrafico;
-    src: local("telegrafico.ttf"),
-         url(../fonts/telegrafico.ttf);
+  font-family: telegrafico;
+  src: local("telegrafico.ttf"),
+  url(../fonts/telegrafico.ttf);
 }
 
 @font-face {
@@ -91,9 +84,9 @@ html, body {
 /* nav bar */
 .navbar {
 	background-color: #1c1708;
-    opacity: 0.9;
-    box-shadow: 0px 4px 3px rgba(0,0,0,.3);
-    font-family: 'telegrafico';
+  opacity: 0.9;
+  box-shadow: 0px 4px 3px rgba(0,0,0,.3);
+  font-family: 'telegrafico';
 }
 
 .navbar .navbar-header {
@@ -101,7 +94,7 @@ html, body {
 }
 
 .navbar ul li a {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 /*.navbar .container {*/
@@ -110,28 +103,25 @@ html, body {
 }
 
 .navbar #bs-example-navbar-collapse-1 .nav {
-    margin: 0 auto;
-    position: absolute;
+  margin: 0 auto;
+  position: absolute;
 }
 
 .navbar .navbar-nav {
-    display: inline-block;
-    float: none;
+  display: inline-block;
+  float: none;
 }
 
 .navbar .navbar-collapse {
-    text-align: center;
+  text-align: center;
 }
-
-/* nav bar span */
-
 
 /* vertical-centered text */
 .text-vcenter {
-  	display: table-cell;
-  	text-align: center;
-  	vertical-align: middle;
-  	margin: 0 auto;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	margin: 0 auto;
 }
 
 hr {
@@ -141,9 +131,9 @@ hr {
 .text-vcenter .container {
 	color: #FFFFFF;
 	position: center;
-    border: double 12px;
-    width: 80%;
-    height: 200px;
+  border: double 12px;
+  width: 70%;
+  height: 200px;
  	box-shadow: 7px 7px 2px rgba(0,0,0,.4);
  	margin: 0 auto;
  	padding: 0;
@@ -152,26 +142,40 @@ hr {
 
 .text-vcenter h1 {
 	font-family: 'telegrafico';
-    text-shadow: 2px 2px 0 rgba(0,0,0,.4);
-    letter-spacing: 10px;
-    color: #FFFFFF;
-    font-size: 4.5em;
-    font-weight: 700;
-    margin: 0;
-    padding: 10px 0 0 0;
+  text-shadow: 2px 2px 0 rgba(0,0,0,.4);
+  letter-spacing: 10px;
+  color: #FFFFFF;
+  font-size: 4.5em;
+  font-weight: 700;
+  margin: 0;
+  padding: 10px 0 0 0;
 }
 .text-vcenter h4 {
 	font-family: 'vevey';
 	font-size: 1.9em;
 	color: #FFFFFF;
-    text-shadow: 2px 2px 0 rgba(0,0,0,.4);
-    letter-spacing: 16px;
+  text-shadow: 2px 2px 0 rgba(0,0,0,.4);
+  letter-spacing: 16px;
 }
 
+/* button edits */
+.btn {
+  background-color: transparent;
+  border: double #f5f5f1 2px 2px 0, #498c92 3px 3px 0;
+}
+
+.title {
+  text-align: center;
+  font-family: 'vevey';
+  font-size: 4.5em;
+  text-shadow: #f5f5f1 2px 2px 0, #498c92 3px 3px 0;
+  letter-spacing: 10px;
+  margin-top: 100px;
+}
 
 /* additional sections */
 #home {
-  background: url(../img/marble_02.jpg) no-repeat center center fixed; 
+  background: url(../img/marble_02.jpg) center; 
   display: table;
   height: 75%;
   position: relative;
@@ -180,104 +184,156 @@ hr {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  /*box-shadow: 0px 4px 3px rgba(0,0,0,.3);*/
+  box-shadow: 0px 4px 3px rgba(0,0,0,.3);
 }
 
 #home .main-logo1 {
-    width: 300px;
+  width: 300px;
 }
 
 #about {
-    background-color: #FFFFFF;
-    height: 500px;
+  background-color: #FFFFFF;
+  min-height: 475px;
+  max-height: 750px;
+  overflow: visible;
 }
 
-#resume {
+.summary {
+  font-family: 'cocomat';
+  font-size: 20px;
+  line-height: 30px;
+  padding-bottom: 25px;
+}
+
+.more-summary {
+  font-family: 'cocomat';
+  font-size: 20px;
+  line-height: 30px;
+  padding: 35px 0 100px 0;
+}
+
+#portfolio {
 	background-color: #498c92;
-	height: 500px;
+	height: 1300px;
 	-webkit-transform: skewY(-7deg);
 	-moz-transform: skewY(-7deg);
 	-ms-transform: skewY(-7deg);
 	-o-transform: skewY(-7deg);
 	transform: skewY(-7deg);
 	box-shadow: 0px 4px 3px rgba(0,0,0,.3);
+  overflow: hidden;
 }
 
-#resume .container {
+#portfolio .container {
 	-webkit-transform: skewY(7deg);
 	-moz-transform: skewY(7deg);
 	-ms-transform: skewY(7deg);
 	-o-transform: skewY(7deg);
 	transform: skewY(7deg);
-
 }
 
-/*#resume .container .title {
-	color: #498c92;
-}*/
-
+/* ADDED */
 #portfolio {
-	background-color: #FFFFFF;
-    height: 1200px;
-    box-shadow: 0px 4px 3px rgba(0,0,0,.3);
+/*  font-size: 1.8em;*/
+  position: relative;
+  box-shadow: 0 8px 60px 8px rgba(0,0,0,0.33);
 }
 
-.title {
-	text-align: center;
-	font-family: 'vevey';
-    font-size: 4.5em;
-    text-shadow: #f5f5f1 2px 2px 0, #498c92 3px 3px 0;;
-    letter-spacing: 10px;
-    margin-top: 100px;
+figure.project {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  cursor: pointer;
+  overflow: hidden;
 }
 
-/*#portfolio .projects .row .project-box {
-	border: double 5px;
-	width: 250px;
-	height: 250px;
-}*/
-
-#portfolio #project-box {
-	border: double 5px;
-	width: 50%;
-	height: 50%;
+figure.project img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  opacity: 1;
 }
 
-#portfolio #project-preview {
-	display: relative;
-	margin: 0 auto;
+figure.project figcaption {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-size: 1.25em;
+  color: #fff;
+  width: 100%;
 }
 
-#portfolio projectcaption {
-	position: absolute;
-	opacity: 1;
-	margin: 0 auto;
-	-webkit-transition: all .5s ease-out;
-	-ms-transition: all .5s ease-out;
-	transition: all .5s ease-out;
+figure.project figcaption::before {
+  position: absolute;
+  content: '';
 }
 
-#portfolio .projects .project2{
-	width: 50%;
-	height: 100%;
+figure.project h2,
+figure.project p {
+  opacity: 0;
+  margin: 0 auto;
+  -webkit-transition: all .5s ease-out;
+  -ms-transition: all .5s ease-out;
+  transition: all .5s ease-out;
 }
 
-#portfolio .projects .project3{
-	border: double 5px;
-	width: 300px;
-	height: 300px;
-	
+figure.project h2 {
+  text-transform: uppercase;
+  font-weight: 800;
 }
-#portfolio .projects .project4{
-	border: double 5px;
-	width: 300px;
-	height: 300px;
-	
+
+figure.project p {
+  letter-spacing: 1px;
+  font-size: .8em;
+  padding-top: 1em;
+
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
 }
+
+figure.project:hover img {
+  opacity: .2;
+}
+
+figure.project:hover h2 {
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+  opacity: 1;
+}
+
+figure.project:hover,
+figure.project:hover p {
+  opacity: 1;
+  -webkit-transform: scale3d(1,1,1);
+  transform: scale3d(1,1,1);
+}
+
+figure#project-1 {
+  background: #826159;
+}
+
+figure#project-2 {
+  background: #5994CE;
+}
+
+figure#project-3 {
+  background: #BBBBBB;
+}
+
+figure#project-4 {
+  background: #E5726B;
+}
+
 
 #social-footer {
-    height: 75px;
-    background-image: url(../img/marble_02.jpg); 
+  height: 75px;
+  background-image: url(../img/marble_02.jpg); 
 }
 
 #social-footer .social-container {

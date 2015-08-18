@@ -73,7 +73,7 @@
   </nav> 
 
 <!-- HEADER -->
-<div id="home" class="home">
+<header id="home" class="home">
   <div class="text-vcenter">
     <div class="container">
       <h1 class="name fade-in">BRIAN YOM</h1>
@@ -82,54 +82,47 @@
     </div>
   </div>
 
-</div>
+</header>
 
 
 <!-- ABOUT ME -->
-<div id="about" class="about">
+<section id="about" class="about">
     <div class="container">
 
       <div class="row">
         <div class="col-md-12">
-          <h3 class="title">ABOUT/</h3> 
+          <h3 class="title">ABOUT</h3> 
         </div> <!-- Close Column -->
       </div> <!-- Close Row --> 
       
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-lg-8 col-lg-offset-2 text-center">
           <p class="summary">I'm a designer of many disciplines, from industrial, fashion, to web. I have immersed myself in different fields to channel my creativity. I strongly believe that creativity is not linear and moments of insight can come from anyone, anywhere, and anytime.</p>
         </div> <!-- Close Column -->
+      </div>
 
-      <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#test">MORE</button>
-        <div id="test" class="collapse">
-          <div class="row">
-                <div class="col-md-6">
-                  <p class="summary">I trained as an industrial designer at Rhode Island School of Design. Essentially my training involved creating objects around a piece of technology.  During my transition to my professional career, I noticed a radical change emerging, that we were not prepared for in college.  Tech companies started asking designers to create products that the end user experienced primarily through software.  UI, UX, ID had to intertwine in a cohesive manner to produce a product.  This is when I decided to shift gears to develop new skills and adopted a new profession.  I call it technology design. As a technology designer we must create objects that users can use physically and digitally in harmony.</p>
-                </div>
-            </div><!-- Close Row --> 
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 text-center">
+          <button type="button" class="btn btn-info button-more" data-toggle="collapse" data-target="#test">READ MORE</button>
         </div>
-        
-        
-
-        <div class="col-md-12">
-          <p class="summary"><a href="mystory/mystory.html" ><button type="button" class="btn btn-inverse btn-s">Read More</button></a>
-          </p>
-        </div>
-
-      </div> <!-- Close ROW -->
-      </div> <!-- Close container -->
-
-
-
-    </div> <!-- End of ABOUT -->
+      </div>
+      <div id="test" class="collapse">
+        <div class="row">
+              <div class="col-lg-8 col-lg-offset-2 text-center">
+                <p class="more-summary">I trained as an industrial designer at Rhode Island School of Design. Essentially my training involved creating objects around a piece of technology.  During my transition to my professional career, I noticed a radical change emerging that college did not prepare us for.  Tech companies started asking designers to create products that the end user experienced primarily through software.  UI, UX, ID had to intertwine in a cohesive manner to produce a product.  This is when I decided to shift gears to develop new skills and adopted a new profession.  I call it technology design. As a technology designer we must create objects that users can use physically and digitally in harmony.</p>
+              </div>
+          </div><!-- Close Row --> 
+      </div>
+    </div> <!-- Close container -->
+</section> <!-- End of ABOUT -->
 
 <!-- RESUME -->
-<div id="resume" class="resume">
+<!-- <div id="resume" class="resume">
   <div class="container">
   <div id="skew">
     <div class="row">
       <div class="col-md-12">
-        <h3 class="title">RESUME/</h3>
+        <h3 class="title">RESUME</h3>
       </div>
     </div>
     <div class="row">
@@ -140,75 +133,66 @@
     </div>
   </div>
   </div>
-</div>
+</div> -->
 
 <!-- PORTFOLIO -->
-<div id="portfolio" class="portfolio">
+<section id="portfolio" class="portfolio">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <h3 class="title">PORTFOLIO/</h3>
+        <h3 class="title">PORTFOLIO</h3>
       </div>
     </div>
-
-    <div class="projects">
-      <div class="row">
-        <div id="project-box" class="col-md-6">
-          <projectcaption>
-          <h2>HOVER TITLE</h2>
-          <p>description</p>
-          </projectcaption>
-          <img id="project-preview" src="img/portfolio_test.jpg">
-        </div>
-
-        <div id="project-box" class="col-md-6">
-          <img id="project-preview" src="img/portfolio_test.jpg">
-        </div>
-      </div><!-- Close Row --> 
-
-      <div class="row">
-        <div id="project-box" class="col-md-6">
-          <img id="project-preview" src="img/portfolio_test.jpg">
-        </div>
-
-        <div id="project-box" class="col-md-6">
-          <img id="project-preview" src="img/portfolio_test.jpg">
-        </div>
-
-      </div><!-- Close Row --> 
-    </div><!-- CLOSE PROJECTS -->
-
-    <div class="col-md-12">
-        
-        <!-- BUTTON TOGGLE <a href="#portfolio" onclick="toggler('myContent');">click for more</a>
-<div id="myContent" class='hidden'>
-  <div>more content</div> -->
-
-    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#test">MORE</button>
-      <div id="test" class="collapse">
-
-        <div class="row">
-              <div class="col-md-4">
-                <h4 class="project3">Project #4</h4>
-                <img src="">
-              </div>
-
-              <div class="col-md-4">
-                <h4 class="project4">Project #5</h4>
-                <img src="">
-              </div>
-
-              <div class="col-md-4">
-                <h4 class="project4">Project #6</h4>
-                <img src="">
-              </div>
-          </div><!-- Close Row --> 
-      </div>
+<!-- ADDED -->
+<div class="row">
+  <div class="col-md-6 project">
+    <a href="project1.html">
+        <figure id="project-1" class="project">
+          <img src="img/portfolio_test.jpg" alt=""/>
+          <figcaption>
+            <h2>Project 1</h2>
+            <p>Description 1</p>
+          </figcaption>
+        </figure>
+      </a>
+    </div>
+  <div class="col-md-6 project">
+    <a href="projet2.html">
+      <figure id="project-2" class="project">
+        <img src="img/portfolio_test.jpg" alt=""/>
+        <figcaption>
+          <h2>Project 2</h2>
+          <p>Description 2</p>
+        </figcaption>
+      </figure>
+    </a>
+  </div>
 </div>
-
-
-</div> <!-- CLOSE CONTAINER -->  
-</div><!-- CLOSE PORTFOLIO -->
+<div class="row">
+  <div class="col-md-6 project">
+    <a href="project3.html">
+      <figure id="project-3" class="project">
+        <img src="img/portfolio_test.jpg" alt=""/>
+        <figcaption>
+          <h2>Project 3</h2>
+          <p>Description 3</p>
+        </figcaption>
+      </figure>
+    </a>
+  </div>
+  <div class="col-md-6 project">
+    <a href="project4.html">
+      <figure id="project-4" class="project">
+        <img src="img/portfolio_test.jpg" alt="Knosey mobile app"/>
+        <figcaption>
+          <h2>Project 4</h2>
+          <p>Description 4</p>
+        </figcaption>
+      </figure>
+    </a>
+  </div>
+</div>
+</section><!-- CLOSE PORTFOLIO -->
 
 
 <!-- // START SOCIAL FOOTER \\ -->
