@@ -38,8 +38,7 @@ animation-delay: 1.6s;
 }
 
 .fade {
-  background-color: blue;
-  opacity: 1;
+  opacity: 0;
 }
 
 /* HIDDEN/VISABLE */
