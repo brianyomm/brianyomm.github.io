@@ -33,46 +33,41 @@ $(document).ready(function (){
   });  
 });
 
-    // add smooth scrolling
-    $(function() {
-	  $('a[href*=#]:not([href=#])').click(function() {
-	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+// add smooth scrolling
+$(function() {
+$('a[href*=#]:not([href=#])').click(function() {
+  if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 
-	      var target = $(this.hash);
-	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-	      if (target.length) {
-	        $('html,body').animate({
-	          scrollTop: target.offset().top
-	        }, 1000);
-	        return false;
-	      }
-	    }
-	  });
-	});
+    var target = $(this.hash);
+    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+    if (target.length) {
+      $('html,body').animate({
+        scrollTop: target.offset().top
+      }, 1000);
+      return false;
+    }
+  }
+});
+});
 
 // add fadeIn
-$(document).ready(function() {
-    
-    /* Every time the window is scrolled ... */
-    $(window).scroll( function(){
-    
-        /* Check the location of each desired element */
-        $('.hideme').each( function(i){
+$(window).on("load",function() {
+    function fade() {
+        $('.fade').each(function() {
+            /* Check the location of each desired element */
+            var objectBottom = $(this).offset().top + $(this).outerHeight();
+            var windowBottom = $(window).scrollTop() + $(window).innerHeight();
             
-            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-            
-            /* If the object is completely visible in the window, fade it it */
-            if( bottom_of_window > bottom_of_object ){
-                
-                $(this).animate({'opacity':'1'},500);
-                    
+            /* If the object is completely visible in the window, fade it in */
+            if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+                if ($(this).css('opacity')==0) {$(this).fadeTo(500,1);}
+            } else { //object goes out of view (scrolling up)
+                if ($(this).css('opacity')==1) {$(this).fadeTo(500,0);}
             }
-            
-        }); 
-    
-    });
-    
+        });
+    }
+    fade(); //Fade in completely visible elements during page-load
+    $(window).scroll(function() {fade();}); //Fade in elements during scroll
 });
 
 // add button show more content
@@ -80,9 +75,4 @@ function toggler(divId) {
     $("#" + divId).toggle();
 }
 
-// flip card
-$("#card").flip({
-  axis: 'x',
-  trigger: 'hover'
-});
 	

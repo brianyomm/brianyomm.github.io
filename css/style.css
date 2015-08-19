@@ -37,6 +37,11 @@ animation-delay: 1.2s;
 animation-delay: 1.6s;
 }
 
+.fade {
+  background-color: blue;
+  opacity: 1;
+}
+
 /* HIDDEN/VISABLE */
 .hidden{
 	/*opacity: 0;*/
@@ -79,6 +84,11 @@ html, body {
 }
 .pad-section img {
   width: 100%;
+}
+
+/* center styles */
+.centered {
+  margin: 0 auto;
 }
 
 /* nav bar */
@@ -203,6 +213,9 @@ hr {
 }
 
 #about .headshot {
+  display: block;
+  padding: 15px 0 15px 0;
+  margin: 0 auto;
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
 }
