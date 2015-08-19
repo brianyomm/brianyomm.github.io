@@ -38,8 +38,7 @@ animation-delay: 1.6s;
 }
 
 .fade {
-  background-color: blue;
-  opacity: 1;
+  opacity: 0;
 }
 
 /* HIDDEN/VISABLE */
@@ -207,8 +206,8 @@ hr {
 
 #about {
   background-color: #FFFFFF;
-  min-height: 475px;
-  max-height: 750px;
+  min-height: 650px;
+  max-height: 1000px;
   overflow: visible;
 }
 
