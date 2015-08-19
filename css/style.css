@@ -365,6 +365,13 @@ hr {
   background: #E5726B;
 }
 
+#contactform {
+  padding-top: 300px;
+  height: 750px;
+  background-color: #FFFFFF;
+  text-align: center;
+  font-size: 200px;
+}
 
 #social-footer {
   height: 75px;

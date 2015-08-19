@@ -72,10 +72,20 @@ $(window).on("load",function() {
 });
 
 
-
 // add button show more content
 function toggler(divId) {
     $("#" + divId).toggle();
 }
+
+// Set up an event listener for the contact form.
+$(form).submit(function(event) {
+    // Stop the browser from submitting the form.
+    event.preventDefault();
+
+    // TODO
+});
+
+// Serialize the form data.
+var formData = $(form).serialize();
 
 	
