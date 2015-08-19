@@ -182,8 +182,15 @@ hr {
 }
 
 /* additional sections */
-#home {
+.home {
   background: url(../img/marble_02.jpg) center; 
+}
+
+#portfolio-page {
+  background: url(../img/portfolio/prime&beyond/PB-SLIDE-01.jpg) center; 
+}
+
+.home {
   display: table;
   height: 75%;
   position: relative;
@@ -195,13 +202,19 @@ hr {
   box-shadow: 0px 4px 3px rgba(0,0,0,.3);
 }
 
-#home .container {
+.home .container {
   padding-top: 50px;
 }
 
-#home .by_logo {
+.home .by_logo {
   width: 275px;
   height: 275px;
+}
+
+#portfolio-about {
+  background-color: #FFFFFF;
+  height: 400px;
+  overflow: visible;
 }
 
 #about {
@@ -241,8 +254,17 @@ hr {
 	-ms-transform: skewY(-7deg);
 	-o-transform: skewY(-7deg);
 	transform: skewY(-7deg);
-	box-shadow: 0px 4px 3px rgba(0,0,0,.3);
   overflow: hidden;
+  position: relative;
+  box-shadow: 0 8px 60px 8px rgba(0,0,0,0.33);
+}
+
+#portfolio-info {
+  background-color: #498c92;
+  height: 420px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 8px 60px 8px rgba(0,0,0,0.33);
 }
 
 #portfolio .container-fluid {
@@ -256,8 +278,7 @@ hr {
 /* ADDED */
 #portfolio {
 /*  font-size: 1.8em;*/
-  position: relative;
-  box-shadow: 0 8px 60px 8px rgba(0,0,0,0.33);
+
 }
 
 .container .no-gutter > [class*=" col-"] {
