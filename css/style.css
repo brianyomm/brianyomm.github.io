@@ -37,6 +37,12 @@ animation-delay: 1.2s;
 animation-delay: 1.6s;
 }
 
+.fade-in.four {
+-webkit-animation-delay: 1.9s;
+-moz-animation-delay: 1.9s;
+animation-delay: 1.9s;
+}
+
 .fade {
   opacity: 0;
 }
@@ -166,10 +172,22 @@ hr {
   letter-spacing: 16px;
 }
 
+.text-vcenter .arrow {
+  width: 30px;
+  padding-top: 50px;
+  margin: 0 auto;
+  display: block;
+  animation: bounce 2s infinite;
+}
+
 /* button edits */
 .btn {
   background-color: transparent;
-  border: double #f5f5f1 2px 2px 0, #498c92 3px 3px 0;
+  border-radius: 0px;
+}
+
+.btn-info {
+  color: #46b8da;
 }
 
 .title {
@@ -189,14 +207,14 @@ hr {
 .home {
   background: url(../img/marble_02.jpg) center; 
   display: table;
-  height: 75%;
+  height: 100%;
   position: relative;
   width: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  box-shadow: 0px 4px 3px rgba(0,0,0,.3);
+  box-shadow: 0 8px 60px 8px rgba(0,0,0,0.33);
 }
 
 .home .container {
@@ -221,19 +239,26 @@ hr {
   overflow: visible;
 }
 
-#about .headshot {
+#about .by_headshot {
   display: block;
-  padding: 15px 0 15px 0;
   margin: 0 auto;
+  box-shadow: 0px 4px 4px rgba(0,0,0,.3);
+}
+#about .by_headshot:hover {
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
+  border: 9px double #498c92;
+  -webkit-transition: all .35s ease-in;
+  -ms-transition: all .35s ease-in;
+  transition: all .35s ease-in;
+
 }
 
 .summary {
   font-family: 'cocomat';
   font-size: 20px;
   line-height: 30px;
-  padding-bottom: 25px;
+  padding: 15px 0 25px 0;
 }
 
 .more-summary {
@@ -246,11 +271,11 @@ hr {
 #portfolio {
 	background-color: #498c92;
 	height: 1000px;
-	-webkit-transform: skewY(-7deg);
+/*	-webkit-transform: skewY(-7deg);
 	-moz-transform: skewY(-7deg);
 	-ms-transform: skewY(-7deg);
 	-o-transform: skewY(-7deg);
-	transform: skewY(-7deg);
+	transform: skewY(-7deg);*/
   overflow: hidden;
   position: relative;
   box-shadow: 0 8px 60px 8px rgba(0,0,0,0.33);
@@ -264,13 +289,13 @@ hr {
   box-shadow: 0 8px 60px 8px rgba(0,0,0,0.33);
 }
 
-#portfolio .container-fluid {
+/*#portfolio .container-fluid {
 	-webkit-transform: skewY(7deg);
 	-moz-transform: skewY(7deg);
 	-ms-transform: skewY(7deg);
 	-o-transform: skewY(7deg);
 	transform: skewY(7deg);
-}
+}*/
 
 .container .no-gutter > [class*=" col-"] {
   padding-right: 0;
@@ -377,13 +402,167 @@ hr {
   background: #E5726B;
 }
 
-#contactform {
+/*#contactform {
   padding-top: 300px;
   height: 750px;
   background-color: #FFFFFF;
   text-align: center;
   font-size: 200px;
+}*/
+
+.contact__form {
+  max-width: 770px;
+  width: 100%;
+  margin: 303px auto 80px auto;
+  line-height: 1;
+  -webkit-transition: margin 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+          transition: margin 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -webkit-transform: translateZ(0);
 }
+.contact__form.opened {
+  margin-top: 121px;
+}
+.contact__form__header {
+  text-align: center;
+  margin-bottom: 44px;
+}
+.contact__form__input,
+.contact__form__textarea {
+  width: 100%;
+  height: 38px;
+  border: 0;
+  padding: 0;
+  border-radius: 0;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #e4e6ed;
+  border-bottom: 3px solid #3d4356;
+  background-color: transparent;
+  -webkit-transition: border 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+          transition: border 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+.contact__form__input:focus,
+.contact__form__textarea:focus {
+  border-color: #fff;
+  text-transform: none;
+  font-weight: normal;
+  line-height: 18px;
+  color: #fff;
+  padding-bottom: 10px;
+}
+.contact__form__textarea {
+  padding: 12px 0 0 0;
+  -webkit-transition: height 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+          transition: height 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+.contact__form__textarea.opened {
+  height: 200px;
+}
+@-webkit-keyframes gradient {
+  100% {
+    background: #404558;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #404558), color-stop(100%, #2e3346));
+    background: -webkit-linear-gradient(top, #404558 0%, #2e3346 100%);
+    background: linear-gradient(to bottom, #404558 0%, #2e3346 100%);
+  }
+}
+@keyframes gradient {
+  100% {
+    background: #404558;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #404558), color-stop(100%, #2e3346));
+    background: -webkit-linear-gradient(top, #404558 0%, #2e3346 100%);
+    background: linear-gradient(to bottom, #404558 0%, #2e3346 100%);
+  }
+}
+.contact__form__button {
+  height: 60px;
+  width: 100%;
+  cursor: pointer;
+  padding: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1;
+  position: relative;
+  background: #4a5164;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4a5164), color-stop(92%, #383f52), color-stop(100%, #383f52));
+  background: -webkit-linear-gradient(top, #4a5164 0%, #383f52 92%, #383f52 100%);
+  background: linear-gradient(to bottom, #4a5164 0%, #383f52 92%, #383f52 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4a5164', endColorstr='#383f52', GradientType=0);
+  tranform: translate3d(0, 0, 0);
+  -webkit-transition: opacity 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+          transition: opacity 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+.contact__form__button:hover,
+.contact__form__button:focus {
+  opacity: .8;
+}
+.contact__form__field {
+  width: 100%;
+  margin-bottom: 37px;
+  position: relative;
+  clear: both;
+}
+.contact__form__field--half {
+  width: calc(50% - 15px);
+  margin-bottom: 47px;
+  clear: none;
+}
+.contact__form__field--left {
+  float: left;
+}
+.contact__form__field--right {
+  float: right;
+}
+.contact__form__heading {
+  font-size: 18px;
+  color: #498c92;
+  margin: 0;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+}
+.contact__form__heading--small {
+  font-size: 11px;
+  color: #498c92;
+  margin: 5px 0 0 0;
+  font-weight: normal;
+}
+.contact__form__heading--small a {
+  font-weight: bold;
+}
+.contact__form__required {
+  width: 4px;
+  height: 4px;
+  display: block;
+  position: absolute;
+  top: 14px;
+  right: 1px;
+  border-radius: 50%;
+  background-color: #ff4d4d;
+  -webkit-transition: 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+          transition: 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+.contact__form__required.hidden {
+  display: none;
+}
+.contact__form__info {
+  margin: -22px 0 0 0;
+  font-size: 13px;
+  text-align: center;
+}
+.contact__form__info.hidden {
+  display: none;
+}
+.contact__form__info--good {
+  color: #12844d;
+}
+.contact__form__info--bad {
+  color: #ff4d4d;
+}
+
 
 #social-footer {
   height: 75px;

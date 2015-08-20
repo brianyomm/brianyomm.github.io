@@ -50,8 +50,8 @@
         <ul class="nav navbar-nav">
           <li><a href="#about">About</a></li>
           <li><a href="resume.pdf">Resume</a></li> <!-- add resume pdf pahge -->
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="#contact_form">Contact</a></li>
         </ul>
       </div>
     </div> 
@@ -64,6 +64,7 @@
       <h1 class="name fade-in one">BRIAN YOM</h1>
       <hr class="hr fade-in two">
       <h4 class="occupation fade-in three">creative designer</h4>
+      <img class="arrow" src="img/arrow_down.png">
     </div>
   </div>
 </header>
@@ -77,7 +78,7 @@
       </div> <!-- Close Row --> 
       <div class="row">
         <div class="headshot fade">
-          <img class="headshot" src="img/headshot_175.jpg">
+          <img class="by_headshot" src="img/headshot_175.jpg">
         </div>
       </div>
       <div class="row">
@@ -157,9 +158,65 @@
   </div><!-- CLOSE CONTAINER -->
 </section><!-- CLOSE PORTFOLIO -->
 
-<section id="contactform">
-  <a href="mailto:brianyom@yoursite.com" class="fade">GET @ ME</a>
+<!-- CONTACT FORM -->
+<form method="post" action="javascript:sendQuery();" class="contact__form" id="contact_form">
+        <header class="contact__form__header">
+            <h2 class="contact__form__heading">Drop me an email</br> <a href="mailto:brian@noblees.com">brian@noblees.com</a></h2>
+            <h3 class="contact__form__heading--small">or use contact form below</h3>
+        </header>
+
+        <div class="contact__form__field contact__form__field--half contact__form__field--left">
+            <input type="text" placeholder="Your Name" name="contact_name" id="contact_name" class="contact__form__input">
+            <span class="contact__form__required hidden"></span>
+        </div>
+
+        <div class="contact__form__field contact__form__field--half contact__form__field--right">
+            <input type="text" placeholder="Your Email" name="contact_email" id="contact_email" class="contact__form__input">
+            <span class="contact__form__required hidden"></span>
+        </div>
+
+        <div class="contact__form__field">
+            <textarea cols="30" rows="10" name="contact_message" id="contact_message" class="contact__form__textarea" placeholder="Your Query"></textarea>
+            <span class="contact__form__required hidden"></span>
+        </div>
+
+        <div class="contact__form__field">
+            <input type="submit" class="contact__form__button" value="Send message">
+        </div>
+
+        <div class="contact__form__field">
+            <p class="contact__form__info contact__form__info--good hidden"></p>
+        </div>
+    </form>
 </section>
+    <script type="text/javascript">
+
+        function sendQuery() {
+            $('.contact__form__required, .contact__form__info').addClass('hidden');
+            $('.contact__form__info ').removeClass('contact__form__info--bad contact__form__info--good');
+            $.ajax({
+               type: "GET" ,
+               async: false,
+               url: base_url+"/contact.php",
+               data: $('#contact_form').serialize(),
+               success : function(data) {
+                   data = JSON.parse(data);
+                   if(data.status == "ok") {
+                       $('.contact__form__info').empty().html(data.message).addClass('contact__form__info--good').removeClass('hidden');
+                       $('#contact_name, #contact_email, #contact_message').val('');
+                   } else {
+                        $('.contact__form__info').empty().html(data.message).addClass('contact__form__info--bad').removeClass('hidden');
+                        $.each( data.fields, function( key, value ) {
+                          $('#'+data.fields[key]).parent().children('.contact__form__required').removeClass('hidden');
+                        });
+                   }
+
+               }
+            });
+        }
+    </script>
+ <!--  <a href="mailto:brianyom@yoursite.com" class="fade">GET @ ME</a> -->
+<!-- END CONTACT FORM -->
 
 
 <!-- // START SOCIAL FOOTER \\ -->
@@ -187,7 +244,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
-<script src="js/app.js"></script>
 
 
 
