@@ -156,7 +156,7 @@ hr {
   font-size: 4.5em;
   font-weight: 700;
   margin: 0;
-  padding: 10px 0 0 0;
+  padding: 0;
 }
 .text-vcenter h4 {
 	font-family: 'vevey';
@@ -182,15 +182,12 @@ hr {
 }
 
 /* additional sections */
-.home {
-  background: url(../img/marble_02.jpg) center; 
-}
-
 #portfolio-page {
   background: url(../img/portfolio/prime&beyond/PB-SLIDE-01.jpg) center; 
 }
 
 .home {
+  background: url(../img/marble_02.jpg) center; 
   display: table;
   height: 75%;
   position: relative;
@@ -207,8 +204,8 @@ hr {
 }
 
 .home .by_logo {
-  width: 275px;
-  height: 275px;
+  width: 200px;
+  height: 200px;
 }
 
 #portfolio-about {
@@ -273,12 +270,6 @@ hr {
 	-ms-transform: skewY(7deg);
 	-o-transform: skewY(7deg);
 	transform: skewY(7deg);
-}
-
-/* ADDED */
-#portfolio {
-/*  font-size: 1.8em;*/
-
 }
 
 .container .no-gutter > [class*=" col-"] {
