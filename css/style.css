@@ -140,7 +140,8 @@ html, body {
 }
 
 hr {
-	width: 35%;
+	width: 45%;
+  margin: 0 auto;
 }
 
 /*.text-vcenter .container {
@@ -162,14 +163,15 @@ hr {
   font-size: 4.5em;
   font-weight: 700;
   margin: 0;
-  padding: 0;
+  padding-bottom: 10px;
 }
 .text-vcenter h4 {
 	font-family: 'vevey';
-	font-size: 1.9em;
+	font-size: 2.2em;
 	color: #FFFFFF;
   text-shadow: 2px 2px 0 rgba(0,0,0,.4);
   letter-spacing: 16px;
+  padding-top: 10px;
 }
 
 .text-vcenter .arrow {
@@ -234,8 +236,10 @@ hr {
 
 #about {
   background-color: #FFFFFF;
-  min-height: 650px;
-  max-height: 1000px;
+/*  min-height: 650px;
+  max-height: 1000px;*/
+  min-height: 100%;
+  max-height: 125%;
   overflow: visible;
 }
 
@@ -245,9 +249,9 @@ hr {
   box-shadow: 0px 4px 4px rgba(0,0,0,.3);
 }
 #about .by_headshot:hover {
+  background: url(..img/BY_LOGO_300.png);
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
-  border: 9px double #498c92;
   -webkit-transition: all .35s ease-in;
   -ms-transition: all .35s ease-in;
   transition: all .35s ease-in;
@@ -270,7 +274,7 @@ hr {
 
 #portfolio {
 	background-color: #498c92;
-	height: 1000px;
+	height: 100%;
 /*	-webkit-transform: skewY(-7deg);
 	-moz-transform: skewY(-7deg);
 	-ms-transform: skewY(-7deg);
@@ -279,6 +283,16 @@ hr {
   overflow: hidden;
   position: relative;
   box-shadow: 0 8px 60px 8px rgba(0,0,0,0.33);
+}
+
+.carousel-outer-img {
+  height:100%;
+}
+
+.carousel-inner-img {
+  margin: 0 auto;
+  width: 350px;
+  height: 350px;
 }
 
 #portfolio-info {
@@ -296,6 +310,10 @@ hr {
 	-o-transform: skewY(7deg);
 	transform: skewY(7deg);
 }*/
+
+.no-gutter {
+  padding: 0;
+}
 
 .container .no-gutter > [class*=" col-"] {
   padding-right: 0;
@@ -413,7 +431,7 @@ hr {
 .contact__form {
   max-width: 770px;
   width: 100%;
-  margin: 303px auto 80px auto;
+  margin: 30px auto 80px auto;
   line-height: 1;
   -webkit-transition: margin 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
           transition: margin 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
@@ -487,10 +505,10 @@ hr {
   font-size: 14px;
   line-height: 1;
   position: relative;
-  background: #4a5164;
+  background: #498c92;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4a5164), color-stop(92%, #383f52), color-stop(100%, #383f52));
-  background: -webkit-linear-gradient(top, #4a5164 0%, #383f52 92%, #383f52 100%);
-  background: linear-gradient(to bottom, #4a5164 0%, #383f52 92%, #383f52 100%);
+  background: -webkit-linear-gradient(top, #498c92 0%, #383f52 92%, #383f52 100%);
+  background: linear-gradient(to bottom, #498c92 0%, #383f52 92%, #383f52 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4a5164', endColorstr='#383f52', GradientType=0);
   tranform: translate3d(0, 0, 0);
   -webkit-transition: opacity 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
@@ -570,10 +588,11 @@ hr {
 }
 
 #social-footer .social-container {
-    width: 140px;
-    height: 24px;
-    margin: auto;
-    padding-top: 30px;
+  color: #FFFFFF;
+  width: 140px;
+  height: 24px;
+  margin: auto;
+  padding-top: 30px;
 }
 
 
