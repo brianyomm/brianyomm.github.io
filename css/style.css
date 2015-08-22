@@ -285,8 +285,25 @@ hr {
   box-shadow: 0 8px 60px 8px rgba(0,0,0,0.33);
 }
 
+.positionRelative {
+  position: relative;
+}
+
+#carousel-chrome {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#carousel-example-generic {
+  padding-top: 40px;
+}
+
 .carousel-outer-img {
-  height:100%;
+  width: 75%;
+  height: 75%;
 }
 
 .carousel-inner-img {
