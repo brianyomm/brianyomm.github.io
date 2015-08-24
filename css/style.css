@@ -203,7 +203,7 @@ hr {
 
 /* additional sections */
 #portfolio-page {
-  background: url(../img/portfolio/prime&beyond/PB-SLIDE-01.jpg) center; 
+  background: url(../portfolio/prime&beyond/img/PB-SLIDE-01.jpg) center; 
 }
 
 .home {
@@ -606,10 +606,14 @@ hr {
 
 #social-footer .social-container {
   color: #FFFFFF;
-  width: 140px;
+  width: 300px;
   height: 24px;
   margin: auto;
   padding-top: 30px;
+}
+
+#social-footer .social-icon {
+  padding-right: 5px;
 }
 
 
