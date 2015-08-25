@@ -131,6 +131,10 @@ html, body {
   text-align: center;
 }
 
+.navbar .sticky {
+
+}
+
 /* vertical-centered text */
 .text-vcenter {
 	display: table-cell;
@@ -289,22 +293,6 @@ hr {
   position: relative;
 }
 
-#carousel-chrome {
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-}
-
-/*#carousel-example-generic {
-  padding-top: 40px;
-}*/
-/*
-.carousel-outer-img {
-  width: 75%;
-  height: 75%;
-}*/
 
 .carousel-inner-img {
   margin: 0 auto;
@@ -606,14 +594,14 @@ hr {
 
 #social-footer .social-container {
   color: #FFFFFF;
-  width: 300px;
+  width: 200px;
   height: 24px;
   margin: auto;
   padding-top: 30px;
 }
 
 #social-footer .social-icon {
-  padding-right: 5px;
+  padding-right: 10px;
 }
 
 
