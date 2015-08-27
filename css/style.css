@@ -215,12 +215,16 @@ html, body {
   font-size: 4.5em;
   text-shadow: #f5f5f1 2px 2px 0, #498c92 3px 3px 0;
   letter-spacing: 10px;
-  margin-top: 100px;
+  margin: 100px 0 30px 0;
 }
 
 /* additional sections */
 #portfolio-page {
   background: url(../portfolio/prime&beyond/img/PB-SLIDE-01.jpg) center; 
+}
+
+#orobos-header {
+    background: url(../portfolio/orobos/img/orobos-banner.jpg) center no-repeat;
 }
 
 .home {
@@ -261,17 +265,21 @@ html, body {
 }
 
 #about .by_headshot {
+      box-shadow: 0px 4px 4px rgba(0,0,0,.3);
   display: block;
   margin: 0 auto;
-  box-shadow: 0px 4px 4px rgba(0,0,0,.3);
+
+
 }
 #about .by_headshot:hover {
+    padding: 20px;
   background: url(..img/BY_LOGO_300.png);
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
   -webkit-transition: all .35s ease-in;
   -ms-transition: all .35s ease-in;
   transition: all .35s ease-in;
+    
 
 }
 
@@ -279,7 +287,7 @@ html, body {
   font-family: 'cocomat';
   font-size: 20px;
   line-height: 30px;
-  padding: 15px 0 25px 0;
+  padding: 35px 0 25px 0;
 }
 
 .more-summary {
@@ -289,8 +297,7 @@ html, body {
   padding: 35px 0 100px 0;
 }
 
-.about-box {
-  border: 2px solid #498c92;
+ .about-box {
 }
 
 .hrInfo {
@@ -311,6 +318,9 @@ html, body {
   position: relative;
 }
 
+#carousel-example-generic {
+box-shadow: 0px 10px 10px 1px rgba(0,0,0,.3);
+}
 
 .carousel-inner-img {
   margin: 0 auto;
