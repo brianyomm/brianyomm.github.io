@@ -93,6 +93,24 @@ html, body {
   padding-bottom: 0;
 }
 
+.negativeMargin {
+  margin-top: -60px;
+}
+
+.suppImgL {
+  float: left;
+  width: 800px;
+}
+
+.suppImgR {
+  float: right;
+  width: 800px;
+}
+
+#supp_img {
+  padding-top: 50px;
+}
+
 /* padded section */
 .pad-section {
   padding: 50px 0;
@@ -290,6 +308,13 @@ html, body {
   padding: 35px 0 25px 0;
 }
 
+.summary2 {
+  text-decoration: none;
+  font-family: 'cocomat';
+  font-size: 20px;
+  line-height: 20px;
+}
+
 .more-summary {
   font-family: 'cocomat';
   font-size: 20px;
@@ -347,9 +372,9 @@ box-shadow: 0px 10px 10px 1px rgba(0,0,0,.3);
 }
 
 #website_deck .website_mockup {
-    width: 100%;
-    height: 100%;
-margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
 }
 
 .col-md-6.project {
