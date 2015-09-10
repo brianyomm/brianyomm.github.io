@@ -213,11 +213,12 @@ html, body {
 
 .text-vcenter .arrow {
   width: 30px;
-  padding-top: 50px;
+  padding-top: 275px;
   margin: 0 auto;
   display: block;
   animation: bounce 2s infinite;
 }
+
 
 /* button edits */
 .btn {
@@ -248,7 +249,7 @@ html, body {
 }
 
 .home {
-  background: url(../img/marble_02.jpg) center; 
+  background: url(../img/marble_03.jpg) center; 
   display: table;
   height: 100%;
   position: relative;
@@ -257,7 +258,7 @@ html, body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  box-shadow: 0 8px 60px 8px rgba(0,0,0,0.33);
+/*  box-shadow: 0 8px 60px 8px rgba(0,0,0,0.33);*/
 }
 
 .home .container {
@@ -265,8 +266,8 @@ html, body {
 }
 
 .home .by_logo {
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
 }
 
 #portfolio-about {
@@ -276,11 +277,11 @@ html, body {
 }
 
 #about {
-  background-color: #FFFFFF;
+  background-color: #498c92;
 /*  min-height: 650px;
   max-height: 1000px;*/
   min-height: 100%;
-  max-height: 125%;
+  max-height: 135%;
   overflow: visible;
 }
 
@@ -288,19 +289,8 @@ html, body {
   box-shadow: 0px 4px 4px rgba(0,0,0,.3);
   display: block;
   margin: 0 auto;
-
-
-}
-#about .by_headshot:hover {
-    padding: 20px;
-  background: url(..img/BY_LOGO_300.png);
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
-  -webkit-transition: all .35s ease-in;
-  -ms-transition: all .35s ease-in;
-  transition: all .35s ease-in;
-    
-
 }
 
 .summary {
@@ -338,7 +328,7 @@ html, body {
 	height: 120%;
   overflow: hidden;
   position: relative;
-  box-shadow: 0 8px 60px 8px rgba(0,0,0,0.33);
+  /*box-shadow: 0 8px 60px 8px rgba(0,0,0,0.33);*/
 }
 
 .positionRelative {
@@ -637,13 +627,13 @@ box-shadow: 0px 10px 10px 1px rgba(0,0,0,.3);
 
 
 #social-footer {
-  height: 75px;
+  height: 80px;
   background-image: url(../img/marble_02.jpg); 
 }
 
 #social-footer .social-container {
   color: #FFFFFF;
-  width: 200px;
+  width: 300px;
   height: 24px;
   margin: auto;
   padding-top: 30px;
