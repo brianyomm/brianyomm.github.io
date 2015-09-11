@@ -128,6 +128,15 @@ html, body {
   margin: 0 auto;
 }
 
+/* font styles */
+.clientName {
+  text-decoration: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
 /* nav bar */
 .navbar {
 	background-color: transparent;
