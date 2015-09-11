@@ -339,6 +339,24 @@ html, body {
   padding: 35px 0 25px 0;
 }
 
+.contact_txt {
+  font-family: 'telegrafico';
+  text-shadow: 2px 2px 0 rgba(0,0,0,.4);
+  letter-spacing: 5px;
+  color: #FFFFFF;
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+.contact_txt2 {
+  padding-top: 30px;
+  font-family: 'vevey';
+  font-size: 2.2em;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 0 rgba(0,0,0,.4);
+  letter-spacing: 16px;
+}
+
  .about-box {
 }
 
