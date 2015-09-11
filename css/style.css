@@ -168,6 +168,10 @@ html, body {
 
 }
 
+.icon-bar {
+  background-color: #FFFFFF;
+}
+
 /* vertical-centered text */
 .text-vcenter {
 	display: table-cell;
@@ -219,7 +223,6 @@ html, body {
   animation: bounce 2s infinite;
 }
 
-
 /* button edits */
 .btn {
   background-color: transparent;
@@ -227,7 +230,7 @@ html, body {
 }
 
 .btn-info {
-  color: #46b8da;
+  color: #FFFFFF;
 }
 
 .title {
@@ -280,7 +283,7 @@ html, body {
   background-color: #498c92;
 /*  min-height: 650px;
   max-height: 1000px;*/
-  min-height: 100%;
+  min-height: 75%;
   max-height: 135%;
   overflow: visible;
 }
@@ -295,6 +298,7 @@ html, body {
 
 .summary {
   font-family: 'cocomat';
+  color: #FFFFFF;
   font-size: 20px;
   line-height: 30px;
   padding: 35px 0 25px 0;
@@ -309,6 +313,7 @@ html, body {
 
 .more-summary {
   font-family: 'cocomat';
+  color: #FFFFFF;
   font-size: 20px;
   line-height: 30px;
   padding: 35px 0 100px 0;
@@ -449,19 +454,19 @@ box-shadow: 0px 10px 10px 1px rgba(0,0,0,.3);
 }
 
 #project-1 {
-  background: #826159;
+  background: #000000;
 }
 
 #project-2 {
-  background: #5994CE;
+  background: #000000;
 }
 
 #project-3 {
-  background: #BBBBBB;
+  background: #000000;
 }
 
 #project-4 {
-  background: #E5726B;
+  background: #000000;
 }
 
 /*#contactform {
@@ -471,6 +476,9 @@ box-shadow: 0px 10px 10px 1px rgba(0,0,0,.3);
   text-align: center;
   font-size: 200px;
 }*/
+#contact {
+  background-color: #498c92;
+}
 
 .contact__form {
   max-width: 770px;
