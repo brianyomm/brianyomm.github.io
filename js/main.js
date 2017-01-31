@@ -1,317 +1,635 @@
-$(document).ready(function(){
-  $('a[href*=#]').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-    && location.hostname == this.hostname) {
-      var $target = $(this.hash);
-      $target = $target.length && $target
-      || $('[name=' + this.hash.slice(1) +']');
-      if ($target.length) {
-        var targetOffset = $target.offset().top;
-        $('html,body')
-        .animate({scrollTop: targetOffset}, 1000);
-       return false;
-      }
-    }
-  });
-});
+jQuery(function($) {
+    
+	'use strict';
+    //Preloader
 
-// add navbar sticky
-$(window).scroll(function() {
-if ($(this).scrollTop() > 1){  
-    $('navbar').addClass("sticky");
-  }
-  else{
-    $('navbar').removeClass("sticky");
-  }
-});
+    $(".page-loader .loader").delay(0).fadeOut();
+    $(".page-loader").delay(500).fadeOut("slow");
 
-// add fadeIn
-$(window).on("load",function() {
-    function fade() {
-        $('.fade').each(function() {
-            /* Check the location of each desired element */
 
-            var objectBottom = $(this).offset().top + $(this).outerHeight();
-            var windowBottom = $(window).scrollTop() + $(window).innerHeight();
+    //Menu Sticky
+    $(window).on('scroll', function() {
+        if ($(window).scrollTop() > 1) {
+            $('.main-nav').addClass('menu-sticky');
+            $('.main-nav.js-transparent').removeClass('menu-transparent');
+            $('.main-nav.has-top-nav').removeClass('mrg-top-40');
+            $('.main-nav.js-transparent.has-top-logo').removeClass('mrg-top-90');
+            $('.main-nav.float-menu').removeClass('float-menu-style');
+            $('.top-nav,.top-logo').addClass('push-top');
+            $('.screen-frame .bar-top').addClass('after-scroll');
 
-            /* If the object is completely visible in the window, fade it in */
-            if (objectBottom < windowBottom) { //object comes into view (scrolling down)
-                if ($(this).css('opacity')==0) {$(this).stop(true,true).fadeTo("fast",1);}
-            } else { //object goes out of view (scrolling up)
-                if ($(this).css('opacity')==1) {$(this).stop(true,true).fadeTo("fast",0);}
-            }
+        } else {
+            $('.main-nav').removeClass('menu-sticky');
+            $('.main-nav.js-transparent').addClass('menu-transparent');
+            $('.main-nav.has-top-nav').addClass('mrg-top-40');
+            $('.main-nav.js-transparent.has-top-logo').addClass('mrg-top-90');
+            $('.main-nav.float-menu').addClass('float-menu-style');
+            $('.top-nav,.top-logo').removeClass('push-top');
+            $('.screen-frame .bar-top').removeClass('after-scroll');
+        }
+    });
+
+
+    // Full Screen Menu
+    $('.fs-menu-trigger').on('click', function() {
+        $('.fs-menu').addClass('active');
+    });
+
+    $('.fs-menu-close, .menu-close').on('click', function() {
+        $('.fs-menu').removeClass('active');
+    });
+
+    $(document).keyup(function(e) {
+        if (e.keyCode == 27) {
+            $('.fs-menu').removeClass('active');
+        }
+    });
+
+
+    //Side Menu	
+    $("#menu-toggle").on('click', function(e) {
+        e.preventDefault();
+        $(".side-nav").toggleClass("toggled");
+    });
+
+    $('.side-nav .sidebar-inner li.dropdown').children('ul').hide();
+
+    $('.side-nav .sidebar-inner li a').click(function(event) {
+        event.stopPropagation();
+        $(this).find(".side-nav .sidebar-inner li a").removeClass('menu-open');
+        $(this).parents(".side-nav .sidebar-inner li a").addClass('menu-open');
+        $(this).toggleClass('menu-open');
+        $(this).parent().children('ul.side-sub-menu').toggle(200);
+    });
+
+
+    //OnePage Menu tracking 
+    $('body').scrollspy({
+        target: ".op-nav .custom-collapse"
+    })
+
+
+    //Mobile sub menu
+    $(".submenu").click(function(event) {
+        event.stopPropagation();
+        $(this).find(".submenu").removeClass('open');
+        $(this).parents(".submenu").addClass('open');
+        $(this).toggleClass('open');
+    });
+
+
+    // Search
+    $('#search-trigger').on('click', function() {
+        $('#search').addClass('active').find('.search').focus();
+    });
+
+    $('#search').on('click', function() {
+        $(this).find('.search').focus();
+    });
+
+    $('#close').on('click', function() {
+        $('#search').removeClass('active');
+    });
+
+    $(document).keyup(function(e) {
+        if (e.keyCode == 27) { // escape key maps to keycode `27`
+            $('#search').removeClass('active');
+        }
+    });
+
+
+    // scroll to
+    $('.scroll-to').on('click', function() {
+        $('html, body').animate({
+            scrollTop: $(this.hash).offset().top - 5
+        }, 1000);
+        return false;
+    });
+
+
+    // back to top
+    if ($('#back-to-top').length) {
+        var scrollTrigger = 100, // px
+            backToTop = function() {
+                var scrollTop = $(window).scrollTop();
+                if (scrollTop > scrollTrigger) {
+                    $('#back-to-top').addClass('show');
+                } else {
+                    $('#back-to-top').removeClass('show');
+                }
+            };
+        backToTop();
+        $(window).on('scroll', function() {
+            backToTop();
+        });
+        $('#back-to-top').on('click', function(e) {
+            e.preventDefault();
+            $('html,body').animate({
+                scrollTop: 0
+            }, 700);
         });
     }
-    fade(); //Fade in completely visible elements during page-load
-    $(window).scroll(function() {fade();}); //Fade in elements during scroll
-});
 
 
-// add button show more content
-function toggler(divId) {
-    $("#" + divId).toggle();
-}
+    //Youtube Video Background
+    $(function() {
+        $(".video-player").YTPlayer();
+    });
 
-// Set up an event listener for the contact form.
-$(form).submit(function(event) {
-    // Stop the browser from submitting the form.
-    event.preventDefault();
 
-    // TODO
-});
+    // Works Item Lightbox				
+    $(".lightbox-image").magnificPopup({
+        type: 'image',
+        gallery: {
+            enabled: true
+        },
+        mainClass: "mfp-fade"
 
-// Serialize the form data.
-var formData = $(form).serialize();
+    });
 
-// add google maps ()
-$(document).ready(function (){
+    $(".individual-gallery").magnificPopup({
+        type: 'image',
+        gallery: {
+            enabled: true
+        },
+        mainClass: "mfp-fade"
 
-  // create a LatLng object containing the coordinate for the center of the map
-  var latlng = new google.maps.LatLng(40.856057, -73.977883);
+    });
 
-  // prepare the map properties
-  var options = {
-    zoom: 15,
-    center: latlng,
-    mapTypeId: google.maps.MapTypeId.ROADMAP,
-    navigationControl: true,
-    mapTypeControl: false,
-    scrollwheel: false,
-    disableDoubleClickZoom: true
-  };
+    $('.lightbox-video').magnificPopup({
+        disableOn: 700,
+        type: 'iframe',
+        mainClass: 'mfp-fade',
+        removalDelay: 160,
+        preloader: false,
+        fixedContentPos: false
+    });
 
-  // initialize the map object
-  var map = new google.maps.Map(document.getElementById('google_map'), options);
 
-  // add Marker
-  var marker1 = new google.maps.Marker({
-    position: latlng, map: map
-  });
+    // WOW Animation
+    var wow = new WOW({
+        boxClass: 'wow',
+        animateClass: 'animated',
+        offset: 90,
+        mobile: false,
+        live: true
+    });
+    wow.init();
 
-  // add listener for a click on the pin
-  google.maps.event.addListener(marker1, 'click', function() {
-    infowindow.open(map, marker1);
-  });
 
-  // add information window
-  var infowindow = new google.maps.InfoWindow({
-    content:  '<div class="info"><strong>This is my company</strong><br><br>My company address is here<br> 32846 Sydney</div>'
-  });  
-});
+    //parallax
+    $('.parallax').parallax("50% 100%", 0.5);
 
-// add sticky
-(function (factory) {
-    if (typeof define === 'function' && define.amd) {
-        // AMD. Register as an anonymous module.
-        define(['jquery'], factory);
-    } else if (typeof module === 'object' && module.exports) {
-        // Node/CommonJS
-        module.exports = factory(require('jquery'));
-    } else {
-        // Browser globals
-        factory(jQuery);
-    }
-}(function ($) {
-    var slice = Array.prototype.slice; // save ref to original slice()
-    var splice = Array.prototype.splice; // save ref to original slice()
+    // Progress bars
+    $(".progress-bar").appear(function(indx) {
+        $(this).css("width", $(this).attr("aria-valuenow") + "%");
+    });
 
-  var defaults = {
-      topSpacing: 0,
-      bottomSpacing: 0,
-      className: 'is-sticky',
-      wrapperClassName: 'sticky-wrapper',
-      center: false,
-      getWidthFrom: '',
-      widthFromWrapper: true, // works only when .getWidthFrom is empty
-      responsiveWidth: false
-    },
-    $window = $(window),
-    $document = $(document),
-    sticked = [],
-    windowHeight = $window.height(),
-    scroller = function() {
-      var scrollTop = $window.scrollTop(),
-        documentHeight = $document.height(),
-        dwh = documentHeight - windowHeight,
-        extra = (scrollTop > dwh) ? dwh - scrollTop : 0;
+    // Counters
+    $(".counter").appear(function() {
+        var count = $(this);
+        count.countTo({
+            from: 0,
+            to: count.html(),
+            speed: 2000,
+            refreshInterval: 60,
+        });
+    });
 
-      for (var i = 0, l = sticked.length; i < l; i++) {
-        var s = sticked[i],
-          elementTop = s.stickyWrapper.offset().top,
-          etse = elementTop - s.topSpacing - extra;
 
-  //update height in case of dynamic content
-  s.stickyWrapper.css('height', s.stickyElement.outerHeight());
+    // Count-down
+    $().ready(function() {
+        var endDate = "June 7, 2017 15:03:25";
+        $('.countdown').countdown({
+            date: endDate,
+            render: function(data) {
+                $(this.el).html("<div>" + this.leadingZeros(data.days, 3) +
+                    " <span>days</span></div><div>" + this.leadingZeros(data.hours, 2) +
+                    " <span>hrs</span></div><div>" + this.leadingZeros(data.min, 2) +
+                    " <span>min</span></div><div>" + this.leadingZeros(data.sec, 2) +
+                    " <span>sec</span></div>");
+            }
+        });
+    });
 
-        if (scrollTop <= etse) {
-          if (s.currentTop !== null) {
-            s.stickyElement
-              .css({
-                'width': '',
-                'position': '',
-                'top': ''
-              });
-            s.stickyElement.parent().removeClass(s.className);
-            s.stickyElement.trigger('sticky-end', [s]);
-            s.currentTop = null;
-          }
+
+    // Owl-carousel    
+
+    // Single Item
+    // Basic Single Slide no pagination & navigation
+    $(".owl-single").owlCarousel({
+        singleItem: true,
+        slideSpeed: 300,
+        autoPlay: 10000,
+        transitionStyle: "fade",
+        pagination: false,
+        navigation: false,
+    });
+
+    // Single slide with navigation only
+    $(".owl-single-nav").owlCarousel({
+        navigation: true,
+        slideSpeed: 300,
+        singleItem: true,
+        transitionStyle: "fade",
+        pagination: false,
+        navigationText: [
+            "<i class='ti-angle-left prev'></i>",
+            "<i class='ti-angle-right next'></i>"
+        ],
+    });
+
+    // Single slide with pagination only
+    $(".owl-single-pag").owlCarousel({
+        slideSpeed: 300,
+        singleItem: true,
+        pagination: true,
+        transitionStyle: "fade",
+    });
+
+    // Single slide with all controls
+    $(".owl-single-all").owlCarousel({
+        slideSpeed: 300,
+        singleItem: true,
+        pagination: true,
+        navigation: true,
+        transitionStyle: "fade",
+        navigationText: [
+            "<i class='ti-angle-left prev'></i>",
+            "<i class='ti-angle-right next'></i>"
+        ],
+    });
+
+    // 2 Item
+    // Basic Owl-carousel 2 item 
+    $(".owl-2").owlCarousel({
+        items: 2,
+        slideSpeed: 300,
+        itemsDesktop: [1199, 2],
+        itemsMobile: [479, 1],
+        pagination: false,
+        navigation: false,
+        autoPlay: 10000,
+    });
+
+    // Owl-carousel 2 item with navigation
+    $(".owl-2-nav").owlCarousel({
+        items: 2,
+        slideSpeed: 300,
+        navigation: true,
+        pagination: false,
+        itemsDesktop: [1199, 2],
+        itemsMobile: [479, 1],
+        navigationText: [
+            "<i class='ti-angle-left prev'></i>",
+            "<i class='ti-angle-right next'></i>"
+        ]
+    });
+
+    // Owl-carousel 2 item with pagination
+    $(".owl-2-pag").owlCarousel({
+        navigation: false,
+        items: 2,
+        pagination: true,
+        itemsDesktop: [1199, 2],
+        itemsMobile: [479, 1],
+    });
+
+    // Owl-carousel 2 item with all control
+    $(".owl-2-all").owlCarousel({
+        items: 2,
+        slideSpeed: 300,
+        navigation: true,
+        pagination: true,
+        itemsDesktop: [1199, 2],
+        itemsMobile: [479, 1],
+        navigationText: [
+            "<i class='ti-angle-left prev'></i>",
+            "<i class='ti-angle-right next'></i>"
+        ]
+    });
+
+    // 3 Item
+    // Basic Owl-carousel 3 item 
+    $(".owl-3").owlCarousel({
+        items: 3,
+        slideSpeed: 300,
+        itemsDesktop: [1199, 3],
+        itemsTablet: [992, 2],
+        itemsMobile: [479, 1],
+        pagination: false,
+        navigation: false,
+        autoPlay: 10000,
+    });
+
+    // Owl-carousel 3 item with navigation
+    $(".owl-3-nav").owlCarousel({
+        items: 3,
+        slideSpeed: 300,
+        navigation: true,
+        pagination: false,
+        itemsDesktop: [1199, 3],
+        itemsTablet: [992, 2],
+        itemsMobile: [479, 1],
+        navigationText: [
+            "<i class='ti-angle-left prev'></i>",
+            "<i class='ti-angle-right next'></i>"
+        ]
+    });
+
+    // Owl-carousel 3 item with pagination
+    $(".owl-3-pag").owlCarousel({
+        navigation: false,
+        items: 3,
+        pagination: true,
+        itemsDesktop: [1199, 3],
+        itemsTablet: [992, 2],
+        itemsMobile: [479, 1],
+    });
+
+    // Owl-carousel 3 item with all control
+    $(".owl-3-all").owlCarousel({
+        items: 3,
+        slideSpeed: 300,
+        navigation: true,
+        pagination: true,
+        itemsDesktop: [1199, 3],
+        itemsTablet: [992, 2],
+        itemsMobile: [479, 1],
+        navigationText: [
+            "<i class='ti-angle-left prev'></i>",
+            "<i class='ti-angle-right next'></i>"
+        ]
+    });
+
+    // 4 Item
+    // Basic Owl-carousel 4 item 
+    $(".owl-4").owlCarousel({
+        items: 4,
+        slideSpeed: 300,
+        itemsDesktop: [1199, 4],
+        itemsTablet: [992, 2],
+        itemsMobile: [479, 1],
+        pagination: false,
+        navigation: false,
+        autoPlay: 10000,
+    });
+
+    // Owl-carousel 4 item with navigation
+    $(".owl-4-nav").owlCarousel({
+        items: 4,
+        slideSpeed: 300,
+        navigation: true,
+        pagination: false,
+        itemsDesktop: [1199, 4],
+        itemsTablet: [992, 2],
+        itemsMobile: [479, 1],
+        navigationText: [
+            "<i class='ti-angle-left prev'></i>",
+            "<i class='ti-angle-right next'></i>"
+        ]
+    });
+
+    // Owl-carousel 4 item with pagination
+    $(".owl-4-pag").owlCarousel({
+        navigation: false,
+        items: 4,
+        pagination: true,
+        itemsDesktop: [1199, 4],
+        itemsTablet: [992, 2],
+        itemsMobile: [479, 1],
+    });
+
+    // Owl-carousel 4 item with all control
+    $(".owl-4-all").owlCarousel({
+        items: 4,
+        slideSpeed: 300,
+        navigation: true,
+        pagination: true,
+        itemsDesktop: [1199, 4],
+        itemsTablet: [992, 2],
+        itemsMobile: [479, 1],
+        navigationText: [
+            "<i class='ti-angle-left prev'></i>",
+            "<i class='ti-angle-right next'></i>"
+        ]
+    });
+
+    // 5 Item
+    // Basic Owl-carousel 5 item 
+    $(".owl-5").owlCarousel({
+        items: 5,
+        slideSpeed: 300,
+        itemsDesktop: [1199, 5],
+        itemsTablet: [992, 2],
+        itemsMobile: [479, 1],
+        pagination: false,
+        navigation: false,
+        autoPlay: 10000,
+    });
+
+    // Owl-carousel 5 item with navigation
+    $(".owl-5-nav").owlCarousel({
+        items: 5,
+        slideSpeed: 300,
+        navigation: true,
+        pagination: false,
+        itemsDesktop: [1199, 5],
+        itemsTablet: [992, 2],
+        itemsMobile: [479, 1],
+        navigationText: [
+            "<i class='ti-angle-left prev'></i>",
+            "<i class='ti-angle-right next'></i>"
+        ]
+    });
+
+    // Owl-carousel 5 item with pagination
+    $(".owl-5-pag").owlCarousel({
+        navigation: false,
+        items: 5,
+        pagination: true,
+        itemsDesktop: [1199, 5],
+        itemsTablet: [992, 2],
+        itemsMobile: [479, 1],
+    });
+
+    // Owl-carousel 5 item with all control
+    $(".owl-5-all").owlCarousel({
+        items: 5,
+        slideSpeed: 300,
+        navigation: true,
+        pagination: true,
+        itemsDesktop: [1199, 5],
+        itemsTablet: [992, 2],
+        itemsMobile: [479, 1],
+        navigationText: [
+            "<i class='ti-angle-left prev'></i>",
+            "<i class='ti-angle-right next'></i>"
+        ]
+    });
+
+
+    //Owl Carousel thumnail Gallery
+    var shopslider = $("#shop-slider");
+    var shopsliderthumb = $("#shop-slider-thumb");
+
+    shopslider.owlCarousel({
+        singleItem: true,
+        slideSpeed: 1000,
+        navigation: true,
+        pagination: false,
+        afterAction: syncPosition,
+        responsiveRefreshRate: 200,
+        navigationText: [
+            "<i class='ti-angle-left prev'></i>",
+            "<i class='ti-angle-right next'></i>"
+        ],
+    });
+
+    shopsliderthumb.owlCarousel({
+        items: 3,
+        itemsDesktop: [1199, 3],
+        itemsDesktopSmall: [979, 5],
+        itemsTablet: [768, 4],
+        itemsMobile: [479, 4],
+        pagination: false,
+        responsiveRefreshRate: 100,
+        afterInit: function(el) {
+            el.find(".owl-item").eq(0).addClass("active");
         }
-        else {
-          var newTop = documentHeight - s.stickyElement.outerHeight()
-            - s.topSpacing - s.bottomSpacing - scrollTop - extra;
-          if (newTop < 0) {
-            newTop = newTop + s.topSpacing;
-          } else {
-            newTop = s.topSpacing;
-          }
-          if (s.currentTop !== newTop) {
-            var newWidth;
-            if (s.getWidthFrom) {
-                newWidth = $(s.getWidthFrom).width() || null;
-            } else if (s.widthFromWrapper) {
-                newWidth = s.stickyWrapper.width();
-            }
-            if (newWidth == null) {
-                newWidth = s.stickyElement.width();
-            }
-            s.stickyElement
-              .css('width', newWidth)
-              .css('position', 'fixed')
-              .css('top', newTop);
+    });
 
-            s.stickyElement.parent().addClass(s.className);
+    function syncPosition(el) {
+        var current = this.currentItem;
+        $("#shop-slider-thumb")
+            .find(".owl-item")
+            .removeClass("active")
+            .eq(current)
+            .addClass("active")
+        if ($("#shop-slider-thumb").data("owlCarousel") !== undefined) {
+            center(current)
+        }
+    }
 
-            if (s.currentTop === null) {
-              s.stickyElement.trigger('sticky-start', [s]);
+    $("#shop-slider-thumb").on("click", ".owl-item", function(e) {
+        e.preventDefault();
+        var number = $(this).data("owlItem");
+        shopslider.trigger("owl.goTo", number);
+    });
+
+    function center(number) {
+        var shopsliderthumbvisible = shopsliderthumb.data("owlCarousel").owl.visibleItems;
+        var num = number;
+        var found = false;
+        for (var i in shopsliderthumbvisible) {
+            if (num === shopsliderthumbvisible[i]) {
+                var found = true;
+            }
+        }
+
+        if (found === false) {
+            if (num > shopsliderthumbvisible[shopsliderthumbvisible.length - 1]) {
+                shopsliderthumb.trigger("owl.goTo", num - shopsliderthumbvisible.length + 2)
             } else {
-              // sticky is started but it have to be repositioned
-              s.stickyElement.trigger('sticky-update', [s]);
+                if (num - 1 === -1) {
+                    num = 0;
+                }
+                shopsliderthumb.trigger("owl.goTo", num);
             }
-
-            if (s.currentTop === s.topSpacing && s.currentTop > newTop || s.currentTop === null && newTop < s.topSpacing) {
-              // just reached bottom || just started to stick but bottom is already reached
-              s.stickyElement.trigger('sticky-bottom-reached', [s]);
-            } else if(s.currentTop !== null && newTop === s.topSpacing && s.currentTop < newTop) {
-              // sticky is started && sticked at topSpacing && overflowing from top just finished
-              s.stickyElement.trigger('sticky-bottom-unreached', [s]);
-            }
-
-            s.currentTop = newTop;
-          }
+        } else if (num === shopsliderthumbvisible[shopsliderthumbvisible.length - 1]) {
+            shopsliderthumb.trigger("owl.goTo", shopsliderthumbvisible[1])
+        } else if (num === shopsliderthumbvisible[0]) {
+            shopsliderthumb.trigger("owl.goTo", num - 1)
         }
-      }
-    },
-    resizer = function() {
-      windowHeight = $window.height();
 
-      for (var i = 0, l = sticked.length; i < l; i++) {
-        var s = sticked[i];
-        var newWidth = null;
-        if (s.getWidthFrom) {
-            if (s.responsiveWidth) {
-                newWidth = $(s.getWidthFrom).width();
-            }
-        } else if(s.widthFromWrapper) {
-            newWidth = s.stickyWrapper.width();
-        }
-        if (newWidth != null) {
-            s.stickyElement.css('width', newWidth);
-        }
-      }
-    },
-    methods = {
-      init: function(options) {
-        var o = $.extend({}, defaults, options);
-        return this.each(function() {
-          var stickyElement = $(this);
-
-          var stickyId = stickyElement.attr('id');
-          var stickyHeight = stickyElement.outerHeight();
-          var wrapperId = stickyId ? stickyId + '-' + defaults.wrapperClassName : defaults.wrapperClassName;
-          var wrapper = $('<div></div>')
-            .attr('id', wrapperId)
-            .addClass(o.wrapperClassName);
-
-          stickyElement.wrapAll(wrapper);
-
-          var stickyWrapper = stickyElement.parent();
-
-          if (o.center) {
-            stickyWrapper.css({width:stickyElement.outerWidth(),marginLeft:"auto",marginRight:"auto"});
-          }
-
-          if (stickyElement.css("float") === "right") {
-            stickyElement.css({"float":"none"}).parent().css({"float":"right"});
-          }
-
-          stickyWrapper.css('height', stickyHeight);
-
-          o.stickyElement = stickyElement;
-          o.stickyWrapper = stickyWrapper;
-          o.currentTop    = null;
-
-          sticked.push(o);
-        });
-      },
-      update: scroller,
-      unstick: function(options) {
-        return this.each(function() {
-          var that = this;
-          var unstickyElement = $(that);
-
-          var removeIdx = -1;
-          var i = sticked.length;
-          while (i-- > 0) {
-            if (sticked[i].stickyElement.get(0) === that) {
-                splice.call(sticked,i,1);
-                removeIdx = i;
-            }
-          }
-          if(removeIdx !== -1) {
-            unstickyElement.unwrap();
-            unstickyElement
-              .css({
-                'width': '',
-                'position': '',
-                'top': '',
-                'float': ''
-              })
-            ;
-          }
-        });
-      }
-    };
-
-  // should be more efficient than using $window.scroll(scroller) and $window.resize(resizer):
-  if (window.addEventListener) {
-    window.addEventListener('scroll', scroller, false);
-    window.addEventListener('resize', resizer, false);
-  } else if (window.attachEvent) {
-    window.attachEvent('onscroll', scroller);
-    window.attachEvent('onresize', resizer);
-  }
-
-  $.fn.sticky = function(method) {
-    if (methods[method]) {
-      return methods[method].apply(this, slice.call(arguments, 1));
-    } else if (typeof method === 'object' || !method ) {
-      return methods.init.apply( this, arguments );
-    } else {
-      $.error('Method ' + method + ' does not exist on jQuery.sticky');
     }
-  };
 
-  $.fn.unstick = function(method) {
-    if (methods[method]) {
-      return methods[method].apply(this, slice.call(arguments, 1));
-    } else if (typeof method === 'object' || !method ) {
-      return methods.unstick.apply( this, arguments );
-    } else {
-      $.error('Method ' + method + ' does not exist on jQuery.sticky');
+
+    //Quantity Controler
+   $(function() {
+
+		// Increase
+		jQuery(document).on('click', '.qtyplus', function(e) {
+			e.preventDefault();
+			var quantityInput = jQuery(this).parents('.quantity-form').find('input.qty'),
+				newValue = parseInt(quantityInput.val(), 10) + 1,
+				maxValue = parseInt(quantityInput.attr('max'), 10);
+
+			if (!maxValue) {
+				maxValue = 9999999999;
+			}
+
+			if ( newValue <= maxValue ) {
+				quantityInput.val(newValue);
+				quantityInput.change();
+			}
+		});
+
+		// Decrease
+		jQuery(document).on('click', '.qtyminus', function(e) {
+			e.preventDefault();
+			var quantityInput = jQuery(this).parents('.quantity-form').find('input.qty'),
+				newValue = parseInt(quantityInput.val(), 10) - 1,
+				minValue = parseInt(quantityInput.attr('min'), 10);
+			
+			if (!minValue) {
+				minValue = 1;
+			}
+
+			if ( newValue >= minValue ) {
+				quantityInput.val(newValue);
+				quantityInput.change();
+			}
+		});
+
+	});
+
+
+    //Portfolio Isotope	
+    if ($.fn.isotope && $.fn.imagesLoaded && ($('.portfolio').length > 0)) {
+
+        $('.portfolio-isotope').imagesLoaded(function() {
+
+            $('.iso-button').on("click", function() {
+                $('.iso-button').removeClass('iso-active');
+                $(this).addClass('iso-active');
+
+                var selector = $(this).attr('data-filter');
+                container.isotope({
+                    filter: selector
+                });
+
+                return false;
+            });
+
+            $(window).resize(function() {
+                container.isotope({});
+
+            });
+        });
     }
-  };
-  $(function() {
-    setTimeout(scroller, 0);
-  });
-}));
-	
+
+    var container = $('.portfolio-isotope');
+
+    container.imagesLoaded(function() {
+        
+		$('.portfolio-isotope').isotope({
+            itemSelector: '.folio-item',
+			transitionDuration: '0.5s',
+			layoutMode: 'fitRows'
+        });
+		$('.portfolio-isotope.masonry').isotope({
+            layoutMode: 'masonry'
+        });
+    });
+
+
+    //Blog Masonry	
+    $('.blog-post.masonry, .layout-masonry').imagesLoaded(function() {
+        $('.blog-post.masonry, .layout-masonry').isotope({
+            layoutMode: 'masonry',
+            transitionDuration: '0.3s'
+        });
+    });
+
+});
