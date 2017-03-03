@@ -2579,12 +2579,12 @@ h5.heading-alt-style {
 }
 
 .section-2 {
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 100px
 }
 
 .section-3 {
-    padding-top: 75px;
+    padding-top: 50px;
     padding-bottom: 75px
 }
 
@@ -3164,8 +3164,10 @@ section {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+/*
 .menu-bars span,
 .menu-bars span:hover,
+*/
 .menu-bars span:after {
     background-color: #333;
 }
@@ -7967,9 +7969,11 @@ button {
     letter-spacing: 0.5px;
 }
 
+/*
 .blog-sidebar .sidebar-widget {
     margin-top: 70px
 }
+*/
 
 .blog-sidebar .sidebar-widget ul.categories li a {
     line-height: 40px;
