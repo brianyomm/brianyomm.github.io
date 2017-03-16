@@ -1,268 +1,424 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="Brian Yom" content="My Site" />
-  <title>Brian Yom</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<!-- // CSS \\-->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/animate.css"/>
-<!-- // MIX PANEL \\ -->
-<script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
-for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f)}})(document,window.mixpanel||[]);
-mixpanel.init("704eaf98ae969ddbeb68ac3208e5d88a");</script>
-<script>mixpanel.track("home");</script>
-<!-- // FONT AWESOME \\ -->
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="css/normalize.css" media="screen">
-<!-- // ADDING FONTS || -->
-  <link href='http://fonts.googleapis.com/css?family=Cantarell' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Source+Serif+Pro' rel='stylesheet' type='text/css'>
-<!-- // caching \\ -->
-  <meta http-equiv="Pragma" content="no-cache">
-  <meta http-equiv="Expires" content="-1">
-<!-- // meta scaling 7/10 \\-->
-  <meta name="viewport" content="width-device-width, initial-scale=1">
-  <meta name="robots" content="index, follow">
-<!-- // PINTEREST \\-->
-  <meta name="p:domain_verify" content="8fb8c38468a36cbe685eb811eb904690"/>
-<!-- // PANEL SNAP \\ -->
-  <script src="js/jquery-1.11.3.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="js/jquery.panelSnap.js"></script>
+    <meta charset="utf-8">
+    <title>Brian Yom</title>
+    <meta name="description" content="Multipurpose HTML Theme">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="images/logo/favicon.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/themify-icons.css" />
+    <link rel="stylesheet" href="css/YTPlayer.css" />
+    <link rel="stylesheet" href="css/owl.carousel.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <!-- Exuclsive Page CSS -->
+    <link rel="stylesheet" href="css/exculsive-page-css/freelancer.css" />
+    
+    <style>
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+
 </head>
-<!-- //BODY -->
+
 <body>
-<!-- //NAV BAR -->
-<nav class="navbar navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-
-    </div>
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li><a class="page-scroll" href="#about">About</a></li>
-        <li><a class="page-scroll" target="_blank" href="files/by_resume.pdf">Resume</a></li>
-        <li><a class="page-scroll" id="navPortfolio" href="#portfolio">Portfolio</a></li>
-        <li><a class="page-scroll" href="#contact_form">Contact</a></li>
-      </ul>
-    </div>
-  </div> 
-</nav> 
-<!-- //HEADER -->
-<header id="home" class="home">
-  <div class="text-vcenter">
-    <div class="container">
-      <img class="by_logo row fade-in" src="img/BY_LOGO_300.png">
-      <h1 class="name row fade-in one">BRIAN YOM</h1>
-      <hr class="hrHome row fade-in two">
-      <h4 class="occupation row fade-in three">product designer</h4>
-      <img class="arrow" src="img/arrow_down.png">
-    </div>
-  </div>
-</header>
-<!-- HEADER// -->
-<!-- //ABOUT -->
-<section id="about" class="about">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 fade">
-          <h3 class="title">ABOUT</h3> 
-        </div> <!-- Close Column -->
-      </div> <!-- Close Row --> 
-      <div class="row">
-        <span class="hrHome">
-        <div class="headshot fade">
-          <img class="by_headshot" src="img/headshot_175.jpg">
-        </div>
-        <span class="hrHome">
-      </div>
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 text-center fade">
-          <p class="summary">I'm a designer of many disciplines, from industrial, fashion, to web. I have immersed myself in different fields to channel my creativity. I strongly believe that creativity is not linear and moments of insight can come from anyone, anywhere, and anytime.</p>
-        </div> <!-- Close Column -->
-      </div>
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 text-center fade">
-          <button type="button" class="btn btn-info button-more" data-toggle="collapse" data-target="#test">+</button>
-        </div>
-      </div>
-      <div id="test" class="collapse">
-        <div class="row">
-              <div class="col-lg-8 col-lg-offset-2 text-center ">
-                <p class="more-summary">I trained as an industrial designer at Rhode Island School of Design. Essentially my training involved creating objects around a piece of technology.  During my transition to my professional career, I noticed a radical change emerging that college did not prepare us for.  Tech companies started asking designers to create products that the end user experienced primarily through software.  UI, UX, ID had to intertwine in a cohesive manner to produce a product.  This is when I decided to shift gears to develop new skills and adopted a new profession.  I call it technology design. As a technology designer we must create objects that users can use physically and digitally in harmony.</p>
-              </div>
-          </div><!-- Close Row --> 
-      </div>
-    </div> <!-- Close container -->
-    <!-- <div id="about-container">
-      <div class="container no-gutter">
-        <div class="row">
-          <div class="col-md-6 about-box padding">
-            <p class="infoText no-padding-tb">name</p>
-            <hr class="hrInfo">
-            <p class="infoText">BRIAN YOM</p>
-          </div>
-          <div class="col-md-6 about-box">
-            <p class="infoText">title</p>
-            <hr class="hrInfo">
-              <p class="infoText">product designer</p>
-          </div>
-        </div>
-      </div>
-    </div> -->
-</section>
-<!-- ABOUT// -->
-<!-- //PORTFOLIO -->
-<section id="portfolio" class="portfolio">
-  <div class="container-fluid no-gutter">
-    <div class="row">
-      <div class="col-md-12 fade">
-        <h3 class="title">PORTFOLIO</h3>
-      </div>
-    </div>
-    <div class="row no-gutter">
-      <div class="col-md-6 project fade">
-        <a href="portfolio/prime&beyond/primeandbeyond.html">
-            <figure id="project-1" class="project">
-              <img src="portfolio/prime&beyond/img/figure_img.jpg" alt=""/>
-              <figcaption href="portfolio/prime&beyond/primeandbeyond.html">
-                <h2>Prime & Beyond</h2>
-                <p>Website Redesign</p>
-              </figcaption>
-            </figure>
-          </a>
-        </div>
-      <div class="col-md-6 project fade">
-        <a href="portfolio/orobos/orobos.html">
-          <figure id="project-2" class="project">
-            <img src="portfolio/orobos/img/figure_img.jpg" alt=""/>
-            <figcaption>
-              <h2>Orobos</h2>
-              <p>Website & Branding</p>
-            </figcaption>
-          </figure>
-        </a>
-      </div>
-      <div class="col-md-6 project fade">
-        <a href="https://drive.google.com/open?id=0BzEk1F5uELStZnRHd1U5UDY5amM" target=_blank>
-          <figure id="project-3" class="project">
-            <img src="portfolio/nmi/img/main-banner-01.jpg" alt=""/>
-            <figcaption>
-              <h2>New Marketing Institute</h2>
-              <p>Social Media Ad Campaign</p>
-            </figcaption>
-          </figure>
-        </a>
-      </div>
-      <div class="col-md-6 project fade">
-        <a href="portfolio/propercloth/propercloth.html">
-          <figure id="project-4" class="project">
-            <img src="portfolio/propercloth/img/figure_img.jpg" alt=""/>
-            <figcaption>
-              <h2>Proper Cloth</h2>
-              <p>Visuals</p>
-            </figcaption>
-          </figure>
-        </a>
-      </div>
-    </div>
-    <!-- <div class="container fade">
-      <div class="row positionRelative">
-        <img id="carousel-chrome" src="img/mockup-chrome.png">
-          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-            Indicators
-            <ol class="carousel-indicators">
-            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-            </ol>
-            Wrapper for slides
-            <div class="carousel-inner" role="listbox">
-              <div class="item active">
-                <img class="carousel-outer-img" src="portfolio/prime&beyond/img/PB-SLIDE-01.jpg" alt="">
-                <div class="carousel-caption">
-                  <a href="portfolio/prime&beyond/primeandbeyond.html"><img class="carousel-inner-img" src="portfolio/prime&beyond/img/main-logo.png"></a>
-                  <h3>Prime & Beyond</h3>
-                  <p>Website Redesign</p>
-                </div>
-              </div>
-              <div class="item">
-                <a href="https://drive.google.com/file/d/0BzEk1F5uELStZnRHd1U5UDY5amM/view?usp=sharing"><img class="carousel-outer-img" target="_blank" src="portfolio/nmi/img/main-banner-01.jpg" alt=""></a>
-              </div>
-              <div class="item">
-                <img class="carousel-outer-img" src="portfolio/orobos/img/orobos-banner.jpg" alt="">
-                <div class="carousel-caption">
-                  <a href="portfolio/orobos/orobos.html"><img class="carousel-inner-img" src="portfolio/orobos/img/orobos-logo.png"></a>
-                  <h3>Orobos</h3>
-                  <p>Website</p>
-                </div>
-              </div>
+    <!-- Pageloader -->
+    <div class="page-loader">
+        <div class="loader">
+            <div class='loader-style-1 panelLoad'>
+                <div class='cube-face cube-face-front'>B</div>
+                <div class='cube-face cube-face-back'>R</div>
+                <div class='cube-face cube-face-left'>I</div>
+                <div class='cube-face cube-face-right'>A</div>
+                <div class='cube-face cube-face-bottom'>N</div>
+                <div class='cube-face cube-face-top'></div>
             </div>
-
-        Controls
-            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>CLOSE CAROUSEL
-      </div>CLOSE ROW
-    </div> --><!-- CLOSE CONTAINER -->
-</section><!-- CLOSE PORTFOLIO -->
-<!-- CONTACT SECTION -->
-<section id="contact" class="contact">
-  <div class="container-fluid no-gutter">
-    <div class="row">
-      <div class="col-md-12 fade">
-        <h3 class="title">CONTACT ME</h3>
-      </div>
+            <!-- /Cube panelload -->
+            <span class="cube-face">BRIAN</span>
+        </div>
+        <!-- /loader -->
     </div>
-<form method="post" action="javascript:sendQuery();" class="contact__form fade" id="contact_form">
-        <header class="contact__form__header">
-            <p class="contact_txt">Got any questions? comments? jobs? pizza? beer?</p>
-            <p class="contact_txt">Drop me an email!</p>
-            <h4 class="contact_txt2" href="mailto:brian@noblees.com">brian@noblees.com</a>
-        </header>
-</form>
-</section>
-<!-- END CONTACT FORM -->
-<!-- //SOCIAL FOOTER-->
-<div id="social-footer">
-  <div class="row">
-    <div class="social-container">
-      <a target="_blank" class="social-icon" href="http://facebook.com/brian.yom">
-      <img src="img/facebook24.png" alt="Facebook"></a>
-      <a target="_blank" class="social-icon" href="http://linkedin.com/in/brianyom">
-      <img src="img/linkedin24.png" alt="Linkedin"></a>
-      <a target="_blank" class="social-icon" href="http://pinterest.com/brianyom">
-      <img src="img/pinterest24.png" alt="Pinterest"></a>
-      <a target="_blank" class="social-icon" href="http://github.com/brianyomm/brianyomm.github.io">
-      <img src="img/git24.png" alt="GitHub"></a>
-      <a target="_blank" class="social-icon" href="http://instagram.com/brian.yom">
-      <img src="img/instagram24.png" alt="Instagram"></a>
-      <a target="_blank" class="social-icon" href="http://soundcloud.com/brianyom">
-      <img src="img/soundcloud24.png" alt="Soundcloud"></a>
+    <!-- /Page-loader -->
+
+    <div class="screen-frame static">
+        <div class="bar-top"></div>
+        <div class="bar-btm"></div>
+        <div class="bar-left"></div>
+        <div class="bar-right"></div>
     </div>
-    <div class="copyright">
-    <a>©Brian Yom</a>
-  </div>
-</div>
+    <!-- /screen-frame -->
 
-<script src="js/viewportchecker.js"></script> 
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<script src="js/main.js"></script>
+    <!-- Navigation -->
+    <div class="fs-menu-button">
+        <a href="#/" class="ti-menu fs-menu-trigger"></a>
+    </div>
+    <!-- / fs-menu-button -->
 
+    <div class="fs-menu">
+
+        <a href="#/" class="fs-menu-close ti-close"></a>
+
+        <div class="container">
+            <div class="inner-nav">
+                <ul>
+                    <li style="animation-delay: 0.35s;"><a class="scroll-to" href="#about">About</a></li>
+                    <li style="animation-delay: 0.55s;"><a class="scroll-to" href="#portfolio">Portfolio</a></li>
+                    <li style="animation-delay: 0.65s;"><a class="scroll-to" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <!-- /inner-nav -->
+
+        </div>
+        <!-- /container -->
+    </div>
+    <!-- /fs-menu -->
+    <!--/#Navigation-->
+
+    <div class="showcase">
+        <section id="home" class="section bg relative" style="background-image: url(images/background/v2.6.png)">
+            <div class="hero-caption caption-center caption-height mrg-top-title">
+                <h1 class="hero-heading ls-10 proggy font-size-35"><b>brian_yom</b></h1>
+                <p class="hero-text mrg-top-0 font-size-30">UI/UX_Designer</p>
+            </div>
+            <!-- /hero-caption -->
+        </section>
+        <!--/ #home -->
+
+        <section id="about" class="section">
+            <div class="container max-height">
+                <div class="cell-vertical-container">
+                    <div class="content">
+                        <div class="col-sm-6">
+                            <h4 class="hero-heading text-left">00_about Me</h4>
+                            <p class="sub-heading-left mrg-top-15">UI/UX Designer</p>
+                            <p>I'm a designer of many disciplines, from industrial, fashion, to web. I have immersed myself in different fields to channel my creativity. I strongly believe that creativity is not linear and moments of insight can come from anyone, anywhere, and anytime.</p>
+                            <p>Trained as an industrial designer at Rhode Island School of Design. School involved creating objects around a piece of technology. During my transition to a professional career, I noticed a radical change emerging that college did not prepare us for. Tech companies started asking designers to create products that the end user experienced primarily through software. UI, UX, ID had to intertwine in a cohesive manner to produce a product. This is when I decided to shift gears to develop new skills and adopted a new profession. I call it technology design. As a technology designer we must create objects that users can use physically and digitally in harmony.</p>
+                            <a href="#" class="btn btn-sm btn-style-4 mrg-top-20">view resume</a>
+
+                        </div>
+                        
+                        <!-- /column -->
+                        <div class="col-sm-6">
+                            <img class="img-responsive mrg-horizon-auto" src="images/headshotv2.png" alt="">
+                        </div>
+                        <!-- /column -->
+                    </div>
+                    <!-- /content -->
+                </div>
+                <!-- /cell-vertical-container -->
+            </div>
+            <!-- /container -->
+        </section>
+
+        
+
+        <section id="portfolio" class="section bg-gray">
+            <div class="container max-height">
+                <div class="cell-vertical-container">
+                    <div class="content">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <h4 class="hero-heading text-dark">01_portfolio</h4>
+                                <p class="sub-heading-left mrg-top-15">SUB HEADER</p>
+                            </div>
+                            <!-- /column -->
+                            <div class="col-md-2">
+                                <ul class="nav custom-tabs tab-style-1 text-right">
+                                    <li class="active"><a data-toggle="tab" href="#tab-1-1">Patron</a></li>
+                                    <li><a data-toggle="tab" href="#tab-1-2">Orobos</a></li>
+                                    <li><a data-toggle="tab" href="#tab-1-3">SOJO SPA CLUB</a></li>
+                                    <li><a data-toggle="tab" href="#tab-1-4">MISC</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="portfolio">
+                                    <div class="tab-content">
+                                        <div id="tab-1-1" class="tab-pane fade in active mrg-top-15 ">
+                                            <div class="folio-item video web branding">
+                                                <div class="folio-style-1">
+                                                    <div class="folio-image">
+                                                        <img class="img-responsive" src="images/portfolio/10.jpg" alt="">
+                                                    </div>
+                                                    <!-- folio-image -->
+                                                    <div class="overlay">
+                                                        <div class="overlay-caption">
+                                                            <div class="overlay-content">
+                                                                <div class="folio-info">
+                                                                    <h3 class="text-white">Patron</h3>
+                                                                    <p>Lorem ipsum dolor sit amet</p>
+                                                                </div>
+                                                                <!-- /folio-info -->
+                                                                <div class="folio-links">
+                                                                    <a href=/patron.html class="lightbox-video mfp-iframe" title="Project Name"><i class="ti-search"></i></a>
+                                                                    <a href="https://www.patron.gallery/" target="_blank"><i class="ti-link"></i></a>
+                                                                </div>
+                                                                <!-- folio-links -->
+                                                            </div>
+                                                            <!-- /overlay-content -->
+                                                        </div>
+                                                        <!-- /overlay-caption -->
+                                                    </div>
+                                                    <!-- /overlay -->
+                                                </div>
+                                                <!-- /folio-style -->
+                                            </div>
+                                            <!-- /folio-item -->
+                                        </div>
+                                        <!-- /tab-pane -->
+
+                                        <div id="tab-1-2" class="tab-pane fade mrg-top-15 ">
+                                            <div class="folio-item video web branding">
+                                                <div class="folio-style-1">
+                                                    <div class="folio-image">
+                                                        <img class="img-responsive" src="images/portfolio/12.jpg" alt="">
+                                                    </div>
+                                                    <!-- folio-image -->
+                                                    <div class="overlay">
+                                                        <div class="overlay-caption">
+                                                            <div class="overlay-content">
+                                                                <div class="folio-info">
+                                                                    <h3 class="text-white">OROBOS</h3>
+                                                                    <p>Lorem ipsum dolor sit amet</p>
+                                                                </div>
+                                                                <!-- /folio-info -->
+                                                                <div class="folio-links">
+                                                                    <a href="https://www.youtube.com/watch?v=6D-A6CL3Pv8" class="lightbox-video mfp-iframe" title="Project Name"><i class="ti-search"></i></a>
+                                                                    <a href="http://orobos.nyc/" target="_blank"><i class="ti-link"></i></a>
+                                                                </div>
+                                                                <!-- folio-links -->
+                                                            </div>
+                                                            <!-- /overlay-content -->
+                                                        </div>
+                                                        <!-- /overlay-caption -->
+                                                    </div>
+                                                    <!-- /overlay -->
+                                                </div>
+                                                <!-- /folio-style -->
+                                            </div>
+                                            <!-- /folio-item -->
+                                        </div>
+                                        <!-- /tab-pane -->
+
+                                        <div id="tab-1-3" class="tab-pane fade mrg-top-15 ">
+                                            <div class="folio-item video web branding">
+                                                <div class="folio-style-1">
+                                                    <div class="folio-image">
+                                                        <img class="img-responsive" src="images/portfolio/18.jpg" alt="">
+                                                    </div>
+                                                    <!-- folio-image -->
+                                                    <div class="overlay">
+                                                        <div class="overlay-caption">
+                                                            <div class="overlay-content">
+                                                                <div class="folio-info">
+                                                                    <h3 class="text-white">SOJO SPA CLUB</h3>
+                                                                    <p>Lorem ipsum dolor sit amet</p>
+                                                                </div>
+                                                                <!-- /folio-info -->
+                                                                <div class="folio-links">
+                                                                    <a href="https://www.youtube.com/watch?v=6D-A6CL3Pv8" class="lightbox-video mfp-iframe" title="Project Name"><i class="ti-search"></i></a>
+                                                                    <a href="http://www.sojospaclub.com/" target="_blank"><i class="ti-link"></i></a>
+                                                                </div>
+                                                                <!-- folio-links -->
+                                                            </div>
+                                                            <!-- /overlay-content -->
+                                                        </div>
+                                                        <!-- /overlay-caption -->
+                                                    </div>
+                                                    <!-- /overlay -->
+                                                </div>
+                                                <!-- /folio-style -->
+                                            </div>
+                                            <!-- /folio-item -->
+                                        </div>
+                                        <!-- /tab-pane -->
+
+                                        <div id="tab-1-4" class="tab-pane fade mrg-top-15 ">
+                                            <div class="folio-item video web branding">
+                                                <div class="folio-style-1">
+                                                    <div class="folio-image">
+                                                        <img class="img-responsive" src="images/portfolio/15.jpg" alt="">
+                                                    </div>
+                                                    <!-- folio-image -->
+                                                    <div class="overlay">
+                                                        <div class="overlay-caption">
+                                                            <div class="overlay-content">
+                                                                <div class="folio-info">
+                                                                    <h3 class="text-white">Project Name</h3>
+                                                                    <p>Lorem ipsum dolor sit amet</p>
+                                                                </div>
+                                                                <!-- /folio-info -->
+                                                                <div class="folio-links">
+                                                                    <a href="https://www.youtube.com/watch?v=6D-A6CL3Pv8" class="lightbox-video mfp-iframe" title="Project Name"><i class="ti-search"></i></a>
+                                                                    <a href="single-1.htm"><i class="ti-link"></i></a>
+                                                                </div>
+                                                                <!-- folio-links -->
+                                                            </div>
+                                                            <!-- /overlay-content -->
+                                                        </div>
+                                                        <!-- /overlay-caption -->
+                                                    </div>
+                                                    <!-- /overlay -->
+                                                </div>
+                                                <!-- /folio-style -->
+                                            </div>
+                                            <!-- /folio-item -->
+                                        </div>
+                                        <!-- /tab-pane -->
+
+                                    </div>
+                                    <!-- /tab-content -->
+
+                                </div>
+                                <!-- /portfolio -->
+                            </div>
+                            <!-- /column -->
+                        </div>
+                        <!-- row -->
+                    </div>
+                    <!-- /content -->
+                </div>
+                <!-- /cell-vertical-container -->
+            </div>
+            <!-- /container -->
+        </section>
+
+        <section id="contact" class="section">
+            <div class="max-height mrg-top-30 row">
+                <div class="col-md-12 col-sm-12 bg max-height">
+                    <div class="cell-vertical-container bg parallax-overlay-light" style="background-image:url()">
+                        <div class="content">
+                            <div class="col-md-6 col-md-offset-3">
+                                <h4 class="hero-heading text-center">04_contact</h4>
+                                <p class="text-center ls-1">beer? coffee? pizza?</p>
+                                <div class="row">
+                                    <form class="contact-form-wrapper mrg-top-30" name="contactForm" id="contact_form" method="post" action="php/email.php">
+                                        <div class="form-inside">
+                                            <div class="form-group col-sm-6">
+                                                <input type="text" class="form-control" name="name" id="exampleInputName" placeholder="Name">
+                                            </div>
+                                            <!-- /form-group -->
+
+                                            <div class="form-group col-sm-6">
+                                                <input type="email" class="form-control" name="email" id="exampleInputEmail" placeholder="Email">
+                                            </div>
+                                            <!-- /form-group -->
+
+                                            <div class="form-group col-sm-12">
+                                                <input type="text" class="form-control" name="subject" id="exampleInputSubject" placeholder="Subject">
+                                            </div>
+                                            <!-- /form-group -->
+
+                                            <div class="form-group col-sm-12">
+                                                <textarea class="form-control" name="message" rows="3" id="exampleInputMessage" placeholder="Meassage"></textarea>
+                                            </div>
+                                            <!-- /form-group -->
+                                        </div>
+                                        <!-- /form-inside -->
+
+                                        <div class="form-group col-xs-12">
+                                            <div id="mail_success" class="success" style="display:none;">
+                                                Thank You ! Your email has been delivered.
+                                            </div>
+                                            <!-- /mail_success -->
+                                            <div id="mail_fail" class="error" style="display:none;">
+                                                An error occured, please try again later !
+                                            </div>
+                                            <!-- /mail_error -->
+                                        </div>
+                                        <!-- /form-group -->
+
+                                        <div class="form-group col-sm-12 text-center" id="submit">
+                                            <input class="btn btn-md btn-style-4" type="submit" id="send_message" value="Send Message">
+                                        </div>
+                                        <!-- /form-group -->
+                                    </form>
+                                </div>
+                                <!-- /row -->
+                            </div>
+                            <!-- /column -->
+
+                        </div>
+                        <!-- /content -->
+                    </div>
+                    <!-- /cell-vertical-conatiner -->
+
+                </div>
+                <!-- /column -->
+            </div>
+            <!-- /max-height -->
+        </section>
+    </div>
+    <!-- /#showcase -->
+
+    <!-- Java Script -->
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="js/jquery.mb.YTPlayer.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
+    <script type="text/javascript" src="js/jquery.countTo.js"></script>
+    <script type="text/javascript" src="js/jquery.countdown.min.js"></script>
+    <script type="text/javascript" src="js/jquery.appear.js"></script>
+    <script type="text/javascript" src="js/smoothscroll.js"></script>
+    <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
+    <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+    <script type="text/javascript" src="js/google-map.js"></script>
+    <script type="text/javascript" src="js/email.js"></script>
+    <!-- Page Exclusive JS-->
+    <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+    <script>
+        //ShowCase
+        function ShowcaseLoading() {
+            var ShowcaseCreated = false;
+            isPhoneDevice = "ontouchstart" in document.documentElement;
+            Showcase();
+
+            $(window).on('load resize', function() {
+                if ($(this).width() < 992) {
+                    ShowcaseCreated = true;
+                    $.fn.fullpage.destroy('all');
+                } else {
+                    Showcase();
+                }
+            });
+
+            function Showcase() {
+                $('.showcase').each(function() {
+                    var $this = $(this);
+                    if (ShowcaseCreated === false) {
+                        ShowcaseCreated = true;
+                        $this.fullpage({
+                            anchors: ['Home', 'About', 'Services', 'Portfolio', 'Contact'],
+                            navigation: true,
+                            navigationPosition: 'right',
+                            navigationTooltips: ['Home', 'About', 'Services', 'Portfolio', 'Contact'],
+                            scrollBar: true,
+                        });
+                    }
+                });
+            }
+        }
+
+        if ($('.showcase').length > 0) {
+            ShowcaseLoading();
+        }
+    </script>
+    <!-- /Page Exclusive JS-->
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
+
+</html>
