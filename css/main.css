@@ -118,31 +118,12 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700italic);
 
-@font-face {
-    font-family: Consolas;
-    src: local("Consolas.ttf"),
-    url(../fonts/Consolas.ttf);
-}
-
-@font-face {
-    font-family: Proggysquare;
-    src: local("ProggySquare.ttf"),
-    url(../fonts/ProggySquare.ttf);
-}
- 
-@font-face {
-    font-family: Sourcecode;
-    src: local("SourceCodePro-Regular.ttf"),
-    url(../fonts/SourceCodePro-Regular.ttf);
-    
-}
-
 /*****************************************************
 *****************  2. General CSS  *******************
 *****************************************************/
 
 body {
-    font-family: "Sourcecode", Helvetica, sans-serif;
+    font-family: "Open Sans", Helvetica, sans-serif;
     font-size: 14px;
     font-weight: 300;
     letter-spacing: 0.2px;
@@ -167,39 +148,6 @@ img {
     user-drag: none;
 }
 
-.svg-wrapper {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-	  margin: 0 auto;
-  width: 320px;  
-}
-.shape {
-  stroke-dasharray: 140 540;
-  stroke-dashoffset: -474;
-  stroke-width: 8px;
-  fill: transparent;
-  stroke: #19f6e8;
-  border-bottom: 5px solid black;
-  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
-}
-.text {
-  font-family: 'Roboto Condensed';
-  font-size: 22px;
-  line-height: 32px;
-  letter-spacing: 8px;
-  color: #291989;
-  top: -48px;
-  position: relative;
-}
-.svg-wrapper:hover .shape {
-  stroke-width: 2px;
-  stroke-dashoffset: 0;
-  stroke-dasharray: 760;
-}
-
-
-
 
 /*===============================
  =======  2.1 Typograpgy  ======
@@ -211,7 +159,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Consolas", Helvetica, sans-serif;
+    font-family: "Montserrat", Helvetica, sans-serif;
     text-transform: uppercase;
     color: #3e3e3e;
     line-height: 1.5
@@ -433,11 +381,11 @@ ul li {
 }
 
 .sub-heading-left {
-    font-family: 'Consolas', serif;
+    font-family: 'Droid Serif', serif;
+    font-style: italic;
     letter-spacing: 1px;
     margin-top: 45px;
-    text-align: left;
-    color: #f800ff;
+    text-align: left
 }
 
 .sub-heading-right {
@@ -1200,10 +1148,6 @@ h5.heading-alt-style {
 .mrg-horizon-125 {
     margin-left: 125px !important;
     margin-right: 125px !important
-}
-
-.mrg-top-title {
-    top: 17%;
 }
 
 .mrg-top-5 {
@@ -2454,7 +2398,7 @@ h5.heading-alt-style {
 .screen-frame .bar-btm,
 .screen-frame .bar-left,
 .screen-frame .bar-right {
-    background-color: #291989;
+    background-color: #fff;
     width: 100%;
     position: fixed;
     z-index: 99;
@@ -2552,10 +2496,6 @@ section {
  =======  3.3 Background  =======
 *===============================*/
 
-.bg-blue {
-    background-color: #291989;
-}
-
 .bg-light-gray {
     background-color: #FAFBFC
 }
@@ -2616,7 +2556,7 @@ section {
 
 .bg {
     background-position: center;
-    background-size: ;
+    background-size: cover;
     background-repeat: no-repeat
 }
 
@@ -3980,13 +3920,8 @@ section {
 }
 
 .hero-heading {
-    font-family: "Consolas", Helvetica, sans-serif;
-    font-weight: 400;
-    color: #291989;
-}
-
-.hero-heading.overlap {
-    line-height: -100px;
+    font-family: "Montserrat", Helvetica, sans-serif;
+    font-weight: 400
 }
 
 .hero-heading-alt {
@@ -3995,9 +3930,8 @@ section {
 }
 
 h1.hero-heading {
-    font-size: 50px;
-    letter-spacing: 10px;
-    color: #291989;
+    font-size: 60px;
+    letter-spacing: 4px;
 }
 
 h2.hero-heading {
@@ -4051,11 +3985,12 @@ h5.hero-heading-alt {
     font-size: 14px;
     letter-spacing: 1.5px;
     margin-top: 15px;
-    color: #f800ff
+    color: #3e3e3e
 }
 
 .hero-text {
-    font-family: 'proggysquare';
+    font-family: 'Droid Serif', serif;
+    font-style: italic;
 }
 
 .hero-text-alt {
@@ -4425,7 +4360,7 @@ h5.hero-heading-alt {
     height: 4px;
     width: 4px;
     border: 0;
-    background: #291989;
+    background: #333;
     left: 50%;
     top: 50%;
     margin: -2px 0 0 -2px;
@@ -5169,7 +5104,7 @@ h5.hero-heading-alt {
 
 .custom-tabs.tab-style-1 li.active a,
 .custom-tabs.tab-style-1 li a:hover {
-    color: #291989;
+    color: #212121;
 }
 
 
@@ -5386,10 +5321,10 @@ button {
 }
 
 .btn {
-    font-family: "proggysquare", Helvetica, sans-serif;
+    font-family: "Montserrat", Helvetica, sans-serif;
     text-transform: uppercase;
     border-radius: 0px;
-    font-size: 20px;
+    font-size: 12px;
     margin-right: 10px;
     margin-bottom: 15px;
     letter-spacing: 2px;
@@ -5468,15 +5403,15 @@ button {
 }
 
 .btn-style-4 {
-    border: 1px solid #291989;
+    border: 1px solid #212121;
     background-color: transparent;
-    color: #291989 !important;
+    color: #212121 !important;
 }
 
 .btn-style-4:hover {
-    border: 1px solid #f800ff;
+    border: 1px solid #212121;
     color: #ececec !important;
-    background-color: #f800ff !important
+    background-color: #212121 !important
 }
 
 .btn-style-5 {
