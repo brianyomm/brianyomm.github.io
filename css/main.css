@@ -125,6 +125,12 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'ProggySquare';
+    src: url('../fonts/ProggySquare.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /*****************************************************
 *****************  2. General CSS  *******************
@@ -167,7 +173,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Montserrat", Helvetica, sans-serif;
+    font-family: "ProggySquare", Helvetica, sans-serif;
     text-transform: uppercase;
     color: #3e3e3e;
     line-height: 1.5
