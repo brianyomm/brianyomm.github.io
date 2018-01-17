@@ -118,6 +118,12 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700italic);
 
+@font-face {
+    font-family: 'Gameshow';
+    src: url('../css/fonts/Gameshow.ttf') format('truetype');
+}
+
+
 /*****************************************************
 *****************  2. General CSS  *******************
 *****************************************************/
@@ -2495,6 +2501,10 @@ section {
 /*===============================
  =======  3.3 Background  =======
 *===============================*/
+
+.bgmain {
+    background-position: 50% 50%;
+}
 
 .bg-light-gray {
     background-color: #FAFBFC
