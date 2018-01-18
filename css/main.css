@@ -326,7 +326,8 @@ img {
 
 .wrap {
   width: 375px;
-  margin: 0 auto;
+/*    top: 50%;*/
+  margin: 57% auto;
   text-align: center;
   position: relative;
 }
