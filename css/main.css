@@ -183,10 +183,21 @@ img {
   7. Width (px)
   8. Height (px)
 */
+
+.sectionmain {
+    top: 50%;
+}
+.wrap {
+    position: absolute;
+    top: 50%;
+    left:20%;
+}
+
 .example-one {
-  font-size: 85px;
-  color: #b9debe;
-  position: relative;
+    font-family: Gameshow;
+    text-align: center;
+    font-size: 85px;
+    color: #b9debe;
 }
 @keyframes example-one-anim-1 {
   0% {
@@ -318,17 +329,6 @@ img {
   left: -2px;
   text-shadow: 2px 0 blue;
   animation: example-one-anim-2 3s infinite linear alternate-reverse;
-}
-
-.example-one {
-  font-family: Gameshow;
-}
-
-.wrap {
-  width: 330px;
-/*    top: 50%;*/
-  margin: 50% auto;
-  text-align: center;
 }
 
 
