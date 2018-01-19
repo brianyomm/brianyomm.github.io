@@ -469,7 +469,6 @@ ul li {
 
 .list li {
     list-style: none;
-    padding-left: 30px;
 }
 
 .list.icon-star li,
@@ -2672,11 +2671,6 @@ h5.heading-alt-style {
     padding-top: 160px
 }
 
-section {
-    border-bottom: 1px solid #ececec;
-}
-
-
 /*===============================
  =======  3.3 Background  =======
 *===============================*/
@@ -3121,9 +3115,79 @@ section {
 ********************  5. Menu  ***********************
 *****************************************************/
 
+#header {
+    position: fixed;
+    top: 1.875em;
+    left: 0;
+    right: 0;
+    height: 5em;
+    z-index: 99;
+}
+
+.header-container {
+    max-width: 53em;
+    padding: 0 1.25em;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.header-nav {
+    top: 0;
+    left: 1.25em;
+    right: 1.25em;
+    bottom: 0;
+    height: inherit;
+}
+
+.list-nav {
+    padding: 2.0625em 0;
+}
+
+.list-nav-element {
+    font-size: 1.875em;
+    font-family: ProggySquare;
+    letter-spacing: .1em;
+    color: #b9debe;
+    margin: 0 -.625em;
+    padding: 0;
+    transition: color .2s cubic-bezier(.89, .04, .79, .44)
+}
+
+.list-navi-element-profile {
+    float: left;
+}
+
+.list-navi-element-work {
+    float: right;
+}
+
+.list-navi-element a {
+    padding: 0 .625em;
+    display: block;
+    position: relative;
+    color: inherit;
+    transition: color .2s ease-in-out;
+    cursor: pointer
+}
+
+.list-navi-element a:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    margin: -.1875em 0 0 -.1875em;
+    width: 0;
+    height: .1875em;
+    background: #2c308c;
+    transition: width .2s ease-in-out;
+}
+
 .navbar {
     margin-bottom: 0px;
-    border: 0px
+    border: 0px;
+    position: fixed;
+    left: 50%;
 }
 
 .nav .open a,
@@ -5490,13 +5554,13 @@ button:hover,
 button:focus {
     text-decoration: none;
     outline: none;
-    color: #777;
+    color: #b9debe;
 }
 
 a:hover,
 a:focus {
-    color: #ECB510;
-    text-decoration: none;
+    color: #FFF;
+    text-decoration-line: line-through;
 }
 
 a:focus,
@@ -5504,6 +5568,9 @@ button:focus {
     outline: none;
     text-decoration: none;
 }
+
+
+
 
 button {
     background-color: transparent;
