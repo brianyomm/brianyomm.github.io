@@ -184,13 +184,11 @@ img {
   8. Height (px)
 */
 
-.sectionmain {
-    top: 50%;
-}
 .wrap {
+    z-index: 9;
     position: absolute;
     top: 50%;
-    left:20%;
+    left: 30em;
 }
 
 .example-one {
@@ -3114,6 +3112,12 @@ h5.heading-alt-style {
 /*****************************************************
 ********************  5. Menu  ***********************
 *****************************************************/
+.footer-social {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
 
 #header {
     position: fixed;
@@ -4510,6 +4514,31 @@ h5.hero-heading-alt {
 /*=============================
  ======  6.5 Showcase  ========
 *============================*/
+
+.showcase .body {
+    min-height: 100vh;
+}
+
+.showcase .body .canvas-frame {
+    position: fixed;
+    width: 100vw;
+    top: 50%;
+    height: calc(100vh - 18em);
+    margin-top: calc((100vh - 18em)/ -2);
+}
+
+.canvas {
+    z-index: 1;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    text-align: center;
+}
+
+
+#mainrect {
+    display: block;
+}
 
 .showcase .section {
     padding: 0;
