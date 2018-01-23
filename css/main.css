@@ -188,7 +188,7 @@ img {
     z-index: 9;
     position: absolute;
     top: 50%;
-    left: 30em;
+    left: 1em;
 }
 
 .example-one {
@@ -4535,12 +4535,84 @@ h5.hero-heading-alt {
     text-align: center;
 }
 
+.render {
+    width: 100%;
+    height: calc(100vh - 280px);
+    max-width: 53.75em;
+    box-sizing: border-box;
+    padding: 0 1.25em;
+    position: absolute;
+    top: 11.25em;
+    bottom: 7.5em;
+    left: 0;
+    right: 0;
+    margin: 0 auto
+}
+
+.work-img {
+    display: block;
+    position: absolute;
+    bottom: 20%;
+    right: 10%;
+    width: 10em;
+}
+
+.work-meta {
+    position: absolute;
+/*    display: block;*/
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.work-title {
+    
+}
+
+.work-date {
+    position: absolute;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+
+.work-link {
+    
+}
+
+.work-line {
+    position: absolute;
+    bottom: 4.6875em;
+    left: 50%;
+    display: block;
+    width: 1.25em;
+    margin-left: -.125em;
+    background: white;
+    z-index: 4;
+}
+
+.work-url {
+    font-size: .75em;
+    font-family: avenirnext-demibold,Helvetica,sans-serif;
+    font-weight: 700;
+    letter-spacing: .1875em;
+    text-transform: uppercase;
+    color: #02010a;
+    line-height: 1.5em;
+    padding: 0;
+    z-index: 4;
+    position: absolute;
+    bottom: 4.6875em;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+}
 
 #mainrect {
     display: block;
     width: 18em;
     height: 100vh;
     margin: 0 auto;
+    animation-direction: reverse;
 }
 
 .showcase .section {
