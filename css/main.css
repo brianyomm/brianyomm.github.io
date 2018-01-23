@@ -3144,7 +3144,7 @@ h5.heading-alt-style {
 }
 
 .list-nav {
-    padding: 2.0625em 0;
+    padding: 2.0625em;
 }
 
 .list-nav-element {
@@ -4538,6 +4538,9 @@ h5.hero-heading-alt {
 
 #mainrect {
     display: block;
+    width: 18em;
+    height: 100vh;
+    margin: 0 auto;
 }
 
 .showcase .section {
