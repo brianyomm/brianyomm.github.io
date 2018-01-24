@@ -446,11 +446,11 @@ ul li {
 }
 
 .list {
-    position: relative
+/*    position: relative*/
 }
 
 .list li {
-    list-style: disc
+/*    list-style: disc*/
 }
 
 .list.number li {
@@ -4554,14 +4554,19 @@ h5.hero-heading-alt {
     position: absolute;
     bottom: 20%;
     right: 10%;
-    width: 10em;
+    width: 18em;
 }
 
 .work-meta {
     position: absolute;
-/*    display: block;*/
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
+    display: block;
+    -webkit-transform: rotate(-90deg);
+    transform: translateY(-90deg)
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    bottom: 29%;
+    right: 0%;
 }
 
 .work-title {
@@ -4607,12 +4612,47 @@ h5.hero-heading-alt {
     text-align: center;
 }
 
+.work-number {
+    font-size: 3em;
+    font-family: Proggysquare,sans-serif;
+    font-weight: 700;
+    position: absolute;
+    bottom: 20%;
+    left: 25%;
+}
+
 #mainrect {
     display: block;
     width: 18em;
     height: 100vh;
     margin: 0 auto;
     animation-direction: reverse;
+}
+
+#pages {
+    position: fixed;
+    bottom: 3.5em;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.list-pages {
+    text-align: center;
+}
+
+.list-pages-links {
+    text-align: center;
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: center;
+    list-style-type: none;
+    list-style: none;
+    margin: 0 auto;
+}
+
+.list-pages-number {
+    display: inline-block;
 }
 
 .showcase .section {
