@@ -3153,6 +3153,7 @@ h5.heading-alt-style {
     letter-spacing: .1em;
     color: #b9debe;
     margin: 0 -.625em;
+    margin: 0 -.625em;
     padding: 0;
     transition: color .2s cubic-bezier(.89, .04, .79, .44)
 }
@@ -4535,6 +4536,14 @@ h5.hero-heading-alt {
     text-align: center;
 }
 
+#mainrect {
+    display: block;
+    height: inherit;
+    width: 22em;
+    margin: 0 auto;
+    animation-direction: reverse;
+}
+
 .render {
     width: 100%;
     height: calc(100vh - 280px);
@@ -4587,7 +4596,7 @@ h5.hero-heading-alt {
     position: absolute;
     display: block;
     height: 50px;
-    bottom: .05em;
+    bottom: -2em;
     left: 50%;
     width: .25em;
     background: white;
@@ -4605,7 +4614,7 @@ h5.hero-heading-alt {
     padding: 0;
     z-index: 4;
     position: absolute;
-    bottom: 2.6875em;
+    bottom: 1.25em;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -4621,17 +4630,9 @@ h5.hero-heading-alt {
     left: 25%;
 }
 
-#mainrect {
-    display: block;
-    width: 18em;
-    height: 100vh;
-    margin: 0 auto;
-    animation-direction: reverse;
-}
-
 #pages {
     position: fixed;
-    bottom: 3.5em;
+    bottom: 3.0em;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -4649,15 +4650,24 @@ h5.hero-heading-alt {
     list-style-type: none;
     list-style: none;
     margin: 0 auto;
+    padding: 0 15px;
+}
+
+.list-pages-links .personal {
+    font-size: 1.25em;
+    text-transform: capitalize;
+    font-family: proggysquare;
 }
 
 .list-pages-number {
     display: inline-block;
+    font-size: 1.25em;
+    color: #94cf9e !important;
 }
 
 .showcase .section {
     padding: 0;
-    min-height: 100vh
+    min-height: 100vh;
 }
 
 .showcase .section .cell-vertical-container {
@@ -5860,8 +5870,8 @@ button {
 }
 
 .btn-icon {
-    padding: 12px 15px;
-    font-size: 14px
+    padding: 10px 10px;
+    font-size: 10px
 }
 
 .btn-icon.round {
@@ -5869,7 +5879,7 @@ button {
 }
 
 .btn-icon.circle {
-    border-radius: 50px
+    border-radius: 10px
 }
 
 .btn-block {
