@@ -47,7 +47,7 @@ body {
     font-family: Gameshow;
     text-align: center;
     font-size: 85px;
-    color: #b9debe;
+    color: #fff;
 }
 @keyframes example-one-anim-1 {
   0% {
@@ -328,26 +328,37 @@ ul li {
 ***********************  buttons *********************        
 *****************************************************/
 
-a,
-button,
-button:hover,
-button:focus {
+a {
+    color: #fff;
+    position: relative;
+    text-decoration: none;
+}
+
+
+a:after {
+    background-color: #bbd6af;
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 0;
+    left: 0;
+    height: 3px;
+    transition: width 500ms ease;
     text-decoration: none;
     outline: none;
-    color: #b9debe;
+}
+
+a:hover:after {
+    width: 100%;
 }
 
 a:hover,
 a:focus {
-    color: #FFF;
-    text-decoration-line: line-through;
+    text-decoration: none;
+    outline: none;
+    color: #bbd6af;
 }
 
-a:focus,
-button:focus {
-    outline: none;
-    text-decoration: none;
-}
 
 .btn {
     font-family: "Montserrat", Helvetica, sans-serif;
@@ -635,10 +646,10 @@ button:focus {
 }
 
 .list-nav-element {
-    font-size: 1.875em;
+    font-size: 1.7em;
     font-family: ProggySquare;
     letter-spacing: .1em;
-    color: #b9debe;
+    color: #f8d5bf;
     margin: 0 -.625em;
     padding: 0;
     transition: color .2s cubic-bezier(.89, .04, .79, .44)
@@ -656,7 +667,7 @@ button:focus {
     padding: 0 .625em;
     display: block;
     position: relative;
-    color: inherit;
+    color: #f8d5bf;
     transition: color .2s ease-in-out;
     cursor: pointer
 }
@@ -709,7 +720,7 @@ button:focus {
 #mainrect {
     display: block;
     height: inherit;
-    width: 22em;
+    width: 40em;
     margin: 0 auto;
     animation-direction: reverse;
 }
@@ -769,25 +780,26 @@ button:focus {
     bottom: -2em;
     left: 50%;
     width: .25em;
-    background: white;
+    background: #92aaad;
     z-index: 4;
 }
 
 .work-url {
-    font-size: 1em;
+    font-size: 1.7em;
     font-family: Proggysquare,sans-serif;
     font-weight: 700;
     letter-spacing: .1875em;
     text-transform: uppercase;
-    color: #02010a;
+    color: #fff;
     line-height: 1.5em;
     padding: 0;
     z-index: 4;
     position: absolute;
     bottom: 1.25em;
+    margin: 0 auto;
     left: 0;
     right: 0;
-    margin: 0 auto;
+    display: inline-block;
     text-align: center;
 }
 
@@ -795,6 +807,7 @@ button:focus {
     font-size: 3em;
     font-family: Proggysquare,sans-serif;
     font-weight: 700;
+    color: #92aaad;
     position: absolute;
     bottom: 20%;
     left: 25%;
@@ -813,6 +826,9 @@ button:focus {
 }
 
 .list-pages-links {
+    font-family: proggysquare;
+    font-size: 1.5em;
+    color: #fff;
     text-align: center;
     box-sizing: border-box;
     display: inline-block;
@@ -825,9 +841,7 @@ button:focus {
 
 .list-pages-number {
     display: inline-block;
-    font-family: proggysquare;
-    font-size: 1.25em;
-    color: #94cf9e !important;
+    color: #94cf9e;
 }
 
 /*****************************************************
