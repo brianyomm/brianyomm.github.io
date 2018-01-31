@@ -855,7 +855,7 @@ a:focus {
 
 
 @media (max-width: 768px) {
-    #mainrect,#mainrect-patron,#mainrect-patron {
+    #mainrect,#mainrect-patron,#mainrect-sojo {
         width: 27em;
     }
     
@@ -874,7 +874,7 @@ a:focus {
 }
 
 @media (max-width: 414px) {
-    #mainrect,#mainrect-patron,#mainrect-patron {
+    #mainrect,#mainrect-patron,#mainrect-sojo {
         width: 18em;
     }
 }
@@ -884,7 +884,7 @@ a:focus {
         font-size: 4em;
     }
     
-    #mainrect,#mainrect-patron,#mainrect-patron {
+    #mainrect,#mainrect-patron,#mainrect-sojo {
         width: 16em;
     }
     
