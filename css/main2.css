@@ -839,12 +839,52 @@ a:focus {
     padding: 0 15px;
 }
 
+
 .list-pages-number {
     display: inline-block;
     color: #94cf9e;
 }
 
 /*****************************************************
-**********************  footer  **********************
+**********************  responsive  **********************
 *****************************************************/
 
+
+@media (max-width: 768px) {
+    #mainrect {
+        width: 27em;
+    }
+    
+    .work-link {
+        display: none;
+    }
+    
+    #pages {
+        bottom: 2em;
+    }
+    
+    .list-pages-links {
+        display: block;
+        margin-top: .25em;
+    }
+}
+
+@media (max-width: 414px) {
+    #mainrect {
+        width: 18em;
+    }
+}
+
+@media (max-width: 375px) {
+    .example-one {
+        font-size: 4em;
+    }
+    
+    #mainrect {
+        width: 16em;
+    }
+    
+    .work-img {
+        right: 2%;
+    }
+}
