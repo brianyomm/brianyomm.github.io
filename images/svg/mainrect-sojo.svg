@@ -1,0 +1,22 @@
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 550 1000" style="enable-background:new 0 0 550 1000;" xml:space="preserve">
+
+<style type="text/css">
+	.st0{fill:none;stroke:#bea48b;stroke-width:25;stroke-miterlimit:10;}
+    #mainrect {
+        stroke-dasharray: 3000;
+        stroke-dashoffset: 4500;
+        -webket-animation: dash 1.5s linear forwards;
+        -o-webket-animation: dash 1.5s linear forwards;
+        -moz-webket-animation: dash 1.5s linear forwards;
+        animation: dash 1.5s linear forwards;
+    }
+    
+    @-webkit-keyframes dash {
+        to {
+            stroke-dashoffset: 0;
+        }
+    }
+</style>
+    
+<rect id="mainrect" x="16.453" y="22" class="st0" width="517.095" height="956"/>
+</svg>

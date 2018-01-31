@@ -335,7 +335,7 @@ a {
 }
 
 
-a:after {
+a.strike:after {
     background-color: #bbd6af;
     content: '';
     position: absolute;
@@ -428,7 +428,11 @@ a:focus {
 
 .instagram.bg,
 .instagram.border:hover {
-    background-color: #5d4a3b;
+  background-image: -webkit-linear-gradient(top, #feda75, #d62976, #962fbf, #4f5bd5);
+  background-image: -moz-linear-gradient(top, #feda75, #d62976, #962fbf, #4f5bd5);
+  background-image: -ms-linear-gradient(top, #feda75, #d62976, #962fbf, #4f5bd5);
+  background-image: -o-linear-gradient(top, #feda75, #d62976, #962fbf, #4f5bd5);
+  background-image: linear-gradient(to bottom, #feda75, #d62976, #962fbf, #4f5bd5);
 }
 
 .pinterest:hover {
@@ -717,7 +721,7 @@ a:focus {
     text-align: center;
 }
 
-#mainrect {
+#mainrect, #mainrect-patron, #mainrect-sojo {
     display: block;
     height: inherit;
     width: 40em;
@@ -851,7 +855,7 @@ a:focus {
 
 
 @media (max-width: 768px) {
-    #mainrect {
+    #mainrect,#mainrect-patron,#mainrect-patron {
         width: 27em;
     }
     
@@ -870,7 +874,7 @@ a:focus {
 }
 
 @media (max-width: 414px) {
-    #mainrect {
+    #mainrect,#mainrect-patron,#mainrect-patron {
         width: 18em;
     }
 }
@@ -880,7 +884,7 @@ a:focus {
         font-size: 4em;
     }
     
-    #mainrect {
+    #mainrect,#mainrect-patron,#mainrect-patron {
         width: 16em;
     }
     

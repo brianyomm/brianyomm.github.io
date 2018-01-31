@@ -52,65 +52,126 @@
                 <div class="header-nav">
                     <ul class="list list-nav">
                         <li class="list-nav-element list-navi-element-profile">
-                            <a class="" href="/profile">PROFILE</a>
+                            <a class="strike" href="/profile">PROFILE</a>
                         </li>
                         <li class="list-nav-element list-navi-element-work">
-                            <a class="" href="/work">WORK</a>
+                            <a class="strike" href="/work">WORK</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </header>
     <div class="showcase bg-dark">
-        <div class="body" data-tilt data-tilt-reset="false" data-tilt-max="6">
-            <div class="canvas canvas-frame">
-<!--
-                <div class="wrap">
-                    <div data-tilt data-tilt-reset="false" data-tilt-max="20" class="example-one" data-text="BRIANyom">BRIANYOM</div>
-                </div>
--->
-                <object id="mainrect">
-                    <embed data-tilt data-tilt-max="20" src="images/svg/mainrect.svg">
-                </object>
-            </div>
-        </div>
-        <div class="render">
-            <div class="work-title">
-                <div class="wrap">
-                    <div data-tilt data-tilt-reset="false" data-tilt-max="20" class="example-one" data-text="BRIANyom">BRIANYOM</div>
+        
+        <div id="portfolio" class="work">
+            <div class="body" data-tilt data-tilt-reset="false" data-tilt-max="6">
+                <div class="canvas canvas-frame">
+                    <object id="mainrect">
+                        <embed data-tilt data-tilt-max="20" src="images/svg/mainrect.svg">
+                    </object>
                 </div>
             </div>
-            <div class="work-hero">
-                <img data-tilt data-tilt-reset="false" data-tilt-max="20" class="work-img" src="images/placeholder400.png">
-            </div>
-            <div class="work-meta">
-                <p class="work-date">Jan, 2017</p>
-                <p class="work-title">personal portfolio</p>
-            </div>
-            <div class="work-link">
-                <div class="work-line"></div>
-                <a class="work-url" href="/personalportfolio">Load Portfolio</a>
-            </div>
-            <div class="work-number">
-                <p>01</p>
+            <div class="render">
+                <div class="work-title">
+                    <div class="wrap">
+                        <div data-tilt data-tilt-reset="false" data-tilt-max="20" class="example-one" data-text="BRIANyom">BRIANYOM</div>
+                    </div>
+                </div>
+                <div class="work-hero">
+                    <img data-tilt data-tilt-reset="false" data-tilt-max="20" class="work-img" src="images/placeholder400.png">
+                </div>
+                <div class="work-meta">
+                    <p class="work-date">Jan, 2017</p>
+                    <p class="work-title">personal portfolio</p>
+                </div>
+                <div class="work-link">
+                    <div class="work-line"></div>
+                    <a class="work-url" href="/personalportfolio">Load Portfolio</a>
+                </div>
+                <div class="work-number">
+                    <p>01</p>
+                </div>
             </div>
         </div>
+        
+        <div id="patron" class="work" style="display:none">
+            <div class="body" data-tilt data-tilt-reset="false" data-tilt-max="6">
+                <div class="canvas canvas-frame">
+                    <object id="mainrect-patron">
+                        <embed data-tilt data-tilt-max="20" src="images/svg/mainrect-patron.svg">
+                    </object>
+                </div>
+            </div>
+            <div class="render">
+                <div class="work-title">
+                    <div class="wrap">
+                        <div data-tilt data-tilt-reset="false" data-tilt-max="20" class="example-one" data-text="pATRON">PATRON</div>
+                    </div>
+                </div>
+                <div class="work-hero">
+                    <img data-tilt data-tilt-reset="false" data-tilt-max="20" class="work-img" src="images/placeholder400-2.png">
+                </div>
+                <div class="work-meta">
+                    <p class="work-date">2016-2017</p>
+                    <p class="work-title">Patron</p>
+                </div>
+                <div class="work-link">
+                    <div class="work-line"></div>
+                    <a class="work-url" href="/personalportfolio">Load Patron</a>
+                </div>
+                <div class="work-number">
+                    <p>02</p>
+                </div>
+            </div>
+        </div>
+        
+        <div id="sojo" class="work" style="display:none" >
+            <div class="body" data-tilt data-tilt-reset="false" data-tilt-max="6">
+                <div class="canvas canvas-frame">
+                    <object id="mainrect-sojo">
+                        <embed data-tilt data-tilt-max="20" src="images/svg/mainrect-sojo.svg">
+                    </object>
+                </div>
+            </div>
+            <div class="render">
+                <div class="work-title">
+                    <div class="wrap">
+                        <div data-tilt data-tilt-reset="false" data-tilt-max="20" class="example-one" data-text="SOJOspaCLUB">SOJOSPACLUB</div>
+                    </div>
+                </div>
+                <div class="work-hero">
+                    <img data-tilt data-tilt-reset="false" data-tilt-max="20" class="work-img" src="images/placeholder400-3.png">
+                </div>
+                <div class="work-meta">
+                    <p class="work-date">2017-2018</p>
+                    <p class="work-title">SoJo Spa Club</p>
+                </div>
+                <div class="work-link">
+                    <div class="work-line"></div>
+                    <a class="work-url" href="/personalportfolio">Load SoJo Spa Club</a>
+                </div>
+                <div class="work-number">
+                    <p>03</p>
+                </div>
+            </div>
+        </div>
+        
         <nav id="pages">
             <ul class="list list-pages">
                 <li class="list-pages-links">
-                    <a role="button" data-url="patron" class="" class="active">
+                    <a onclick="openWork('portfolio')" class="strike">
                         <span class="list-pages-number">01</span>
                         Personal Portfolio
                     </a>
                 </li>
                 <li class="list-pages-links">
-                    <a role="button" data-url="patron" class="">
+                    <a onclick="openWork('patron')" class="strike">
                         <span class="list-pages-number">02</span>
                         Patron
                     </a>
                 </li>
                 <li class="list-pages-links">
-                    <a role="button" data-url="SoJo" class="">
+                    <a onclick="openWork('sojo')" class="strike">
                         <span class="list-pages-number">02</span>
                         SoJo Spa Club
                     </a>
@@ -119,16 +180,25 @@
         </nav>
         <div class="footer-social text-center">
             <div class="social-icon">
-                <a href="#" class="btn btn-icon facebook border no-border no-margin circle text-white"><i class="ti-facebook"></i></a>
-                <a href="#" class="btn btn-icon soundcloud border no-border no-margin circle text-white"><i class="ti-soundcloud"></i></a>
-                <a href="#" class="btn btn-icon instagram border no-border no-margin circle text-white"><i class="ti-instagram"></i></a>
-                <a href="#" class="btn btn-icon pinterest border no-border no-margin circle text-white"><i class="ti-pinterest"></i></a>
-                <a href="#" class="btn btn-icon linkedin border no-border no-margin circle text-white"><i class="ti-linkedin"></i></a>
+                <a href="https://www.facebook.com/brian.yom" target="_blank" class="btn btn-icon facebook border no-border no-margin circle text-white"><i class="ti-facebook"></i></a>
+                <a href="https://www.instagram.com/yomasaurus_rex/" target="_blank" class="btn btn-icon instagram border no-border no-margin circle text-white"><i class="ti-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/brianyom/" target="_blank" class="btn btn-icon linkedin border no-border no-margin circle text-white"><i class="ti-linkedin"></i></a>
+                <a href="https://www.pinterest.com/brianyom/" target="_blank" class="btn btn-icon pinterest border no-border no-margin circle text-white"><i class="ti-pinterest"></i></a>
+                <a href="https://soundcloud.com/brianyom" target="_blank" class="btn btn-icon soundcloud border no-border no-margin circle text-white"><i class="ti-soundcloud"></i></a>
             </div>
         </div>
     </div>
     <!-- /#showcase -->
-
+    <script>
+        function openWork(workName) {
+            var i;
+            var x = document.getElementsByClassName("work");
+            for (i = 0; i < x.length; i++) {
+               x[i].style.display = "none";  
+            }
+            document.getElementById(workName).style.display = "block";  
+        }
+    </script>
     <!-- Java Script -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
