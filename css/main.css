@@ -191,13 +191,13 @@ img {
     left: 1em;
 }
 
-.example-one {
+.glitch-title {
     font-family: Gameshow;
     text-align: center;
     font-size: 85px;
     color: #b9debe;
 }
-@keyframes example-one-anim-1 {
+@keyframes glitch-title-anim-1 {
   0% {
     clip: rect(14px, 750px, 36px, 0);
   }
@@ -253,7 +253,7 @@ img {
     clip: rect(62px, 750px, 104px, 0);
   }
 }
-@keyframes example-one-anim-2 {
+@keyframes glitch-title-anim-2 {
   0% {
     clip: rect(49px, 750px, 2px, 0);
   }
@@ -309,7 +309,7 @@ img {
     clip: rect(54px, 750px, 87px, 0);
   }
 }
-.example-one:before, .example-one:after {
+.glitch-title:before, .glitch-title:after {
   content: attr(data-text);
   position: absolute;
   top: 0;
@@ -318,15 +318,15 @@ img {
   background: #2e3036;
   clip: rect(0, 0, 0, 0);
 }
-.example-one:after {
+.glitch-title:after {
   left: 2px;
   text-shadow: -1px 0 red;
-  animation: example-one-anim-1 2s infinite linear alternate-reverse;
+  animation: glitch-title-anim-1 2s infinite linear alternate-reverse;
 }
-.example-one:before {
+.glitch-title:before {
   left: -2px;
   text-shadow: 2px 0 blue;
-  animation: example-one-anim-2 3s infinite linear alternate-reverse;
+  animation: glitch-title-anim-2 3s infinite linear alternate-reverse;
 }
 
 

@@ -2,7 +2,7 @@
 
 <style type="text/css">
 	.st0{fill:none;stroke:#d32f2f;stroke-width:25;stroke-miterlimit:10;}
-    #mainrect {
+    #mainrect-patron {
         stroke-dasharray: 3000;
         stroke-dashoffset: 4500;
         -webket-animation: dash 1.5s linear forwards;

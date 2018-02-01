@@ -2,7 +2,7 @@
 
 <style type="text/css">
 	.st0{fill:none;stroke:#bea48b;stroke-width:25;stroke-miterlimit:10;}
-    #mainrect {
+    #mainrect-sojo {
         stroke-dasharray: 3000;
         stroke-dashoffset: 4500;
         -webket-animation: dash 1.5s linear forwards;
@@ -18,5 +18,5 @@
     }
 </style>
     
-<rect id="mainrect" x="16.453" y="22" class="st0" width="517.095" height="956"/>
+<rect id="mainrect-sojo" x="16.453" y="22" class="st0" width="517.095" height="956"/>
 </svg>
