@@ -700,6 +700,9 @@ a:focus {
 **************  body frame render  *******************
 *****************************************************/
 
+.fadeIn {
+    animation: opac 0.8s;
+}
 
 .showcase .body {
     min-height: 100vh;
