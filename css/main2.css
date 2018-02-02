@@ -235,10 +235,10 @@ span {
 
 .profile-bio p {
     font-family: proggysquare;
-    font-size: 5em;
+    font-size: 3.6em;
     font-kerning: auto;
     font-weight: 400;
-    line-height: .85em;
+    line-height: .95em;
 }
 
 .vertical-text-left,
@@ -342,6 +342,11 @@ a {
     text-decoration: none;
 }
 
+.a-dark {
+    color: black;
+}
+
+
 
 a.strike:after {
     background-color: #bbd6af;
@@ -360,12 +365,14 @@ a:hover:after {
     width: 100%;
 }
 
+
 a:hover,
 a:focus {
     text-decoration: none;
     outline: none;
     color: #bbd6af;
 }
+
 
 
 .btn {
@@ -702,6 +709,7 @@ a:focus {
     left: 0;
     right: 0;
     bottom: 0;
+    z-index: 3;
 }
 
 /*****************************************************
@@ -714,23 +722,9 @@ a:focus {
     position: relative;
 }
 
-.profile-sidebar {
-    width: 25%;
-    padding-right: 1.25;
-    float: left;
-    box-sizing: border-box;
-}
-
-.profile-bio {
-    padding-left: 1.5em;
-    width: 75%;
-    float:right;
-    box-sizing: border-box;
-}
-
 #profile-picture {
-    width: 17.5em;
-    height: 21.25em;
+    width: 16em;
+    height: 16em;
     background-size: cover;
     background-position: right center;
     background-repeat: no-repeat;
@@ -748,21 +742,35 @@ a:focus {
     margin: 0 auto;
 }
 
+.profile {
+    height: 100%;
+}
+
 .profile-container {
     position: absolute;
     z-index: 2;
-    width: 65em;
-    top: 5%;
+    width: 70em;
+    top: 15%;
     left:0;
     right:0;
 }
 
-.bg-black {
-    background-color: black
+.profile-sidebar {
+    width: 25%;
+    padding-right: 1.25;
+    float: left;
+    box-sizing: border-box;
 }
 
-.fadeIn {
-    animation: opac 0.8s;
+.profile-bio {
+    padding-left: 1.5em;
+    width: 75%;
+    float: right;
+    box-sizing: border-box;
+}
+
+.bg-black {
+    background-color: black
 }
 
 .profile-body {
@@ -789,6 +797,10 @@ a:focus {
     margin-top: calc((100vh - 18em)/ -2);
 }
 
+.fixed {
+    position: fixed;
+}
+
 .canvas {
     z-index: 1;
     left: 0;
@@ -812,7 +824,7 @@ a:focus {
     box-sizing: border-box;
     padding: 0 1.25em;
     position: absolute;
-    top: 11.25em;
+/*    top: 11.25em;*/
     bottom: 7.5em;
     left: 0;
     right: 0;
