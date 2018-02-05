@@ -1041,6 +1041,10 @@ a:focus {
 }
 
 @media (max-width: 414px) {
+    #header {
+        top: .25em;
+    }
+    
     #mainrect,#mainrect-patron,#mainrect-sojo {
         width: 18em;
     }
