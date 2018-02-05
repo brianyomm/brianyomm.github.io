@@ -182,6 +182,83 @@ body {
 }
 
 /*===============================
+ =======  fade  ======
+*===============================*/
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+  opacity:0;  
+  -webkit-animation:fadeIn ease-in 1;  
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+.fade-in.one {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.fade-in.two {
+  -webkit-animation-delay: 1.5s;
+  -moz-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+
+.fade-in.three {
+  -webkit-animation-delay: 1.75s;
+  -moz-animation-delay: 1.75s;
+  animation-delay: 1.75s;
+}
+
+.fade-in.four {
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+.fadeInDown {
+    opacity: 0;
+    animation-name: fadeInDown;
+    -webkit-animation-name: fadeInDown;
+}
+
+.fadeInDown.one {
+    -webkit-animation-delay: 1.75s;
+  -moz-animation-delay: 1.75s;
+  animation-delay: 1.75s;
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+.fadeInUp.one {
+    -webkit-animation-delay: 1.75s;
+  -moz-animation-delay: 1.75s;
+  animation-delay: 1.75s;
+}
+
+.fadeInUp.two {
+    -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+/*===============================
  =======  typograpgy  ======
 *===============================*/
 
@@ -716,8 +793,6 @@ a:focus {
 **************  body frame render  *******************
 *****************************************************/
 #profile {
-    margin-top: 10em;
-    margin-bottom: 10em;
     z-index: 1;
     position: relative;
 }
@@ -750,9 +825,10 @@ a:focus {
     position: absolute;
     z-index: 2;
     width: 70em;
-    top: 15%;
     left:0;
     right:0;
+    margin-top: 10%;
+    margin-bottom: 5%;
 }
 
 .profile-sidebar {
@@ -797,7 +873,9 @@ a:focus {
     margin-top: calc((100vh - 18em)/ -2);
 }
 
-.fixed {
+.body-profile {
+    margin-top: 10em;
+    margin-bottom: 10em;
     position: fixed;
 }
 
