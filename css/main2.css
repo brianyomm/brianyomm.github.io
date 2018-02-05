@@ -1051,7 +1051,7 @@ a:focus {
 }
 
 @media (max-width: 375px) {
-    .example-one {
+    .glitch-title {
         font-size: 4em;
     }
     
@@ -1063,11 +1063,33 @@ a:focus {
         width: 14em;
     }
     
+    .container {
+        padding: 0 2em;
+}
+    
+    .profile-container {
+        width: 30em;
+        margin-top: 18%;
+        margin-bottom: 15%;
+}
+    
+    .profile-sidebar {
+        padding-right: 0;
+        padding-left: 1em;
+        float: none;
+    }
+    
+    .profile-bio {
+        padding-left: 1em;
+        width: 75%;
+        float: none;
+}
+    
     .work-img {
         right: 2%;
     }
     
     .list-pages-links {
-    font-size: 1.2em;
+        font-size: 1.2em;
     }
 }
