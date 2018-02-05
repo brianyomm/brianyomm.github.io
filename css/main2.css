@@ -1062,4 +1062,8 @@ a:focus {
     .work-img {
         right: 2%;
     }
+    
+    .list-pages-links {
+    font-size: 1.2em;
+    }
 }
