@@ -1069,19 +1069,24 @@ a:focus {
     
     .profile-container {
         width: 30em;
-        margin-top: 18%;
+        margin-top: 55%;
         margin-bottom: 15%;
 }
     
     .profile-sidebar {
         padding-right: 0;
-        padding-left: 1em;
+        padding-left: 0;
         float: none;
     }
     
+    #profile-picture {
+        width: 20em;
+        height: 20em;
+    }
+    
     .profile-bio {
-        padding-left: 1em;
-        width: 75%;
+        padding-left: 0;
+        width: 100%;
         float: none;
 }
     
