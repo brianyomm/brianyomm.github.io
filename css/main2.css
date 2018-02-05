@@ -46,7 +46,7 @@ body {
 .glitch-title {
     font-family: Gameshow;
     text-align: center;
-    font-size: 85px;
+    font-size: 5.2em;
     color: #fff;
 }
 @keyframes glitch-title-anim-1 {
@@ -989,6 +989,7 @@ a:focus {
     left: 0;
     right: 0;
     margin: 0 auto;
+    z-index: 3;
 }
 
 .list-pages {
