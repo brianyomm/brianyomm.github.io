@@ -719,14 +719,18 @@ a:focus {
     left: 0;
     right: 0;
     height: 5em;
+    display: block;
     z-index: 99;
 }
 
 .header-container {
     max-width: 53em;
+    position: relative;
+    height: inherit;
     padding: 0 1.25em;
     margin: 0 auto;
     box-sizing: border-box;
+    width: 100%;
 }
 
 .header-nav {
@@ -735,6 +739,19 @@ a:focus {
     right: 1.25em;
     bottom: 0;
     height: inherit;
+    
+}
+
+.header-logo {
+    width: 3.75em;
+    margin: 0 auto;
+    z-index: 1;
+    top: 0;
+    left: 1.25em;
+    right: 1.25em;
+    position: absolute;
+    height: inherit;
+    
 }
 
 .list-nav {
@@ -890,7 +907,14 @@ a:focus {
 #mainrect, #mainrect-patron, #mainrect-sojo {
     display: block;
     height: inherit;
-    width: 40em;
+    width: 35em;
+    margin: 0 auto;
+    animation-direction: reverse;
+}
+
+#bylogo {
+    display: block;
+    width: 4em;
     margin: 0 auto;
     animation-direction: reverse;
 }
@@ -947,7 +971,7 @@ a:focus {
     position: absolute;
     display: block;
     height: 50px;
-    bottom: -2em;
+    bottom: 2em;
     left: 50%;
     width: .25em;
     background: #92aaad;
@@ -965,7 +989,7 @@ a:focus {
     padding: 0;
     z-index: 4;
     position: absolute;
-    bottom: 1.25em;
+    bottom: 4em;
     margin: 0 auto;
     left: 0;
     right: 0;
@@ -1023,6 +1047,13 @@ a:focus {
 @media (max-width: 1440px) {
     #mainrect,#mainrect-patron,#mainrect-sojo {
         width: 23em;
+    }
+    .work-line {
+        bottom: -.8em;
+    }
+    
+    .work-url {
+        bottom: 1.8em;
     }
 }
 
