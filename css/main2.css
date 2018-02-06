@@ -1020,6 +1020,11 @@ a:focus {
 **********************  responsive  **********************
 *****************************************************/
 
+@media (max-width: 1440px) {
+    #mainrect,#mainrect-patron,#mainrect-sojo {
+        width: 23em;
+    }
+}
 
 @media (max-width: 768px) {
     #mainrect,#mainrect-patron,#mainrect-sojo {
