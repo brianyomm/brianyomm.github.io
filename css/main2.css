@@ -914,7 +914,7 @@ a:focus {
 
 #bylogo {
     display: block;
-    width: 4em;
+    width: 3em;
     margin: 0 auto;
     animation-direction: reverse;
 }
@@ -943,6 +943,8 @@ a:focus {
 
 .work-meta {
     position: absolute;
+    font-family: proggysquare;
+    font-size: 1.7em;
     display: block;
     -webkit-transform: rotate(-90deg);
     transform: translateY(-90deg)
@@ -954,7 +956,7 @@ a:focus {
 }
 
 .work-title {
-    
+    margin-top: 10px;
 }
 
 .work-date {
