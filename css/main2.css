@@ -298,7 +298,7 @@ h5,
 h6 {
     font-family: "ProggySquare", Helvetica, sans-serif;
     text-transform: uppercase;
-    color: #3e3e3e;
+    color: #94cf9e;
     line-height: 1.5
 }
 
@@ -336,6 +336,7 @@ p,
 span {
     letter-spacing: 0.5px;
     line-height: 26px;
+    color: #777777;
 }
 
 .profile-bio p {
@@ -854,17 +855,14 @@ a:focus {
 }
 
 .container {
-    display: block;
     width: 100%;
     box-sizing: border-box;
     padding: 0 1.25em;
-    position: relative;
     margin: 0 auto;
 }
 
 .container-base {
-    max-width: 53.75em;
-    
+    max-width: 55em;
 }
 
 .profile {
@@ -884,15 +882,13 @@ a:focus {
 #work-main {
     display: block;
     box-sizing: border-box;
-    padding: 12em 0 0;
+    padding: 7em 0 0;
+    position: relative
 }
-
-
 
 .work-container {
     position: absolute;
     z-index: 2;
-    width: 80em;
     left:0;
     right:0;
     margin-bottom: 10%;
@@ -903,6 +899,11 @@ a:focus {
     float: left;
     box-sizing: border-box;
     padding: 0 .625em;
+}
+
+.work-element {
+    padding-top: 10em;
+    margin: 0 auto;
 }
 
 .profile-sidebar {
@@ -1022,7 +1023,7 @@ a:focus {
     -ms-transform: rotate(-90deg);
     -o-transform: rotate(-90deg);
     bottom: 29%;
-    right: 0%;
+    right: -10%;
 }
 
 .work-title {
