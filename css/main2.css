@@ -927,15 +927,16 @@ a:focus {
     background-color: black
 }
 
-.profile-body .body {
-    min-height: 100vh;
-}
 
 .profile-body .body .canvas-frame {
     position: absolute;
 }
 
 .showcase .body {
+    min-height: 100vh;
+}
+
+.profile-body .body {
     min-height: 100vh;
 }
 
@@ -984,7 +985,7 @@ a:focus {
 
 #bylogo {
     display: block;
-    width: 3em;
+    width: 2.5em;
     margin: 0 auto;
     animation-direction: reverse;
 }
@@ -996,7 +997,6 @@ a:focus {
     box-sizing: border-box;
     padding: 0 1.25em;
     position: absolute;
-/*    top: 11.25em;*/
     bottom: 7.5em;
     left: 0;
     right: 0;
