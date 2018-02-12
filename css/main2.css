@@ -456,6 +456,7 @@ a {
     text-decoration: none;
 }
 
+
 .a-dark {
     color: black;
 }
@@ -987,6 +988,11 @@ a:focus {
     background-color: black
 }
 
+.canvas-frame {
+    left: 0;
+    right: 0;
+    width: 100vw;
+}
 
 .profile-body .body .canvas-frame {
     position: absolute;
@@ -1013,20 +1019,22 @@ a:focus {
     width: 100vw;
     top: 50%;
     height: calc(100vh - 18em);
-    ;
+    margin-top: calc((100vh - 18em)/ -2);
 }
 
-.canvas-frame {
-    left: 0;
-    right: 0;
-    width: 100vw;
+.body-profile .body {
+    min-height: 100vh;
 }
 
-.body-profile {
-    margin-top: 10em;
-    margin-bottom: 10em;
+.body-profile .body .canvas-frame {
+    z-index: 0;
     position: fixed;
+    width: 100vw;
+    top: 50%;
+    height: calc(100vh - 18em);
+    margin-top: calc((100vh - 18em)/ -2);
 }
+
 
 .canvas {
     z-index: 1;
@@ -1034,6 +1042,7 @@ a:focus {
     right: 0;
     width: 100vw;
     text-align: center;
+    margin: 0 auto;
 }
 
 #mainrect, #mainrect-patron, #mainrect-sojo {
@@ -1187,9 +1196,11 @@ a:focus {
 *****************************************************/
 
 @media (max-width: 1440px) {
+/*
     #mainrect,#mainrect-patron,#mainrect-sojo {
         width: 23em;
     }
+*/
     .work-line {
         bottom: -.8em;
     }
@@ -1200,9 +1211,11 @@ a:focus {
 }
 
 @media (max-width: 768px) {
+/*
     #mainrect,#mainrect-patron,#mainrect-sojo {
         width: 27em;
     }
+*/
     
     .work-link {
         display: none;
@@ -1227,8 +1240,24 @@ a:focus {
         font-size: 1.2em;
     }
     
+/*
     #mainrect,#mainrect-patron,#mainrect-sojo {
         width: 18em;
+    }
+*/
+    
+    .profile-container {
+        margin-top: 45%;
+    }
+    
+    .profile-sidebar {
+        width: 100%;
+        
+    }
+    
+    .profile-bio {
+        width: 100%;
+        padding: 0 5em;
     }
 }
 
@@ -1241,9 +1270,11 @@ a:focus {
         top: 45%;
     }
     
+/*
     #mainrect,#mainrect-patron,#mainrect-sojo {
         width: 14em;
     }
+*/
     
     .container {
         padding: 0 2em;
@@ -1267,7 +1298,7 @@ a:focus {
     }
     
     .profile-bio {
-        padding-left: 0;
+        padding: 0;
         width: 100%;
         float: none;
 }
