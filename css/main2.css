@@ -303,7 +303,7 @@ h6 {
 }
 
 h1 {
-    font-size: 21px;
+    font-size: 81px;
     letter-spacing: 4.5px;
 }
 
@@ -436,6 +436,14 @@ ul li {
 
 .text-dark {
     color: #212121 !important;
+}
+
+.text-red {
+    color: #d32f2f !important;
+}
+
+.text-brown {
+    color: #bea48b !important;
 }
 
 /*****************************************************
@@ -835,6 +843,47 @@ a:focus {
     z-index: 3;
 }
 
+#pagination-hero {
+    padding: 9em 0;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    border-top: 1px solid #94cf9e;
+    text-align: center;
+}
+
+#pagination-subtitle {
+}
+
+#pagination-title {
+}
+
+#pagination-hero:hover #pagination-hover {
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0)
+        
+}
+
+
+#pagination-hover {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat;
+    transition: opacity .3s ease-in-out, -webkit-transform .6s ease-in-out;
+    transition: opacity .3s ease-in-out, transform .6s ease-in-out;
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 12.5em);
+    transform: translate3d(0, 0, 12.5em)
+}
+
 /*****************************************************
 **************  body frame render  *******************
 *****************************************************/
@@ -863,6 +912,11 @@ a:focus {
 
 .container-base {
     max-width: 55em;
+    padding-top: 5em;
+}
+
+.container-wide {
+    max-width: 64em;
 }
 
 .profile {
@@ -902,8 +956,13 @@ a:focus {
 }
 
 .work-element {
-    padding-top: 10em;
+/*    padding-top: 10em;*/
     margin: 0 auto;
+}
+
+.work-element-picture {
+    margin: 0 auto;
+    text-align: center;
 }
 
 .profile-sidebar {
@@ -1117,6 +1176,10 @@ a:focus {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.work-element {
+    margin-top: 4em;
 }
 
 /*****************************************************
