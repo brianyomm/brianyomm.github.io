@@ -16,17 +16,31 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'SourceSansPro';
+    src: url('../fonts/ProggySquare.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'abel';
+    src: url('../fonts/abel.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /*****************************************************
 *****************  general  *******************
 *****************************************************/
 
 body {
-    font-family: "Open Sans", Helvetica, sans-serif;
+    font-family: "abel", sans-serif;
     font-size: 14px;
     font-weight: 300;
     letter-spacing: 0.2px;
     line-height: 1.8em;
-    color: #777;
+    color: #888;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
     padding: 0!important;
@@ -308,7 +322,7 @@ h1 {
 }
 
 h2 {
-    font-size: 18px;
+    font-size: 28px;
     letter-spacing: 4px;
 }
 
@@ -334,17 +348,18 @@ h6 {
 
 p,
 span {
-    letter-spacing: 0.5px;
+    letter-spacing: 2px;
     line-height: 26px;
     color: #777777;
 }
 
 .profile-bio p {
-    font-family: proggysquare;
+    font-family: abel;
     font-size: 3.6em;
+    letter-spacing: .14em;
     font-kerning: auto;
     font-weight: 400;
-    line-height: .95em;
+    line-height: 1.3em;
 }
 
 .vertical-text-left,
@@ -458,7 +473,7 @@ a {
 
 
 .a-dark {
-    color: black;
+    color: #888;
 }
 
 
@@ -968,7 +983,7 @@ a:focus {
 
 .profile-sidebar {
     width: 25%;
-    padding-right: 1.25;
+    padding-right: 1.25em;
     float: left;
     box-sizing: border-box;
 }
@@ -1252,7 +1267,14 @@ a:focus {
     
     .profile-sidebar {
         width: 100%;
-        
+        margin: 0 0 6em 0;
+    }
+    
+    #profile-picture {
+        display: block;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
     }
     
     .profile-bio {
@@ -1287,21 +1309,28 @@ a:focus {
     }
     
     .profile-sidebar {
-        padding-right: 0;
-        padding-left: 0;
+        width: 100%;
+        padding: 0;
         float: none;
+        margin: 0 0 5em 0;
     }
     
     #profile-picture {
+        display: block;
         width: 20em;
         height: 20em;
+        margin: 0 auto;
     }
     
     .profile-bio {
         padding: 0;
         width: 100%;
         float: none;
-}
+    }
+    
+    .profile-bio p {
+        font-weight: 400;
+    }
     
     .work-img {
         right: 2%;
