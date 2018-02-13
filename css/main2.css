@@ -18,7 +18,7 @@
 
 @font-face {
     font-family: 'SourceSansPro';
-    src: url('../fonts/ProggySquare.otf') format('opentype');
+    src: url('../fonts/SourceSansPro-Regular.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -1134,6 +1134,15 @@ a:focus {
     z-index: 4;
 }
 
+.shape-line {
+    display: block;
+    height: 50px;
+    bottom: 2em;
+    width: .25em;
+    background: #92aaad;
+    margin: 0 auto;
+}
+
 .work-url {
     font-size: 1.7em;
     font-family: Proggysquare,sans-serif;
@@ -1267,7 +1276,7 @@ a:focus {
     
     .profile-sidebar {
         width: 100%;
-        margin: 0 0 6em 0;
+        margin: 0 0 4em 0;
     }
     
     #profile-picture {
@@ -1277,9 +1286,13 @@ a:focus {
         margin: 0 auto;
     }
     
+    #profile-contact {
+        text-align: center;
+    }
+    
     .profile-bio {
         width: 100%;
-        padding: 0 5em;
+        padding: 0 2em;
     }
 }
 
@@ -1292,18 +1305,12 @@ a:focus {
         top: 45%;
     }
     
-/*
-    #mainrect,#mainrect-patron,#mainrect-sojo {
-        width: 14em;
-    }
-*/
-    
     .container {
         padding: 0 2em;
     }
     
     .profile-container {
-        width: 30em;
+        width: 20em;
         margin-top: 55%;
         margin-bottom: 15%;
     }
@@ -1312,7 +1319,7 @@ a:focus {
         width: 100%;
         padding: 0;
         float: none;
-        margin: 0 0 5em 0;
+        margin: 0 0 2em 0;
     }
     
     #profile-picture {
@@ -1320,6 +1327,10 @@ a:focus {
         width: 20em;
         height: 20em;
         margin: 0 auto;
+    }
+    
+    #profile-contact {
+        text-align: center;
     }
     
     .profile-bio {
