@@ -461,6 +461,10 @@ ul li {
     color: #bea48b !important;
 }
 
+.text-green {
+    color: #bbd6af !important;
+}
+
 /*****************************************************
 ***********************  buttons *********************        
 *****************************************************/
@@ -1206,6 +1210,17 @@ a:focus {
     color: #94cf9e;
 }
 
+.list-contact-links {
+    font-family: proggysquare;
+    font-size: 1.7em;
+    letter-spacing: .1em;
+    line-height: 1.57em;
+}
+
+.list-contact-element {
+    text-transform: capitalize;
+}
+
 #portfolio.work {
     background-attachment: fixed;
     background-size: cover;
@@ -1332,6 +1347,7 @@ a:focus {
     }
     
     #profile-contact {
+        margin-top: 1em;
         text-align: center;
     }
     
