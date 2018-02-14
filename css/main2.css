@@ -863,6 +863,10 @@ a:focus {
     z-index: 3;
 }
 
+#pagination {
+    margin-top: 5em;
+}
+
 #pagination-hero {
     padding: 9em 0;
     overflow: hidden;
@@ -970,13 +974,13 @@ a:focus {
 }
 
 .work-element {
-/*    padding-top: 10em;*/
     margin: 0 auto;
     width: inherit;
 }
 
 .work-element-picture {
-    widows: inherit;
+    display: block;
+    width: inherit;
     margin: 0 auto;
     text-align: center;
 }
