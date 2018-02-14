@@ -908,16 +908,7 @@ a:focus {
     position: relative;
 }
 
-#profile-picture {
-    width: 16em;
-    height: 16em;
-    background-size: cover;
-    background-position: right center;
-    background-repeat: no-repeat;
-    margin: 0;
-    padding: 0;
-    float: none;
-}
+
 
 .container {
     width: 100%;
@@ -986,6 +977,17 @@ a:focus {
     padding-right: 1.25em;
     float: left;
     box-sizing: border-box;
+}
+
+#profile-picture {
+    width: 16em;
+    height: 16em;
+    background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    float: none;
 }
 
 .profile-bio {
@@ -1310,7 +1312,7 @@ a:focus {
     }
     
     .profile-container {
-        width: 20em;
+        width: 27em;
         margin-top: 55%;
         margin-bottom: 15%;
     }
@@ -1340,7 +1342,7 @@ a:focus {
     }
     
     .profile-bio p {
-        font-weight: 400;
+        font-size: 2.6em;
     }
     
     .work-img {
