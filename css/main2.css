@@ -327,7 +327,7 @@ h2 {
 }
 
 h3 {
-    font-size: 16px;
+    font-size: 1.6em;
     letter-spacing: 2.5px;
 }
 
@@ -351,6 +351,7 @@ span {
     letter-spacing: 2px;
     line-height: 26px;
     color: #777777;
+    font-size: 1.16em;
 }
 
 .profile-bio p {
@@ -382,7 +383,11 @@ ul {
 }
 
 ul li {
-    list-style: none
+    list-style: none;
+}
+
+.list-meta-element {
+    font-size: 1.16em;
 }
 
 .list {
@@ -926,11 +931,11 @@ a:focus {
     box-sizing: border-box;
     padding: 0 1.25em;
     margin: 0 auto;
+    position: relative;
 }
 
 .container-base {
     max-width: 55em;
-    padding-top: 5em;
 }
 
 .container-wide {
@@ -968,14 +973,19 @@ a:focus {
 
 .work-meta-element {
     width: 33%;
-    float: left;
     box-sizing: border-box;
     padding: 0 .625em;
+    float: left;
+}
+
+.span-clear {
+    overflow: hidden;
 }
 
 .work-element {
     margin: 0 auto;
     width: inherit;
+    margin-top: 4em;
 }
 
 .work-element-picture {
@@ -1237,9 +1247,8 @@ a:focus {
     background-position: center;
 }
 
-.work-element {
-    margin-top: 4em;
-}
+
+
 
 /*****************************************************
 **********************  responsive  **********************
@@ -1278,6 +1287,10 @@ a:focus {
     .list-pages-links {
         display: block;
         margin-top: .25em;
+    }
+    
+    .container-base {
+        max-width: 35em;
     }
 }
 
@@ -1335,6 +1348,10 @@ a:focus {
         padding: 0 2em;
     }
     
+    .container-base {
+        width: 20.5em;
+    }
+    
     .profile-container {
         width: 27em;
         margin-top: 55%;
@@ -1374,7 +1391,14 @@ a:focus {
         right: 2%;
     }
     
+    
+    
     .list-pages-links {
         font-size: 1.2em;
     }
+    
+    .work-meta-element {
+    width: 100%;
+    }
+    
 }
