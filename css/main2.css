@@ -192,6 +192,17 @@ body {
   background: #2e3036;
   clip: rect(0, 0, 0, 0);
 }
+
+.glitch-title.white:before, .glitch-title.white:after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  clip: rect(0, 0, 0, 0);
+}
+
 .glitch-title:after {
   left: 2px;
   text-shadow: -1px 0 red;
