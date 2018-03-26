@@ -1262,7 +1262,10 @@ a:focus {
     background-position: center;
 }
 
-
+#portfolio.work.sojo {
+    background-attachment: scroll;
+    background-size: 30em;
+}
 
 
 /*****************************************************
@@ -1419,4 +1422,7 @@ a:focus {
     width: 100%;
     }
     
+    #portfolio.work.sojo {
+    background-size: 20em;
+    }
 }
