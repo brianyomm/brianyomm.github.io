@@ -1264,7 +1264,7 @@ a:focus {
 
 #portfolio.work.sojo {
     background-attachment: scroll;
-    background-size: 30em;
+    background-size: 50em;
 }
 
 
@@ -1309,6 +1309,10 @@ a:focus {
     
     .container-base {
         max-width: 35em;
+    }
+    
+    #portfolio.work.sojo {
+    background-size: 20em;
     }
 }
 
