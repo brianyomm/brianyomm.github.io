@@ -227,34 +227,58 @@
                     <h3 class="text-blue">WordPress</h3>
                     <p>After using the site for over a year since its completion, my colleagues and I realized the shortcomings of the CMS platform.  Pain points started to become more clear.  Copy edits  for non-developers was a huge one.  The CMS platform had a very small input field for the code.  This meant selecting the code > select all > cut > paste into a text editor > edit > paste into CMS > save > open up the page with a CMS unique URL to publish content.   We were lucky the copywriter was familiar with code to make those changes off CMS.</p>
                     <p>We all thought it would be more optimal to have a central interface to make edits.  WordPress was the solution.  Easy to scale, Azure compatible, and a expansive plugin library and customization options.  Once again I had zero knowledge in WordPress and a new venture began.  Learning never stops!</p>
-                    <h3 class="text-blue">Goals</h3>
                 </div>
             </div>
         </div>
         <div id="sojo-wordpress-challenges">
             <div class="container container-base">
                 <div id="wordpress-challenges" class="work-element">
-                    <h3 class="text-blue">Challenges</h3>
-                    <p>The learning curve was monumental.  I knew the majority of the www was built upon WordPress.  Developing and maintaining through a cloud based server was another monster.</p>
-                    <ul>
+                    <h3 class="text-blue">Challenges & Goals</h3>
+                    <p>The learning curve was monumental.  I knew the majority of the www was built upon WordPress.  Developing and maintaining through a cloud based server was another monster.  Below I have listed the major challenges I will explain in the process section.</p>
+                    <ul class="">
                         <li><p>Local environment</p></li>
                         <li><p>Themes</p></li>
                         <li><p>Customizing Theme</p></li>
                         <li><p>Plugins & Compatability</p></li>
+                        <li><p>Creating Web App on Azure</p></li>
                         <li><p>Caching</p></li>
                         <li><p>SEO</p></li>
-                        <li><p>Creating Web App on Azure</p></li>
-                        <li><p>DNS Settings</p></li>
-                        <li><p>SSL Certificates</p></li>
                         <li><p>CDN Endpoints</p></li>
+                        <li><p>SSL Certificates</p></li>
+                        <li><p>DNS Settings</p></li>
                     </ul>
                 </div>
             </div>
         </div>
         <div id="sojo-wordpress-process">
             <div class="container container-base">
-                <div id="wordpress-challenges" class="work-element">
+                <div id="wordpress-challenges2" class="work-element">
                     <h3 class="text-blue">Process</h3>
+                    <p>To learn the ropes I created a local WordPress webapp by using MAMP to create a local server.  This allowed me to understand WordPress' dashboard and backend of the application for free.  I quickly realized building a full custom theme would require PHP knowledge.  It was a no brainer to utilize a theme that closely matched the previous site.</p>
+                    <h3 class="text-blue">Theme Shopping</h3>
+                    <p>There are an immense amount of premium themes on the web.  One thing to note is to look at the shortcodes for each theme. The shortcode shows all the elements the theme offers.  What I was looking for was pricing information cards that could be easily modified to my needs.</p>
+                    <h3 class="text-blue">Building</h3>
+                    <p>After learning how build using WPBakery Page Builder it became clear as to why so many sites are built on WordPress.  Without prior knowledge of development it is extremely easy to hammer out page after page.  More complex designs can be accomplished with raw HTML.  Building begins with creating a row or section and nesting child elements.  Basic structure would look like this Section > Row > # of columns > elements (ie. text blocks, images, input fields, etc). Everything is a click away and page structures are easily modified adjusting the column height or width.  There are responsive options to adjust column widths.  Initially it was a pain in the ass not being able to see changes live.  I would have to preview the changes, then use Chrome's dev tools to inspect and adjust and note the CSS and then go back to the dashboard to apply the changes.</p>
+                    <h3 class="text-blue">Modules</h3>
+                    <p>However, building elements with modules made everything easier after the first run.  WPBakery Page Builder has the option to save your element or module with changes to call them in later on when needed.  Where things got more difficult was when the presets did not offer what I was looking for and adding custom raw HTML was the only solution.   As expected, WordPress has set classes that can be called on to create a element.  These classes were only identified by inspecting elements via dev tools that were the closest to what I was looking for.  For example on the Homepage under 'Daily Admission'  I had to create the two pricing cards.  The card is using class "stm_pricing-table stm_pricing-table_style_1" naming those two classes defines a container with universal padding.  Nested under that div were "stm_pricing-table__head, __pricing, __contant"  that housed exactly what they imply.  Each page can have custom css if additional styling is necessary.  The key takeaway here is to find the classes that closely resembles your design and adjust CSS.</p>
+                    <h3 class="text-blue">Plugins</h3>
+                    <p>A key feature of WordPress is the plugin library.  Users are able extend functionality  or add new features to their sites.  Below I have listed key plugins I added and reasons why.  This will get long so skip over if no interest.  I thought it was interesting to show the amount of basic plugins required to have a optimized and fully functioning commercial site.</p>
+                    <ul class="list">
+                        <li class=""><p><b>All-in-One WP Migration:</b> A key feature of WordPress is the plugin library.  Users are able extend functionality  or add new features to their sites.  Below I have listed key plugins I added and reasons why.  This will get long so skip over if no interest.  I thought it was interesting to show the amount of basic plugins required to have a optimized and fully functioning commercial site.</p></li>
+                        <li class=""><p><b>API Key for Google Maps:</b> As the name states this allows you to add API keys to display Google Maps on the site.</p></li>
+                        <li class=""><p><b>Autoptimize:</b> This optimized the website by compressing the CSS + JS.</p></li>
+                        <li class=""><p><b>Comet Cache Pro:</b> By far my favorite plugin.  Want to hit that A+ on Google Page speed?  This plugin will be your best friend and guide.  Caching is critical in WordPress site performance.  It is used to minimize the amount of data that must flow between machines across the internet.  This results in fewer requests between machines, which translates into a speed boost.</p></li>
+                        <li class=""><p><b>Contact Form 7:</b>  This allows you to create a simple but flexible contact form for your visitors.  I used it mostly for 'Contact Us' forms.</p></li>
+                        <li class=""><p><b>Google Analytics +:</b> Pretty obvious, collects statistics about visitors.</p></li>
+                        <li class=""><p><b>Insert Headers and Footers:</b> Allows you to insert code above or under the fold.  Users can manually insert header or footer code manually via FTP and PHP files.  But this plugin allows users in the dashboard to easily make edits by providing a simple input field.  This allowed the SEO to easily add in their code for analytics.</p></li>
+                        <li class=""><p><b>Instagram Feed:</b> Display a customizable and responsive Instagram feed as a gallery.</p></li>
+                        <li class=""><p><b>Popup Maker:</b> Easily create popups with any content.  Comes with an editor to style the popups.  I used this to house an iframe for the 'Track Shuttle' features where users can see where the Shuttle service is in real time.  </p></li>
+                        <li class=""><p><b>Really Simple SSL:</b> This plugin detects if an SSL certificate is active on the site and configures the site to run over HTTPS.  Very important for keeping connection secure and safeguarding sensitive data between two systems.</p></li>
+                        <li class=""><p><b>WP Smush Pro</b> Reduces image file sizes to boost performance.</p></li>
+                    </ul>
+                    <h3>Azure Portal</h3>
+                    <h3 class="text-blue">Caching, CDN, and Compiling</h3>
+                    <p>Prior to this project I had no idea what caching and CDN were.  Found out the hard way agonizing over the 7-20 second page loads.  This is where Comet Cache plugin came in.  It was a simple plug and play.  Minor tweaks to add a CDN endpoint (content delivery network) which refers to a geographically distributed group of servers which work together to quickly deliver content to the the end user.  Finding the right one was a trial and error.  Microsoft Azure provides three different options and the Akamai (S2) worked best for my application.  More info about Akamai <a href="https://www.akamai.com/us/en/cdn/what-is-a-cdn.jsp" target="_blank" class="a-dark strike">here</a>. Compressing and compiling HTML, CSS, and JS was a must since WordPress is VERY heavy.  This was done using the Autoptimize plugin which was a plug and play solution.</p>
                 </div>
             </div>
         </div>
