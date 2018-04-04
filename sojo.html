@@ -171,7 +171,7 @@
             </div>
             <div class="container container-base">
                 <div id="work-process2" class="work-element">
-                    <p>Since this was a informative website showcasing features of the SoJo, the UX aspect was straightforward.  Each page offered information about each amenities and admission/facility information, sometimes accompanied by CTAs to book spa treatment services or to display more information.</p>
+                    <p>Since this was a informative website showcasing features of  SoJo, the UX aspect was straightforward.  Each page offered information about amenities and admission. Sometimes accompanied by CTAs to book spa treatment services or to display more information.</p>
                 </div>
             </div>
             <!-- INSERT WIREFRAME -->
@@ -246,6 +246,7 @@
                         <li><p>CDN Endpoints</p></li>
                         <li><p>SSL Certificates</p></li>
                         <li><p>DNS Settings</p></li>
+                        <li><p>Debugging</p></li>
                     </ul>
                 </div>
             </div>
@@ -263,18 +264,20 @@
                     <p>However, building elements with modules made everything easier after the first run.  WPBakery Page Builder has the option to save your element or module with changes to call them in later on when needed.  Where things got more difficult was when the presets did not offer what I was looking for and adding custom raw HTML was the only solution.   As expected, WordPress has set classes that can be called on to create a element.  These classes were only identified by inspecting elements via dev tools that were the closest to what I was looking for.  For example on the Homepage under 'Daily Admission'  I had to create the two pricing cards.  The card is using class "stm_pricing-table stm_pricing-table_style_1" naming those two classes defines a container with universal padding.  Nested under that div were "stm_pricing-table__head, __pricing, __contant"  that housed exactly what they imply.  Each page can have custom css if additional styling is necessary.  The key takeaway here is to find the classes that closely resembles your design and adjust CSS.</p>
                     <h3 class="text-blue">Plugins</h3>
                     <p>A key feature of WordPress is the plugin library.  Users are able extend functionality  or add new features to their sites.  Below I have listed key plugins I added and reasons why.  This will get long so skip over if no interest.  I thought it was interesting to show the amount of basic plugins required to have a optimized and fully functioning commercial site.</p>
-                    <ul class="list">
-                        <li class=""><p><b>All-in-One WP Migration:</b> A key feature of WordPress is the plugin library.  Users are able extend functionality  or add new features to their sites.  Below I have listed key plugins I added and reasons why.  This will get long so skip over if no interest.  I thought it was interesting to show the amount of basic plugins required to have a optimized and fully functioning commercial site.</p></li>
-                        <li class=""><p><b>API Key for Google Maps:</b> As the name states this allows you to add API keys to display Google Maps on the site.</p></li>
-                        <li class=""><p><b>Autoptimize:</b> This optimized the website by compressing the CSS + JS.</p></li>
-                        <li class=""><p><b>Comet Cache Pro:</b> By far my favorite plugin.  Want to hit that A+ on Google Page speed?  This plugin will be your best friend and guide.  Caching is critical in WordPress site performance.  It is used to minimize the amount of data that must flow between machines across the internet.  This results in fewer requests between machines, which translates into a speed boost.</p></li>
-                        <li class=""><p><b>Contact Form 7:</b>  This allows you to create a simple but flexible contact form for your visitors.  I used it mostly for 'Contact Us' forms.</p></li>
-                        <li class=""><p><b>Google Analytics +:</b> Pretty obvious, collects statistics about visitors.</p></li>
-                        <li class=""><p><b>Insert Headers and Footers:</b> Allows you to insert code above or under the fold.  Users can manually insert header or footer code manually via FTP and PHP files.  But this plugin allows users in the dashboard to easily make edits by providing a simple input field.  This allowed the SEO to easily add in their code for analytics.</p></li>
-                        <li class=""><p><b>Instagram Feed:</b> Display a customizable and responsive Instagram feed as a gallery.</p></li>
-                        <li class=""><p><b>Popup Maker:</b> Easily create popups with any content.  Comes with an editor to style the popups.  I used this to house an iframe for the 'Track Shuttle' features where users can see where the Shuttle service is in real time.  </p></li>
-                        <li class=""><p><b>Really Simple SSL:</b> This plugin detects if an SSL certificate is active on the site and configures the site to run over HTTPS.  Very important for keeping connection secure and safeguarding sensitive data between two systems.</p></li>
-                        <li class=""><p><b>WP Smush Pro</b> Reduces image file sizes to boost performance.</p></li>
+                    <ul class="list circle">
+                        <li class=""><p><a href="https://wordpress.org/plugins/all-in-one-wp-migration/" target="_blank" class="a-dark strike bold">All-in-One WP Migration</a>: A key feature of WordPress is the plugin library.  Users are able extend functionality  or add new features to their sites.  Below I have listed key plugins I added and reasons why.  This will get long so skip over if no interest.  I thought it was interesting to show the amount of basic plugins required to have a optimized and fully functioning commercial site.</p></li>
+                        <li class=""><p><a href="" target="_blank" class="a-dark strike bold">WPMU DEV Dashboard</a>: This was an interesting discovery.  It's basically hub that offers many premium plugins that doubles as a system monitor.  There is also a community with supportive information.  The reason I opted for this for its image compression plugin.</p></li>
+                        <li class=""><p><a href="" target="_blank" class="a-dark strike bold">WP Smush Pro</a>: Part of the WPMU's offerings.  Reduces image file sizes to boost performance. Went through a slew of imcompatible image compression plugins and this one did the trick for me.</p></li>
+                        <li class=""><p><a href="https://wordpress.org/plugins/api-key-for-google-maps/" target="_blank" class="a-dark strike bold">API Key for Google Maps</a>: As the name states this allows you to add API keys to display Google Maps on the site.</p></li>
+                        <li class=""><p><a href="https://wordpress.org/plugins/autoptimize/" target="_blank" class="a-dark strike bold">Autoptimize</a>: This optimized the website by compressing the CSS + JS.</p></li>
+                        <li class=""><p><a href="https://wordpress.org/plugins/comet-cache/" target="_blank" class="a-dark strike bold">Comet Cache Pro</a>: By far my favorite plugin.  Want to hit that A+ on Google Page speed?  This plugin will be your best friend and guide.  Caching is critical in WordPress site performance.  It is used to minimize the amount of data that must flow between machines across the internet.  This results in fewer requests between machines, which translates into a speed boost.</p></li>
+                        <li class=""><p><a href="https://wordpress.org/plugins/contact-form-7/" target="_blank" class="a-dark strike bold">Contact Form 7</a>: This allows you to create a simple but flexible contact form for your visitors.  I used it mostly for 'Contact Us' forms.</p></li>
+                        <li class=""><p><a href="" target="_blank" class="a-dark strike bold">Google Analytics +</a>: Pretty obvious, collects statistics about visitors.</p></li>
+                        <li class=""><p><a href="" target="_blank" class="a-dark strike bold">Insert Headers and Footers</a>: Allows you to insert code above or under the fold.  Users can manually insert header or footer code manually via FTP and PHP files.  But this plugin allows users in the dashboard to easily make edits by providing a simple input field.  This allowed the SEO to easily add in their code for analytics.</p></li>
+                        <li class=""><p><a href="" target="_blank" class="a-dark strike bold">Instagram Feed</a>: Display a customizable and responsive Instagram feed as a gallery.</p></li>
+                        <li class=""><p><a href="" target="_blank" class="a-dark strike bold">Popup Maker</a>: Easily create popups with any content.  Comes with an editor to style the popups.  I used this to house an iframe for the 'Track Shuttle' features where users can see where the Shuttle service is in real time.</p></li>
+                        <li class=""><p><a href="" target="_blank" class="a-dark strike bold">Really Simple SSL</a>: This plugin detects if an SSL certificate is active on the site and configures the site to run over HTTPS.  Very important for keeping connection secure and safeguarding sensitive data between two systems.</p></li>
+                        
                     </ul>
                     <h3>Azure Portal</h3>
                     <h3 class="text-blue">Caching, CDN, and Compiling</h3>

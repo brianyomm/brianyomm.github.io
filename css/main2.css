@@ -457,6 +457,10 @@ ul li {
     content: "\e65d";
 }
 
+.bold {
+    font-weight: 900;
+}
+
 .text-white {
     color: #ececec !important
 }
@@ -484,6 +488,8 @@ ul li {
 /*****************************************************
 ***********************  buttons *********************        
 *****************************************************/
+
+
 
 a {
     color: #fff;
@@ -939,8 +945,6 @@ a:focus {
     position: relative;
 }
 
-
-
 .container {
     width: 100%;
     box-sizing: border-box;
@@ -1089,7 +1093,6 @@ a:focus {
     height: calc(100vh - 18em);
     margin-top: calc((100vh - 18em)/ -2);
 }
-
 
 .canvas {
     z-index: 1;
