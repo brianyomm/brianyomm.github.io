@@ -71,6 +71,10 @@ body {
     color: #fff;
 }
 
+.glitch-title.grey {
+    color: #999999;
+}
+
 @keyframes glitch-title-anim-1 {
   0% {
     clip: rect(14px, 750px, 36px, 0);
