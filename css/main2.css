@@ -405,9 +405,9 @@ ul li {
     font-size: 1.16em;
 }
 
-.list {
+.list.margin {
 /*    position: relative*/
-    
+    margin-left: 30px;
 }
 
 .list li {
@@ -1283,6 +1283,10 @@ a:focus {
     background-size: 50em;
 }
 
+#portfolio.work.patron {
+    background-attachment: scroll;
+    background-size: 30em;
+}
 
 /*****************************************************
 **********************  responsive  **********************
