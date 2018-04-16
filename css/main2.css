@@ -414,6 +414,9 @@ ul li {
 /*    list-style: disc*/
 }
 
+.list.mrg-left  {
+    margin-left: 40px;
+}
 .list.number li {
     list-style-type: decimal;
 }
