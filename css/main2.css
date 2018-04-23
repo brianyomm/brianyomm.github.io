@@ -1371,6 +1371,7 @@ video {
 @media (max-width: 414px) {
     .glitch-titlez {
         font-size: 4.5em;
+        line-height: .7em;
     }
     
     #header {
@@ -1425,7 +1426,7 @@ video {
     
     .work-number {
         bottom: 5%;
-        left: 15%;
+        left: 19%;
     }
 
 }
