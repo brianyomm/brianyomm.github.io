@@ -30,13 +30,6 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'Paskowy';
-    src: url('../fonts/Paskowy.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 /*****************************************************
 *****************  general  *******************
 *****************************************************/
@@ -71,11 +64,14 @@ body {
     color: #777;
 }
 
-.glitch-title {
-    font-family: Gameshow;
+.glitch-titlez {
+    font-family: 'Nova Square', cursive;
     text-align: center;
-    font-size: 13.2em;
-    color: #fff;
+    font-size: 8.2em;
+    color: transparent;
+    letter-spacing: .13em;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: grey;
 }
 
 .glitch-title.grey {
@@ -216,12 +212,12 @@ body {
 
 .glitch-title:after {
   left: 2px;
-  text-shadow: -1px 0 red;
+  text-shadow: -1px 0 #94cf9e;
   animation: glitch-title-anim-1 2s infinite linear alternate-reverse;
 }
 .glitch-title:before {
-  left: -2px;
-  text-shadow: 2px 0 blue;
+  left: -4px;
+  text-shadow: 2px 0 #fff;
   animation: glitch-title-anim-2 3s infinite linear alternate-reverse;
 }
 
@@ -529,8 +525,6 @@ a {
     color: #bea48b;
 }
 
-
-
 a.strike:after {
     background-color: #bbd6af;
     content: '';
@@ -555,8 +549,6 @@ a:focus {
     outline: none;
     color: #bbd6af;
 }
-
-
 
 .btn {
     font-family: "Montserrat", Helvetica, sans-serif;
@@ -688,7 +680,6 @@ a:focus {
 	margin-top: 20px;
     color: #94cf9e;
 }
-
 
 /*Preloader 1*/
 
@@ -940,7 +931,6 @@ a:focus {
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0)
 }
-
 
 #pagination-hover {
     opacity: 0;
