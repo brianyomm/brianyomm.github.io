@@ -30,6 +30,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Paskowy';
+    src: url('../fonts/Paskowy.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /*****************************************************
 *****************  general  *******************
 *****************************************************/
@@ -67,7 +74,7 @@ body {
 .glitch-title {
     font-family: Gameshow;
     text-align: center;
-    font-size: 5.2em;
+    font-size: 13.2em;
     color: #fff;
 }
 
@@ -1146,6 +1153,10 @@ a:focus {
     margin: 0 auto
 }
 
+.work-name2 {
+    margin-left: -1em;
+}
+
 .work-img {
     display: block;
     position: absolute;
@@ -1316,6 +1327,13 @@ a:focus {
         width: 27em;
     }
 */
+    .glitch-title {
+        font-size: 6.5em;
+    }
+    
+    .work-name2 {
+        margin-left: 0px;
+    }
     
     .work-link {
         display: none;
@@ -1437,9 +1455,8 @@ a:focus {
     
     .work-img {
         right: 2%;
+        width:  15em;
     }
-    
-    
     
     .list-pages-links {
         font-size: 1.2em;
