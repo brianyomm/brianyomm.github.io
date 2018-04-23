@@ -1422,6 +1422,12 @@ video {
     #portfolio.work.patron {
         background-size: 18em;
     }
+    
+    .work-number {
+        bottom: 5%;
+        left: 15%;
+    }
+
 }
 
 @media (max-width: 375px) {
