@@ -422,6 +422,9 @@ ul li {
 }
 .list.number li {
     list-style-type: decimal;
+    letter-spacing: 2px;
+    line-height: 26px;
+    font-size: 1.25em;
 }
 
 .list.circle li {
@@ -996,7 +999,7 @@ a:focus {
     display: block;
     box-sizing: border-box;
     padding: 7em 0 0;
-    position: relative
+    position: relative;
 }
 
 .work-container {
@@ -1296,6 +1299,11 @@ a:focus {
     background-size: 30em;
 }
 
+video {
+    display: block;
+    margin: 0 auto;
+}
+
 /*****************************************************
 **********************  responsive  **********************
 *****************************************************/
@@ -1352,6 +1360,10 @@ a:focus {
 }
 
 @media (max-width: 414px) {
+    .glitch-titlez {
+        font-size: 4.5em;
+    }
+    
     #header {
         top: .25em;
     }
@@ -1392,6 +1404,14 @@ a:focus {
     
     .list-meta-element {
         width: 100%;
+    }
+    
+    video {
+        width: 85%;
+    }
+    
+    #portfolio.work.patron {
+        background-size: 20em;
     }
 }
 
@@ -1462,7 +1482,7 @@ a:focus {
     }
     
     .work-meta-element {
-    width: 100%;
+        width: 100%;
     }
     
     #portfolio.work.sojo {
