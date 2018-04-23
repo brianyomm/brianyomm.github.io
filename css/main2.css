@@ -1317,7 +1317,7 @@ a:focus {
         width: 27em;
     }
 */
-    .glitch-title {
+    .glitch-titlez {
         font-size: 6.5em;
     }
     
@@ -1392,7 +1392,7 @@ a:focus {
 }
 
 @media (max-width: 375px) {
-    .glitch-title {
+    .glitch-titlez {
         font-size: 4em;
     }
     
