@@ -1393,7 +1393,7 @@ a:focus {
 
 @media (max-width: 375px) {
     .glitch-titlez {
-        font-size: 4em;
+        font-size: 3.5em;
     }
     
     .showcase .body .canvas-frame {
@@ -1450,6 +1450,11 @@ a:focus {
     
     .list-pages-links {
         font-size: 1.2em;
+    }
+    
+    .work-meta {
+        font-size: 1em;
+        right: -15%;
     }
     
     .work-meta-element {
