@@ -504,6 +504,10 @@ ul li {
     color: #00aedb;
 }
 
+#work-main.patron h3 {
+    color: #d32f2f;
+}
+
 /*****************************************************
 ***********************  buttons *********************        
 *****************************************************/
@@ -1462,6 +1466,10 @@ a:focus {
     }
     
     #portfolio.work.sojo {
-    background-size: 20em;
+        background-size: 20em;
+    }
+    
+    #portfolio.work.patron {
+        background-size: 20em;
     }
 }
