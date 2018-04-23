@@ -1406,8 +1406,8 @@ video {
         width: 100%;
     }
     
-    video {
-        width: 85%;
+    video.mobile {
+        width: 300px;
     }
     
     #portfolio.work.patron {
