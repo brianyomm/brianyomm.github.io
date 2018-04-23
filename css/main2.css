@@ -70,6 +70,7 @@ body {
     font-size: 8.2em;
     color: transparent;
     letter-spacing: .13em;
+    line-height: 1.1em;
     -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: grey;
 }
