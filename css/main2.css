@@ -341,8 +341,8 @@ h1 {
 }
 
 h2 {
-    font-size: 28px;
-    letter-spacing: 4px;
+    font-size: 25px;
+    letter-spacing: 3px;
 }
 
 h3 {
@@ -500,11 +500,11 @@ ul li {
     color: #94cf9e !important;
 }
 
-#sojov1 h3 {
+#sojov1 h2 {
     color: #bea48b;
 }
 
-#sojov2 h3 {
+#sojov2 h2 {
     color: #00aedb;
 }
 
