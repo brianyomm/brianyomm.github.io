@@ -73,6 +73,7 @@
                 </div>
                 <div class="work-link">
                     <div class="work-line animated fadeInUp one"></div>
+                    <a class="work-url animated fadeInUp one text-brown" href="https://www.sojospaclub.com" target="_blank">Visit Site</a>
                 </div>
                 <div class="work-number fade-in four">
                     <p>03</p>
@@ -297,7 +298,7 @@
                         <p>There were plenty of resources and information out there with step by step instructions on Azure blogs and forums, Stack Overflow, and Youtube.  Step 2 was to create a web app.  It was a step by step process to configure the WordPress application, database, server, region, and blob container (storage).  I opted for a Linux server after reading that others experienced better performance compared to a Windows Server (figures...).  Azure offers 6 tiers for 'App Service Plans' which  defines a set of compute resources for the web app to run.  I selected Standard (S2).    Final step was to launch the web app using the preset url determined by the web app name.  wpsojolinux.azurewebsites.net.</p>
                         <p>Navigating to the url displays the WordPress initial setup.  Once in the dashboard, I've installed the 'All-in-One WP Migration' plugin and imported the file I have saved from my local web app.  Voilà! A mirrored copy of my local web app in the cloud!  Content, plugins, the whole 9 yards.</p>
                         <h3>Caching, CDN, and Compiling</h3>
-                        <p>Prior to this project I had no idea what caching and CDN were.  Found out the hard way agonizing over the 7-20 second page loads.  This is where Comet Cache plugin came in.  It was a simple plug and play.  Minor tweaks to add a CDN endpoint (content delivery network) which refers to a geographically distributed group of servers which work together to quickly deliver content to the the end user.  Finding the right one was a trial and error.  Microsoft Azure provides three different options and the Akamai (S2) worked best for my application.  More info about Akamai <a href="https://www.akamai.com/us/en/cdn/what-is-a-cdn.jsp" target="_blank" class="a-dark strike">here</a>. Compressing and compiling HTML, CSS, and JS was a must since WordPress is VERY heavy.  This was done using the Autoptimize plugin which was a plug and play solution.</p>
+                        <p>Prior to this project I had no idea what caching and CDN were.  Found out the hard way agonizing over the 15 second page loads.  This is where Comet Cache plugin came in.  It was a simple plug and play.  Minor tweaks to add a CDN endpoint (content delivery network) which refers to a geographically distributed group of servers which work together to quickly deliver content to the the end user.  Finding the right one was a trial and error.  Microsoft Azure provides three different options and the Akamai (S2) worked best for my application.  More info about Akamai <a href="https://www.akamai.com/us/en/cdn/what-is-a-cdn.jsp" target="_blank" class="a-dark strike">here</a>. Compressing and compiling HTML, CSS, and JS was a must since WordPress is VERY heavy.  This was done using the Autoptimize plugin which was a plug and play solution.</p>
                     </div>
                 </div>
             </div>
