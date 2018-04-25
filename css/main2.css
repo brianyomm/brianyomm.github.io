@@ -1581,7 +1581,7 @@ video {
   display: block;
   /* for aspect ratio ~46:100 */
   padding-top: 46%;
-  background: linear-gradient(#444, #888 26%, #f2f2f2 76%, #e4e4e4 84%, #787878);
+  background: linear-gradient(#444, #888 26%, #444 76%, #333 90%, #787878);
 }
 
 .foot {
@@ -1601,7 +1601,7 @@ video {
   /* for perspective */
   transform: rotateX(68deg);
   transform-origin: center top;
-  background: linear-gradient(#7b7b7b, #7f7f7f 39%, #a6a6a6 53%, #ccc 67%, #aaa 86%, #eee 88%, #fff 95%, #a9a9a9 95%, #000);
+  background: linear-gradient(#7b7b7b, #7f7f7f 39%, #a6a6a6 53%, #ccc 67%, #333 86%, #eee 88%, #fff 95%, #a9a9a9 95%, #000);
   border-radius: 0 0 10% 10% / 0 0 30% 30%;
   box-shadow: 0 -10px 5px rgba(255, 255, 255, 0.1) inset, 0 -17px 6px rgba(0, 0, 0, 0.1) inset;
 }
