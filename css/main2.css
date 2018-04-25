@@ -512,6 +512,12 @@ ul li {
     color: #d32f2f;
 }
 
+h2.imacHover {
+    padding-bottom: 10px;
+    margin: 0;
+    text-align: center;
+}
+
 /*****************************************************
 ***********************  buttons *********************        
 *****************************************************/
@@ -1545,7 +1551,7 @@ video {
   content: "";
   display: block;
   /* for aspect ratio ~9:100 */
-  padding-top: 9%;
+  padding-top: 2%;
 }
 
 .logo:after {
