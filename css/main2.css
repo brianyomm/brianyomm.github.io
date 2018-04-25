@@ -1433,6 +1433,11 @@ video {
     .work-number {
         bottom: 5%;
         left: 19%;
+        z-index: 1;
+    }
+    
+    .work-url.werk {
+        bottom: -2em;
     }
 
 }
