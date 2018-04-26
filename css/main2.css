@@ -1036,7 +1036,7 @@ a:focus {
 
 .work-element-picture {
     display: block;
-    width: inherit;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
 }
