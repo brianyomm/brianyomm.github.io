@@ -972,10 +972,21 @@ a:focus {
     position: relative;
 }
 
+.parent {
+    display: flex;
+}
+
 .container {
     width: 100%;
     box-sizing: border-box;
     padding: 0 1.25em;
+    margin: 0 auto;
+    position: relative;
+}
+
+.container-l {
+    width: 100%;
+    box-sizing: border-box;
     margin: 0 auto;
     position: relative;
 }
@@ -986,6 +997,21 @@ a:focus {
 
 .container-wide {
     max-width: 64em;
+}
+
+.container-full {
+    min-width: 100%;
+}
+
+.container-full-image {
+    padding: 4em 0;
+}
+
+.container-half {
+    width: 50%;
+    box-sizing: border-box;
+    position: relative;
+    padding: 2em;
 }
 
 .profile {
@@ -1031,7 +1057,7 @@ a:focus {
 .work-element {
     margin: 0 auto;
     width: inherit;
-    margin-top: 4em;
+    margin-top: 6em;
 }
 
 .work-element-picture {
@@ -1074,6 +1100,10 @@ a:focus {
 
 .bg-black {
     background-color: black
+}
+
+.bg-red {
+    background-color: #d32f2f;
 }
 
 .profile-body {
@@ -1323,6 +1353,10 @@ a:focus {
 video {
     display: block;
     margin: 0 auto;
+}
+
+.shadow {
+    box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.3);
 }
 
 /*****************************************************
