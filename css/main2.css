@@ -973,7 +973,7 @@ a:focus {
 }
 
 .parent {
-    display: flex;
+/*    display: flex;*/
 }
 
 .container {
@@ -1411,6 +1411,10 @@ video {
     
     #portfolio.work.sojo {
     background-size: 20em;
+    }
+    
+    .container-half {
+        width: 100%;
     }
 }
 
