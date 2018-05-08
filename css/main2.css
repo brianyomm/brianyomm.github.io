@@ -1073,6 +1073,12 @@ a:focus {
     text-align: center;
 }
 
+.work-element.mobile {
+    width:375px;
+    left:0;
+    right:0;
+}
+
 .profile-sidebar {
     width: 25%;
     padding-right: 1.25em;
