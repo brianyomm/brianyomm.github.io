@@ -2,6 +2,15 @@
 <html lang="en">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119037803-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-119037803-1');
+    </script>
     <meta charset="utf-8">
     <title>Brian Yom - Patron</title>
     <meta name="description" content="Brian Yom - Patron">
@@ -119,9 +128,14 @@
                     <p>The Patron organization was truely amazing despite the fact the team worked remotely across the globe.  We were artists, engineers, musicians, designers, writers, hackers, and makers who came together with one mission.  We applied Agile methodology and tasks were tracked and assigned using Asana task management tool.</p>
                 </div>
             </div>
+            <div class="container container-base">
+                <div class="work-element">
+                    <h3>The Team</h3>
+                </div>
+            </div>
             <div class="container container-wide">
-                <div class="work-patron work-element">
-                    <a href="images/placeholder16-9-1.png" data-lightbox="image-1" data-title="Test Caption"><img class="work-element-picture" src="images/placeholder16-9-1.png"></a>
+                <div class="work-patron">
+                    <a href="images/work/patron/patron-team.jpg" data-lightbox="image-1" data-title="The Team"><img class="work-element-picture" src="images/work/patron/patron-team.jpg"></a>
                 </div>
             </div>
         </div>
@@ -158,13 +172,28 @@
             <div class="container container-base">
                 <div id="patron-foundation" class="work-element">
                     <h3>foundation + tools</h3>
-                    <p>There were a couple of design related items that needed work. One major one being was a lack of design language. So a decision was made to define our design language by adopting <a href="https://material.io/guidelines/" target="_blank" class="text-green strike">Angular Material</a> to achieve a simple but proven design library. From breakpoints to element placements, everything was previously tested for optimal usability.</p>
-                    <p>During the early stages wireframes were designed in Adobe Illustrator and UXPin... So I suggested we start using Sketch. Nightmares were averted and countless hours were saved after I created our design library in Sketch. Adding uniform elements with a simple copy/paste sure as hell beat rebuilding in Illustrator. With right tools we proceeded to move forward.</p>
+                    <p>When I joined the Patron design team, everything from business goals, user personas, and feature requirements were well documented in a sitewide copy document.  It was my job to read over the entire document and start a gameplan.  Below is an example page from the document about user types and personas.</p>
                 </div>
             </div>
-            <div class="container container-wide">
-                <div class="patron-foundation-img work-element">
-                    <a href="images/work/patron/uikit.jpg" data-lightbox="image-1" data-title="UI Kit on Sketch"><img class="work-element-picture" src="images/work/patron/uikit.jpg"></a>
+            <div class="container-l container-full parent">
+                <div class="row">
+                    <div class="container-half col-md-6">
+                        <a href="images/work/patron/UserStory.png" data-lightbox="Old Creative Profile" data-title="Test Caption"><img class="work-element-picture" src="images/work/patron/UserStory.png"></a>
+                    </div>
+                    <div class="container-half col-md-6">
+                        <a href="images/work/patron/UserStory2.png" data-lightbox="New Creative Profile" data-title="Test Caption"><img class="work-element-picture" src="images/work/patron/UserStory2.png"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="container container-base">
+                <div id="patron-foundation-inner2" class="">
+                    <p>First, I went over the existing prototypes that were designed in UXpin.  They were no where near ready for development and lacked a design language unique to Patron.  So first thing on the agenda was to define our design language by adopting <a href="https://material.io/guidelines/" target="_blank" class="text-green strike">Angular Material</a> to achieve a simple but proven design library. From breakpoints to element placements, everything was tested for optimal usability.</p>
+                    <p>As mentioned the existing designs were on UXpin and Adobe Illustrator... So I suggested we start using Sketch. Nightmares were averted and countless hours were saved after I created our design library in Sketch. Adding uniform elements with a simple copy/paste sure as hell beat rebuilding in Illustrator. With right tools we proceeded to move forward.</p>
+                </div>
+            </div>
+            <div class="container-l container-full">
+                <div class="work-element">
+                    <img class="work-element-picture" src="images/work/patron/design-language.jpg">
                 </div>
             </div>
         </div>
@@ -172,7 +201,7 @@
             <div class="container container-base">
                 <div id="patron-research-inner" class="work-element">
                     <h3>Research & Analysis</h3>
-                    <p>We did not have a direct competitor but there were other platforms that essentially had similar features. A few of them being Airbnb, Taskrabbit, Patreon, Ello, and Twitch. We collected designs on how each platform introduced each feature to their audience and how they balanced the two user cases on a single page.  We learned that in most cases the main site caters towards the Patron (in our case) to able to consume the content.  And a separate page that explains how the platform works for content creators.  This way the Patron will be delighted by services provided by Creatives, and the Creatives will be inspired by other Creatives.</p>
+                    <p> We did not have a direct competitor but there were other platforms that essentially had similar features. A few of them being Airbnb, Taskrabbit, Patreon, Ello, and Twitch. We collected designs on how each platform introduced each feature to their audience and how they balanced the two user cases on a single page.  We learned that in most cases the main site caters towards the Patron (in our case) to able to consume the content.  And a separate page that explains how the platform works for content creators.  This way the Patron will be delighted by services provided by Creatives, and the Creatives will be inspired by other Creatives.</p>
                     <p>In terms of design, AngularJS provides an excellent UI framework based on Google Material Design.  With this extensive library, we are able to tailor each module to our liking. Then we compared our modules with existing designs and made adjustments if necessary</p>
                 </div>
             </div>
@@ -290,6 +319,7 @@
                 <div id="patron-profile-inner" class="work-element">
                     <h3>Creative Profile Page</h3>
                     <p>Looking at the existing design of the profile page, it was clear that I needed to inject our design language for optimum legibility.  The centered profile image provides balance, however in mobile it will cause spacing issues.  Ultimately, I shifted it over to the left to provide ample room for user name and location.</p>
+                    <p>For mobile I center aligned the elements after testing that high character names and city names will interfere with the positioning of the 'Share' and 'Edit Profile' buttons.  While still retaining the tab menu that is horizontally scrollable.</p>
                 </div>
             </div>
             <!-- old creative profile -->
@@ -305,9 +335,9 @@
                     </div>
                 </div>
             </div>
-            <div class="container container-base">
-                <div class="work-element mobile">
-                    <a href="images/work/patron/creative-profile-m" data-lightbox="Mobile Creative Profile" data-title="Mobile Creative Profile"><img class="work-element-picture" src="images/work/patron/creative-profile-m"></a>
+            <div class="container-l container-full">
+                <div class="work-element">
+                    <img class="work-element-picture" src="images/work/patron/creative-multi-m.png">
                 </div>
             </div>
             <div class="container container-base">
@@ -324,7 +354,8 @@
             </div>
             <div class="container container-base">
                 <div id="patron-profile-inner" class="work-element">
-                    <p>Secondly, a customizable portfolio. Where users can drag, resize, and customize to their delight.  This was a web only feature.</p>
+                    <p>Secondly, a customizable portfolio. Where users can drag, resize, and customize to their delight.  No other portfolio platform offers this amount of customizability.  We were super excited to deliver and offer this feature for both Creatives and Patrons. This was a web only feature.</p>
+                    <p></p>
                 </div>
             </div>
             <!-- animated creative portfolio -->
@@ -338,7 +369,7 @@
             <div class="container container-base">
                 <div id="patron-dashboard-inner" class="work-element">
                     <h3>Dashboard</h3>
-                    <p>The dashboard is where creatives easily manage their profile, portfolio, and bookings.  Designed a left column that houses all the dashboard menu items.   We have created cards for Booking items, adding experiences, and reviews.</p>
+                    <p>The dashboard is where creatives easily manage their profile, portfolio, and bookings.  I designed a left column that houses all the dashboard menu items.   We have created cards for Booking items, adding experiences, and reviews.</p>
                 </div>
             </div>
             <div class="container-l container-full parent">
@@ -355,7 +386,7 @@
             </div>
             <div class="container-l container-full">
                 <div class="work-element">
-                    <a href="images/work/patron/dashboard-m-multi.png" data-lightbox="image-1" data-title="Test Caption"><img class="work-element-picture-s " src="images/work/patron/dashboard-multi-m"></a>
+                    <img class="work-element-picture" src="images/work/patron/dashboard-multi-m">
                 </div>
             </div>
         </div>
@@ -363,7 +394,8 @@
             <div class="container container-base">
                 <div id="patron-services-inner" class="work-element">
                     <h3>Creative Services</h3>
-                    <p>The unique Creative Services needed to have its own unique page.  Once again we relied on the good folks of Airbnb to provide a similar process.</p>
+                    <p>The unique Creative Services needed to have its own unique page.  Once again we relied on the good folks of Airbnb to provide a similar design.</p>
+                    <p>During this design phase I quickly realized the importance of having modules for the developers to simply modify in order to serve our needs. So I designed this page to utilize our existing tab menu bar (from the Creative Profile page) that provided the service name, location, and page shortcuts.  The right side housed the container for the booking feature.</p>
                 </div>
             </div>
             <div class="container container-wide">
@@ -375,8 +407,13 @@
         <div id="patron-booking" class="work-element">
             <div class="container container-base">
                 <div id="patron-booking-inner" class="work-element">
-                    <h3>Booking Feature</h3>
+                    <h3>Booking Process</h3>
                     <p>Being a booking service for Patrons, it was insightful to lay out the 3 macro senarios that ultimately drives the Patron to book the creative service.  This was visualized in the Patron's user flow below.</p>
+                </div>
+            </div>
+            <div class="container-l container-full">
+                <div class="work-element">
+                    <a href="images/work/patron/booking.jpg" data-lightbox="image-1" data-title="Design Process" alt="Booking Process"><img class="work-element-picture" src="images/work/patron/booking.jpg" alt="Booking Process"></a>
                 </div>
             </div>
         </div>
@@ -384,15 +421,7 @@
             <div class="container container-base">
                 <div id="patron-acquisition-inner" class="work-element">
                     <h3>User Tests</h3>
-                    <p>Couple major features we wanted to test were the homepage, signup process, creative profile, and booking process.  After looking back at our user stories we populated questions that added up to a 20 minute test. on Google Forms.  I reached out to a couple users via our messaging platform based on their activity on our platform.</p>
-                </div>
-            </div>
-            <div class="container container-wide">
-                <div class="work-web-desktop work-element">
-                    <a href="images/placeholder16-9-1.png" data-lightbox="image-1" data-title="Test Caption"><img class="work-element-picture" src="images/placeholder16-9-1.png"></a>
-                </div>
-                <div class="work-web-tablet work-element">
-                    <a href="images/placeholder16-9-1.png" data-lightbox="image-1" data-title="Test Caption"><img class="work-element-picture" src="images/placeholder16-9-1.png"></a>
+                    <p>Couple major features we wanted to test were the homepage, signup process, creative profile, and booking process.  After looking back at our user stories we populated questions that added up to a 20 minute test on Google Forms.  I reached out to a couple users via our messaging platform based on their activity on our platform.</p>
                 </div>
             </div>
         </div>
@@ -410,15 +439,9 @@
             <div class="container container-base">
                 <div id="patron-acquisition-inner" class="work-element">
                     <h3>User Acquisition</h3>
-                    <p>Some smart way to describing the design for all breakpoints #1</p>
-                </div>
-            </div>
-            <div class="container container-wide">
-                <div class="work-web-desktop work-element">
-                    <a href="images/placeholder16-9-1.png" data-lightbox="image-1" data-title="Test Caption"><img class="work-element-picture" src="images/placeholder16-9-1.png"></a>
-                </div>
-                <div class="work-web-tablet work-element">
-                    <a href="images/placeholder16-9-1.png" data-lightbox="image-1" data-title="Test Caption"><img class="work-element-picture" src="images/placeholder16-9-1.png"></a>
+                    <p>After several months of hard work it was time to reach out to friends and family.  Then the next outer circle was ALL of our Linkedin connections. We acquired around 1000 users.</p>
+                    <p>During the second round, I created an email list using a scrape tool called ScrapeBox.  This tool allowed me to search specific keywords on Google Search, Facebook, and Twitter to return URLs that contained the keyword.  Then used the tool again to harvest email address from those pages.  This powerful tool allowed us to harvest up to 20,000 email address in 24 hours.  I cannot believe this is even legal lol.  After creating an email list with Excel,  the Streak Plugin for Gmail was used to email blast.  Our conversion rate was around 2% which was far below our expectations so we decided to scrap the tool and pivoted to another strategy.</p>
+                    <p>Our third round, primary relied on contacting creatives in other social media platforms.  I was in charge of contacting creatives on Instagram, Twitch, and Ello.  All exchanges of messages were tracked using a pipeline tool called Streak.  This intimite approach was more successful but was a timely process.</p>
                 </div>
             </div>
         </div>
@@ -447,7 +470,7 @@
                     <h1 class="text-brown">SOJO SPA CLUB</h1>
                 </a>
             </div>
-            <a href="sojo.html" id="pagination-hover">
+            <a href="/sojo" id="pagination-hover">
                 <img src="">
             </a>
         </div>
