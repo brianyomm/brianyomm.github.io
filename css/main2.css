@@ -1191,6 +1191,7 @@ a:focus {
     width: auto;
     margin: 0 auto;
     animation-direction: reverse;
+    z-index: 0;
 }
 
 #bylogo {
@@ -1218,6 +1219,7 @@ a:focus {
 }
 
 .work-img {
+    z-index: 999;
     display: block;
     position: absolute;
     bottom: 20%;
@@ -1236,7 +1238,7 @@ a:focus {
     -ms-transform: rotate(-90deg);
     -o-transform: rotate(-90deg);
     bottom: 29%;
-    right: -10%;
+    right: -13%;
 }
 
 .work-title {
@@ -1293,9 +1295,9 @@ a:focus {
 }
 
 .work-number {
-    font-size: 3em;
+    font-size: 8em;
     font-family: Proggysquare,sans-serif;
-    font-weight: 700;
+    font-weight: 00;
     color: #92aaad;
     position: absolute;
     bottom: 20%;
@@ -1496,6 +1498,8 @@ video.desktop {
     }
     
     .work-number {
+        font-size: 3em;
+        font-weight: 700;
         bottom: 5%;
         left: 19%;
         z-index: 1;
