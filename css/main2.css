@@ -1141,14 +1141,6 @@ a:focus {
 }
 
 .showcase .body .canvas-frame {
-    position: fixed;
-    width: 100vw;
-    top: 50%;
-    height: calc(100vh - 18em);
-    margin-top: calc((100vh - 18em)/ -2);
-}
-
-.showcase .body .canvas-frameA {
     position: absolute;
     width: 100vw;
     top: 50%;
