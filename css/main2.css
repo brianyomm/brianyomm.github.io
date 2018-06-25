@@ -1241,6 +1241,10 @@ a:focus {
     right: -13%;
 }
 
+.work-meta.orobos {
+    right: -10%;
+}
+
 .work-title {
     margin-top: 10px;
 }
