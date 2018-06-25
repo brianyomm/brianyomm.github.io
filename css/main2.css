@@ -53,12 +53,12 @@ body {
 .wrap {
     z-index: 9;
     position: absolute;
-    top: 20%;
+    top: 50%;
     left: 1em;
 }
 
 .wrap.up {
-    top: 30%;
+    top: 20%;
 }
 
 .glitch-title-light {
@@ -1518,6 +1518,11 @@ video.desktop {
 @media (max-width: 375px) {
     .glitch-titlez {
         font-size: 3.5em;
+        line-height: 1.1em;
+    }
+    
+    .wrap.up{
+        top: 50%;
     }
     
     .showcase .body .canvas-frame {
