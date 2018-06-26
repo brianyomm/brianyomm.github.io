@@ -680,11 +680,11 @@ a:focus {
 }
 
 .loader span {
-	font-family: "Gameshow", sans-serif;
+	font-family: "Nova Square", sans-serif;
     position: absolute;
 	font-weight: normal;
     top: 52%;
-    font-size: 90px;
+    font-size: 4em;
     letter-spacing: 15px;
     margin-left: -100px;
     left: 50%;
@@ -699,7 +699,7 @@ a:focus {
     height: 80px;
     line-height: 80px;
     text-align: center;
-    font-size: 30px;
+    font-size: 4em;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     -webkit-transition: -webkit-transform 0.5s 0.1s;
