@@ -4,11 +4,11 @@
 	.st0{fill:none;stroke:#000;stroke-width:25;stroke-miterlimit:10;}
     #mainrect {
         stroke-dasharray: 3000;
-        stroke-dashoffset: 4500;
-        -webket-animation: dash 1.5s linear forwards;
-        -o-webket-animation: dash 1.5s linear forwards;
-        -moz-webket-animation: dash 1.5s linear forwards;
-        animation: dash 1.5s linear forwards;
+        stroke-dashoffset: 3100;
+        -webket-animation: dash 1.1s linear forwards;
+        -o-webket-animation: dash 1.1s linear forwards;
+        -moz-webket-animation: dash 1.1s linear forwards;
+        animation: dash 1.1s linear forwards;
     }
     
     @-webkit-keyframes dash {
