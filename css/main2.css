@@ -1284,9 +1284,9 @@ a:focus {
 }
 
 .work-number {
-    font-size: 8em;
+    font-size: 5em;
     font-family: Proggysquare,sans-serif;
-    font-weight: 00;
+    font-weight: 500;
     color: #92aaad;
     position: absolute;
     bottom: 20%;
@@ -1432,7 +1432,7 @@ video.desktop {
 
 @media (max-width: 414px) {
     .glitch-titlez {
-        font-size: 4.5em;
+        font-size: 4.1em;
         line-height: .7em;
     }
     
