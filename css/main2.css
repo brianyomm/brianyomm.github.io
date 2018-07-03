@@ -54,6 +54,13 @@ body {
     bottom: 25%;
 }
 
+.wrap-up {
+    z-index: 9;
+    position: absolute;
+    bottom: 25%;
+    left: 1em;
+}
+
 .glitch-title-light {
     font-family: Gameshow;
     text-align: center;
