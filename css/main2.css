@@ -1580,6 +1580,12 @@ video.desktop {
         width:  15em;
     }
     
+    .work-img.cali {
+        right: 10%;
+        width: 12em;
+        opacity: .6;
+    }
+    
     .list-pages-links {
         font-size: 1.2em;
     }
