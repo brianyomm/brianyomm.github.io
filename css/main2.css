@@ -1219,6 +1219,11 @@ a:focus {
     width: 18em;
 }
 
+.work-img.cali {
+    bottom: 14%;
+    right: 5%;
+}
+
 .work-meta {
     position: absolute;
     font-family: proggysquare;
@@ -1389,11 +1394,11 @@ video.desktop {
     }
 */
     .work-line {
-        bottom: -.8em;
+        bottom: .8em;
     }
     
     .work-url {
-        bottom: 1.8em;
+        bottom: 2.8em;
     }
 }
 
