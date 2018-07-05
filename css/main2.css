@@ -1221,7 +1221,8 @@ a:focus {
 
 .work-img.cali {
     bottom: 14%;
-    right: 5%;
+    right: 7%;
+    width: 20em;
 }
 
 .work-meta {
@@ -1368,6 +1369,12 @@ a:focus {
 #portfolio.work.orobos {
     background-attachment: scroll;
     background-size: 30em;
+}
+
+#portfolio.work.personal {
+    background-attachment: scroll;
+    background-size: 25em;
+    background-position: 69% 78%;
 }
 
 video {
