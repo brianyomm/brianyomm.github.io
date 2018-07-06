@@ -1374,7 +1374,7 @@ a:focus {
 #portfolio.work.personal {
     background-attachment: scroll;
     background-size: 25em;
-    background-position: 69% 78%;
+    ;
 }
 
 video {
@@ -1415,6 +1415,10 @@ video.desktop {
         width: 27em;
     }
 */
+    .showcase .body .canvas-frame {
+        height: calc(100vh - 22em);
+    }
+    
     .glitch-titlez {
         font-size: 6.5em;
     }
@@ -1425,6 +1429,13 @@ video.desktop {
     
     .work-link {
         display: none;
+    }
+    
+    .work-img.cali {
+        right: 17%;
+        bottom: 12%;
+        width: 19em;
+        opacity: .6;
     }
     
     #pages {
@@ -1450,6 +1461,10 @@ video.desktop {
 }
 
 @media (max-width: 414px) {
+    .showcase .body .canvas-frame {
+        height: calc(100vh - 18em);
+    }
+    
     .glitch-titlez {
         font-size: 4.1em;
         line-height: .7em;
