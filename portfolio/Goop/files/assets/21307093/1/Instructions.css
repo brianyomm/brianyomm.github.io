@@ -1,0 +1,358 @@
+.header {
+    position: fixed;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+}
+
+.instructionsText p {
+    color: white;
+    text-align: center;
+}
+
+.instructionsHeader {
+    color: white;
+    text-align: center;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+}
+
+.instructionSpacer {
+    height: .35vh;
+    background-color: #0C082C;
+    width: 175px;
+    margin: 0 auto;
+    margin-top: 0.5%;
+}
+
+.instructionsText {
+    margin: 5% 17.5% 0 17.5%;
+    min-height: 44px; /* yom  */
+}
+
+.instructionsTextMobile {
+    display: none;
+}
+
+.skipButton {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    text-align: center;
+    z-index: 15;
+    top: 7.5%;
+    right: 3%;
+    color: white;
+}
+
+.skipButton:focus {
+    outline: none;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.carousel .item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.carousel .controls {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    z-index: 12;
+    top: 4%;
+}
+
+.carousel .controls .btn {
+    color: black;
+    font-size: 4.5vh;
+    margin: 1.25vh;
+    text-decoration: none;
+}
+
+.nextInstruction {
+    font-weight: 600;
+    width: 300px;
+    height: 46px;
+    background: #0C082C;
+    border: none;
+    text-align: center;
+    color: white;
+    display: block;
+    margin:  0 auto;
+    letter-spacing: 0.4em;
+}
+
+.instructionsFooter  {
+    position: fixed;
+    bottom: 10%;
+    width: 100%;
+    z-index: 10;
+}
+
+.centerImage {
+    width: 100%;
+    margin-top: 5%;
+    text-align: center;
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.instructionImage {
+    margin-top: 5%;
+    margin-right: auto;
+    margin-left: auto;
+    
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    
+    user-drag: none; 
+    -moz-user-drag: none;
+    -khtml-user-drag: none;
+    -webkit-user-drag: none;
+    -o-user-drag: none;
+}
+
+.instructionHand {
+    content: url(https://cdn.nextretail.com/oscar-de-la-renta/2/ui/Press-and-Drag.svg);
+    position:absolute;
+    -webkit-animation:linear infinite alternate;
+    -webkit-animation-name: run;
+    -webkit-animation-duration: 2.5s; 
+}
+
+@-webkit-keyframes run {
+    0% {left: 40%;}
+    50%{left : 55%;}
+    100%{left: 40%;} 
+}
+
+.instructionVantagePoint {
+    margin-top: 10%;
+    content: url(https://s3.amazonaws.com/cdn.nextretail.com/oscar-de-la-renta/2/ui/tapIcon.svg);
+}
+
+.instructionHotspot {
+    content: url(https://cdn.nextretail.com/oscar-de-la-renta/2/ui/hotspot-new.png);
+    max-width: 70px;
+    max-height: 70px;
+}
+
+/* slide from left/right */
+
+.carousel .slide-in-offset {
+    -webkit-transform: translate3d(90%, 0px, 0px);
+    -moz-transform: translate3d(90%, 0px, 0px);
+    -ms-transform: translate3d(90%, 0px, 0px);
+    -o-transform: translate(90%, 0px, 0px);
+    transform: translate3d(90%, 0px, 0px);
+    -webkit-transition: -webkit-transform 0s ease-out;
+    -moz-transition: -moz-transform 0s ease-out;
+    -ms-transition: -ms-transform 0s ease-out;
+    -o-transition: -o-transform 0s ease-out;
+    transition: transform 0s ease-out;
+    z-index: 1;
+}
+
+
+.carousel .slide-in {
+    -webkit-transform: translate3d(90%, 0px, 0px);
+    -moz-transform: translate3d(90%, 0px, 0px);
+    -ms-transform: translate3d(90%, 0px, 0px);
+    -o-transform: translate(90%, 0px, 0px);
+    transform: translate3d(0%, 0px, 0px);
+    -webkit-transition: -webkit-transform 0.5s ease-out;
+    -moz-transition: -moz-transform 0.5s ease-out;
+    -ms-transition: -ms-transform 0.5s ease-out;
+    -o-transition: -o-transform 0.5s ease-out;
+    transition: transform 0.5s ease-out;
+    z-index: 1;
+}
+
+.carousel .slide-out {
+    -webkit-transform: translate3d(90%, 0px, 0px);
+    -moz-transform: translate3d(90%, 0px, 0px);
+    -ms-transform: translate3d(90%, 0px, 0px);
+    -o-transform: translate(90%, 0px, 0px);
+    transform: translate3d(-90%, 0px, 0px);
+    -webkit-transition: -webkit-transform 0.5s ease-out;
+    -moz-transition: -moz-transform 0.5s ease-out;
+    -ms-transition: -ms-transform 0.5s ease-out;
+    -o-transition: -o-transform 0.5s ease-out;
+    transition: transform 0.5s ease-out;
+    z-index: 1;
+}
+
+/* slide from bottom */
+
+.carousel .slide-up {
+    -webkit-transform: translate3d(0px, 200%, 0px);
+    -moz-transform: translate3d(0px, 200%, 0px);
+    -ms-transform: translate3d(0px, 200%, 0px);
+    -o-transform: translate(0px, 200%, 0px);
+    transform: translate3d(0px, 0%, 0px);
+    -webkit-transition: -webkit-transform 0.5s ease-out;
+    -moz-transition: -moz-transform 0.5s ease-out;
+    -ms-transition: -ms-transform 0.5s ease-out;
+    -o-transition: -o-transform 0.5s ease-out;
+    transition: transform 0.5s ease-out;
+    z-index: 1;
+}
+
+.carousel .slide-down {
+    -webkit-transform: translate3d(0px, 0%, 0px);
+    -moz-transform: translate3d(0px, 0%, 0px);
+    -ms-transform: translate3d(0px, 0%, 0px);
+    -o-transform: translate(0px, 0%, 0px);
+    transform: translate3d(0px, 500%, 0px);
+    -webkit-transition: -webkit-transform 0.5s ease-out;
+    -moz-transition: -moz-transform 0.5s ease-out;
+    -ms-transition: -ms-transform 0.5s ease-out;
+    -o-transition: -o-transform 0.5s ease-out;
+    transition: transform 0.5s ease-out;
+    z-index: 1;
+}
+
+.carousel .slide-up-offset {
+    -webkit-transform: translate3d(0px, 200%, 0px);
+    -moz-transform: translate3d(0px, 200%, 0px);
+    -ms-transform: translate3d(0px, 200%, 0px);
+    -o-transform: translate(0px, 200%, 0px);
+    transform: translate3d(0px, 200%, 0px);
+    -webkit-transition: -webkit-transform 0s ease-out;
+    -moz-transition: -moz-transform 0s ease-out;
+    -ms-transition: -ms-transform 0s ease-out;
+    -o-transition: -o-transform 0s ease-out;
+    transition: transform 0s ease-out;
+    z-index: 1;
+}
+
+/* pulsing */
+
+.pulse {
+    display: block;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 0 rgba(255,255,255, 1);
+    animation: pulse 2s infinite;
+}
+.pulse:hover {
+    animation: none;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(255,255,255, 0.9);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 10px rgba(255,255,255, 0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(255,255,255, 0);
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(255,255,255, 0.9);
+    box-shadow: 0 0 0 0 rgba(255,255,255, 0.9);
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 10px rgba(255,255,255, 0);
+      box-shadow: 0 0 0 10px rgba(255,255,255, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(255,255,255, 0);
+      box-shadow: 0 0 0 0 rgba(255,255,255, 0);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+    .instructionsText {
+        display: none;
+    }
+   .instructionsTextMobile {
+       display: block;
+/*        margin-top: 5%; */
+       margin: 5% 17.5% 0 17.5%;
+    }
+    .instructionsFooter {
+        bottom: 14%;
+    }
+    .instructionHotspot {
+        margin-top: 10%
+    }
+    .instructionVantagePoint {
+        margin-top: 20%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nextInstruction {
+        height: 46px;
+    }
+    .instructionHand {
+        position:absolute;
+        -webkit-animation:linear infinite alternate;
+        -webkit-animation-name: run;
+        -webkit-animation-duration: 2.5s;
+    }
+    @-webkit-keyframes run {
+        0% {left: 25%;}
+        50%{left : 60%;}
+        100%{left: 25%;} 
+    }
+    .carousel .controls .btn {
+        margin: 1px;
+    }
+    .instructionsFooter {
+        bottom: 10%;
+    }
+    .instructionHotspot {
+        margin-top: 22%
+    }
+}
+@media screen and (max-width: 414px) {
+    .nextInstruction {
+        width: 90%;
+    }
+    .instructionHand {
+        position:absolute;
+        -webkit-animation:linear infinite alternate;
+        -webkit-animation-name: run;
+        -webkit-animation-duration: 1.8s;
+    }
+    @-webkit-keyframes run {
+        0% {left: 15%;}
+        50%{left : 50%;}
+        100%{left: 15%;} 
+    }
+    .carousel .controls .btn {
+        margin: 1px;
+    }
+    .instructionsFooter {
+        bottom: 2%;
+    }
+    .instructionHotspot {
+        margin-top: 28%
+    }
+}
+
+@media (max-width: 320px) {
+  @-webkit-keyframes run {
+      0% {left: 0;}
+      50% {left : 90%;}
+      100% {left: 0;} 
+  }
+}

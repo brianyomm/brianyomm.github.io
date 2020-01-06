@@ -1,0 +1,88 @@
+#MultiPDP p {
+    font-family: 'BrandonGrotesque-reg';
+    
+}
+
+#MultiPDP h1,h2,h3,h4,h5 {
+    font-family: 'Caslon-Medium';
+}
+
+.headerFloat p, .product-sale-price, .product-meta, #product-description {
+    color: #666;
+}
+
+#header-title {
+    display: none;
+}
+
+.product-meta {
+    margin-bottom: 0;
+}
+
+#accordionEx .card .card-header p {
+    color: #111;
+}
+
+#editorial-container {
+    margin-top: 100px;
+}
+
+.art-icon {
+    width: 48px;
+    height: 48px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    margin-right: 3px;
+    vertical-align: middle;
+}
+
+.art-icon.food {
+    background-image: url(https://s3.amazonaws.com/cdn.nextretail.com/goop/1/ui/img/icon-food.png);
+}
+
+#editorial-container .card-body {
+    padding: 32px !important; 
+}
+
+#editorial-container .card-text {
+    overflow-y: hidden;
+    height: 48px;    
+}
+
+#multi-item-example .controls-top a {
+    color: #111;
+}
+
+#multi-item-example .controls-top h4 {
+    text-transform: uppercase;
+    display: inline;
+}
+
+@media only screen and (max-width: 768px) {
+    
+}
+
+@media only screen and (max-width: 992px) {
+    #header-title {
+        height: 64px;
+        display: block;
+        padding: 16px;
+    }
+    
+    .product-container:last-child {
+        margin-bottom: 48px;
+    }
+    
+    #editorial-container .card-body {
+        padding: 16px !important; 
+    }
+    #editorial-container .card-title {
+        font-size: 1em;
+        min-height: 38px;
+    }
+    .goop .btn-sm {
+        font-size: 11px;
+    }
+}

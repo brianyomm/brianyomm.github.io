@@ -1,0 +1,442 @@
+{
+    "start_rotation": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+    },
+    "rotation_home":{
+       "x": 0,
+       "y": 0,
+       "z": 0
+    },
+    "rotation_handbags":{
+       "x": 0,
+       "y": 90,
+       "z": 0
+    },
+    "rotation_dayWear":{
+       "x": 0,
+       "y": 320,
+       "z": 0
+    },
+    "rotation_evening":{
+       "x": 0,
+       "y": 0,
+       "z": 0
+    },
+    "start_point_id":7,
+    "camera_poses":[   
+        {
+            "point_id":7,
+            "textureName":"07.jpg",
+            "floor_position":"(-2.218, 0.1, -0.823)",
+            "camera_position":"(-2.218, 1.28, -0.823)",
+            "camera_rotation":"(0, 93, 0)",
+            "active": true
+        },
+        {
+            "point_id":10,
+            "textureName":"10.jpg",
+            "floor_position":"(-5.887, 0.1, -1.775)",
+            "camera_position":"(-5.887, 1.28, -1.775)",
+            "camera_rotation":"(0, 86, 0)",
+            "active": true
+        },
+        {
+            "point_id":14,
+            "textureName":"14.jpg",
+            "floor_position":"(-5.77, 0.1, -4.586)",
+            "camera_position":"(-5.77, 1.25, -4.586)",
+            "camera_rotation":"(0, -91, 0)",
+            "active": true
+        },
+        {
+            "point_id":15,
+            "textureName":"15.jpg",
+            "floor_position":"(-5.854, 0.1, -5.087)",
+            "camera_position":"(-5.854, 1.25, -5.087)",
+            "camera_rotation":"(0, 89.5, 1)",
+            "active": true
+        },
+        {
+            "point_id":17,
+            "textureName":"17.jpg",
+            "floor_position":"(-5.899, 0.1, -6.833)",
+            "camera_position":"(-5.899, 1.25, -6.833)",
+            "camera_rotation":"(0, -83.5, 0)",
+            "active": true
+        },
+        {
+            "point_id":20,
+            "textureName":"20.jpg",
+            "floor_position":"(-4.536, 0.1, -3.711)",
+            "camera_position":"(-4.536, 1.25, -3.711)",
+            "camera_rotation":"(0, -1, 0)",
+            "active": true
+        },
+        {
+            "point_id":24,
+            "textureName":"24.jpg",
+            "floor_position":"(-2.092, 0.1, -4.962)",
+            "camera_position":"(-2.092, 1.27, -4.962)",
+            "camera_rotation":"(0, 89.5, 0)",
+            "active": true
+        },
+        {
+            "point_id":28,
+            "textureName":"28.jpg",
+            "floor_position":"(-0.281, 0.1, -3.698)",
+            "camera_position":"(-0.281, 1.26, -3.698)",
+            "camera_rotation":"(0, 179, 0)",
+            "active": true
+        },
+        {
+            "point_id":30,
+            "textureName":"30.jpg",
+            "floor_position":"(1.785, 0.1, -2.854)",
+            "camera_position":"(1.785, 1.22, -2.854)",
+            "camera_rotation":"(0, -2, 0)",
+            "active": true
+        },
+        {
+            "point_id":37,
+            "textureName":"37.jpg",
+            "floor_position":"(4.886, 0.1, -3.732)",
+            "camera_position":"(4.886, 1.23, -3.732)",
+            "camera_rotation":"(0, -2.2, 0)",
+            "active": true
+        },
+        {
+            "point_id":40,
+            "textureName":"40.jpg",
+            "floor_position":"(4.45, 0.1, -4.479)",
+            "camera_position":"(4.45, 1.23, -4.479)",
+            "camera_rotation":"(0, -177.4, 0)",
+            "active": true
+        },
+        {
+            "point_id":43,
+            "textureName":"43.jpg",
+            "floor_position":"(3.188, 0.1, -3.561)",
+            "camera_position":"(3.188, 1.205, -3.561)",
+            "camera_rotation":"(0, -176.7, 0)",
+            "active": true
+        },
+        {
+            "point_id":45,
+            "textureName":"45.jpg",
+            "floor_position":"(2.182, 0.1, -4.755)",
+            "camera_position":"(2.182, 1.25, -4.755)",
+            "camera_rotation":"(0, 89.7, 0)",
+            "active": true
+        },
+        {
+            "point_id":50,
+            "textureName":"50.jpg",
+            "floor_position":"(-1.977, 0.1, -2.505)",
+            "camera_position":"(-1.977, 1.3, -2.505)",
+            "camera_rotation":"(0, 90.5, 0)",
+            "active": true
+        }
+    ],
+    "product_points":[
+        {
+            "point_id":2001, 
+            "product_ids":["1PELddeu3jB3UnRw1sovRf"], 
+            "position":"(-7.185, 1.441, -2.153)", 
+            "comfortable_view_points":[35, 53],
+            "url":"https://nextretail.sirv.com/Spins/Goop/White%20dress/Dress-**.jpg",
+            "start_index":1,
+            "frames_count":24,
+            "start_frame":1,
+            "type" : "360"
+        },
+        {
+            "point_id":2, 
+            "product_ids":["121l22Hjz0jFn60maHIgKU"], 
+            "position":"(-7.199, 1.032, -2.396)",
+            "comfortable_view_points":[35, 53],
+            "type" : "standard"
+        }, 
+        {
+            "point_id":3, 
+            "product_ids":["1gQ22DTwyLATFPvkOSXXVm"], 
+            "position":"(-7.17, 1.481, -2.609)",
+            "comfortable_view_points":[35, 53],
+            "type" : "standard"
+        }, 
+        {
+            "point_id":4, 
+            "product_ids":["3QQdp0oGexCn2XRIFUgI6Z"], 
+            "position":"(-7.202, 1.089, -5.433)", 
+            "comfortable_view_points":[35, 53],
+            "type" : "standard"
+        }, 
+        {
+            "point_id":5, 
+            "product_ids":["2wcr8MDhQLEkwh6oMqsiNm"], 
+            "position":"(-7.225, 1.334, -5.705)",
+            "comfortable_view_points":[35, 53],
+            "type" : "standard"
+        }, 
+        {
+            "point_id":6, 
+            "product_ids":["2rWCax0for1XCTVApcuE3a"], 
+            "position":"(-4.494, 1.536, -5.084)", 
+            "comfortable_view_points":[35, 53],
+            "type" : "standard"
+        }, 
+        {
+            "point_id":2007, 
+            "product_ids":["KyUksIHne5jyiW6HSRhr5"], 
+            "position":"(-4.494, 1.492, -5.529)",
+            "comfortable_view_points":[35, 53],
+            "url":"https://nextretail.sirv.com/Spins/Goop/Black%20swimsuit/Black%20Swimsuit-**.jpg",
+            "start_index":1,
+            "frames_count":24,
+            "start_frame":1,
+            "type" : "360"
+        }, 
+        {
+            "point_id":8, 
+            "product_ids":["OQVE5SApPM9kQh1pJ4s32"], 
+            "position":"(-4.494, 1.544, -6.659)", 
+            "comfortable_view_points":[35, 53],
+            "type" : "standard"
+        }, 
+        {
+            "point_id":9, 
+            "product_ids":["1AQkDifp50Z6u3fXsqzz7c"], 
+            "position":"(-4.646, 1.369, -7)",
+            "comfortable_view_points":[35, 53],
+            "type" : "standard"
+        }, 
+        {
+            "point_id":2010, 
+            "product_ids":["gZoPnBSfsC4qoupUlBbUi"], 
+            "position":"(-2.21, 0.824, -3.585)", 
+            "comfortable_view_points":[35, 53],
+            "url":"https://nextretail.sirv.com/Spins/Goop/Candle/Candle-02-**.jpg",
+            "start_index":1,
+            "frames_count":24,
+            "start_frame":1,
+            "type" : "360"
+        }, 
+        {
+            "point_id":11, 
+            "product_ids":["1F0PC8jgsFPt1IQ6qlNZY"], 
+            "position":"(-2.997, 0.865, -3.419)",
+            "comfortable_view_points":[35, 53],
+            "type" : "standard"
+        }, 
+        {
+            "point_id":111, 
+            "product_ids":["1F0PC8jgsFPt1IQ6qlNZY"], 
+            "position":"(-1.763, 0.517, -5.478)",
+            "comfortable_view_points":[35, 53],
+            "type" : "standard"
+        }, 
+        {
+            "point_id":2013, 
+            "product_ids":["2zlGNzmST2HU73HVDYjVLx"], 
+            "position":"(-2.1, 0.6, -2.97)",
+            "comfortable_view_points":[35, 53],
+            "url":"https://nextretail.sirv.com/Spins/Goop/Book/BOOK-01-**.jpg",
+            "start_index":1,
+            "frames_count":24,
+            "start_frame":1,
+            "type" : "360"
+        }, 
+        {
+            "point_id":131,
+            "product_ids":["2zlGNzmST2HU73HVDYjVLx"], 
+            "position":"(-2.949, 0.961, -5.498)",
+            "comfortable_view_points":[35, 53],
+            "type" : "standard"
+        }, 
+        {
+            "point_id":14, 
+            "product_ids":["SZBXgFFVA0pDZFWWDvnp"], 
+            "position":"(-2.633, 1.626, -5.546)",
+            "comfortable_view_points":[35, 53],
+            "type" : "standard"
+        }, 
+        {
+            "point_id":141, 
+            "product_ids":["SZBXgFFVA0pDZFWWDvnp"], 
+            "position":"(-0.1, 0.94, -5.478)",
+            "comfortable_view_points":[35, 53],
+            "type" : "standard"
+        }, 
+        {
+            "point_id":15, 
+            "product_ids":["4mcutkqriOt11QKURUhav"], 
+            "position":"(2.355, 0.891, -2.98)", 
+            "comfortable_view_points":[35, 53],
+            "type" : "standard"
+        }, 
+        {
+            "point_id":16, 
+            "product_ids":["YdaH9OnH3cozq78UUJICY"], 
+            "position":"(2.29, 0.9, -2.746)", 
+            "comfortable_view_points":[35, 53],
+            "type" : "standard"
+        }, 
+        {
+            "point_id":17, 
+            "product_ids":["1qWEzBBEN8MvzS3eqgvtT4"], 
+            "position":"(5.478, 1.343, -2.479)", 
+            "comfortable_view_points":[35, 53],
+            "type" : "standard"
+        }, 
+        {
+            "point_id":18, 
+            "product_ids":["2WcMjccJ7bKiaAcvK154xc"], 
+            "position":"(2.3, 0.89, -3.06)", 
+            "comfortable_view_points":[35, 53],
+            "type" : "standard"
+        }, 
+        {
+            "point_id":181, 
+            "product_ids":["2WcMjccJ7bKiaAcvK154xc"], 
+            "position":"(5.478, 1.323, -3.6)", 
+            "comfortable_view_points":[35, 53],
+            "type" : "standard"
+        }, 
+        {
+            "point_id":19, 
+            "product_ids":["2bO0T8q6gqDl0wwzlgioJQ"], 
+            "position":"(3.91, 1.15, -4.505)", 
+            "comfortable_view_points":[35, 53],
+            "type" : "standard"
+        }, 
+        {
+            "point_id":191, 
+            "product_ids":["2bO0T8q6gqDl0wwzlgioJQ"], 
+            "position":"(5.498, 1.273, -4.298)", 
+            "comfortable_view_points":[35, 53],
+            "type" : "standard"
+        }, 
+        {
+            "point_id":20, 
+            "product_ids":["24L5FgxxZy56RKm05Vf79g"], 
+            "position":"(2.356, 0.97, -2.719)", 
+            "comfortable_view_points":[35, 53],
+            "type" : "standard"
+        }, 
+        {
+            "point_id":22, 
+            "product_ids":["3nXziY5ytAomyIdTQk5tS8"], 
+            "position":"(5.389, 1.082, -2.71)", 
+            "comfortable_view_points":[35, 53],
+            "type" : "standard"
+        }, 
+        {
+            "point_id":23, 
+            "product_ids":["2IpGts3aWmuj4HjKK5sj9q"], 
+            "position":"(5.43, 1.075, -3.376)", 
+            "comfortable_view_points":[35, 53],
+            "type" : "standard"
+        }, 
+        {
+            "point_id":24, 
+            "product_ids":["3bu5mJtEELBFGdk51ATULw"], 
+            "position":"(5.43, 1.075, -3.743)", 
+            "comfortable_view_points":[35, 53],
+            "type" : "standard"
+        }, 
+        {
+            "point_id":25, 
+            "product_ids":["3icbLUhkrPXCmKVJbqPePu"], 
+            "position":"(5.424, 1.075, -3.91)", 
+            "comfortable_view_points":[35, 53],
+            "type" : "standard"
+        }, 
+        {
+            "point_id":2026, 
+            "product_ids":["28qBeID0PHFGYpWT31hxUL"], 
+            "position":"(5.498, 1.344, -4.729)", 
+            "comfortable_view_points":[35, 53],
+            "url":"https://nextretail.sirv.com/Spins/Goop/Brush/Brush-**.jpg",
+            "start_index":1,
+            "frames_count":24,
+            "start_frame":1,
+            "type" : "360"
+        }, 
+        {
+            "point_id":27, 
+            "product_ids":["18QXrXvYz3ScsmaoH6MD52"], 
+            "position":"(5.389, 1.053, -2.449)", 
+            "comfortable_view_points":[35, 53],
+            "type" : "standard"
+        }, 
+        {
+            "point_id":2028, 
+            "product_ids":["1OQcDmUNSQVwnzS01HAWGP"], 
+            "position":"(5.43, 0.967, -2.851)", 
+            "comfortable_view_points":[35, 53],
+            "url":"https://nextretail.sirv.com/Spins/Goop/Body%20Scrub/Salt%20Detox%20Body%20Scrub-01-**.jpg",
+            "start_index":1,
+            "frames_count":24,
+            "start_frame":1,
+            "type" : "360"
+        }, 
+        {
+            "point_id":2029, 
+            "product_ids":["WZH9VXZqsqNfOfRZF4Usa"], 
+            "position":"(5.43, 1.075, -3.562)", 
+            "comfortable_view_points":[35, 53],
+            "url":"https://nextretail.sirv.com/Spins/Goop/Bath%20Soak/BATH%20SOAK-01-**.jpg",
+            "start_index":1,
+            "frames_count":24,
+            "start_frame":1,
+            "type" : "360"
+        }, 
+        {
+            "point_id":30, 
+            "product_ids":["3M9v8ePJkmhcqWi66B9HYO"], 
+            "position":"(4.031, 1.129, -4.8)", 
+            "comfortable_view_points":[35, 53],
+            "type" : "standard"
+        }, 
+        {
+            "point_id":31, 
+            "product_ids":["2HgiwiAgo9UcWkxvdMl7Wp"], 
+            "position":"(5.389, 1.053, -2.612)", 
+            "comfortable_view_points":[35, 53],
+            "type" : "standard"
+        }, 
+        {
+            "point_id":1001,    
+            "product_ids":["video"],
+            "position":"(2.342, 0.95, -2.866)",
+            "comfortable_view_points":[35, 53],
+            "url":"https://s3.amazonaws.com/cdn.nextretail.com/goop/1/videos/GPnightroutine.mp4",
+            "type" : "video"
+        },
+        {
+            "point_id":1002,    
+            "product_ids":["video"],
+            "position":"(5.415, 1.05, -2.835)",
+            "comfortable_view_points":[35, 53],
+            "url":"https://s3.amazonaws.com/cdn.nextretail.com/goop/1/videos/beautyunboxing.mp4",
+            "type" : "video"
+        },
+        {
+            "point_id":1003,    
+            "product_ids":["video"],
+            "position":"(5.415, 1.365, -4.59)",
+            "comfortable_view_points":[35, 53],
+            "url":"https://s3.amazonaws.com/cdn.nextretail.com/goop/1/videos/drybrush.mp4",
+            "type" : "video"
+        },
+        {
+            "point_id":1004,    
+            "product_ids":["video"],
+            "position":"(5.415, 1.365, -4.4)",
+            "comfortable_view_points":[35, 53],
+            "url":"https://s3.amazonaws.com/cdn.nextretail.com/goop/1/videos/goopHQvid_1.mp4",
+            "type" : "video"
+        }
+    ]
+}

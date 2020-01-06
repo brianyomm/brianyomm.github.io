@@ -1,0 +1,407 @@
+.body {
+    font-family: 'BrandonGrotesque-reg';
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+}
+
+.text-black {
+    color:black;
+}
+
+.text-red {
+    color:#b00020;
+}
+
+.text-white {
+    color:white;
+}
+
+.text-light-grey {
+    color:rgba(0, 0, 0, 0.45);
+}
+
+.text-light-grey1 {
+    color:rgba(0, 0, 0, 0.65);
+}
+
+.dark-grey { 
+    background:#212325; 
+}
+
+.fs-xxs12{
+    font-size:12px;
+}
+
+.fs-xs14{
+    font-size:14px;
+}
+
+.fs-xs16{
+    font-size:16px;
+}
+
+.fs-xs18{
+    font-size:18px;
+}
+
+
+.h1.xl{
+    font-size: 18px;
+}
+
+.h2 {
+  font-size: 14px;
+  line-height: 1.57;
+  letter-spacing: normal;
+}
+
+.h1 .xl{
+    font-size: 44px;
+    line-height: 48px;
+    letter-spacing: -0.5px;
+}
+
+.h1 {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.3px;
+}
+
+.h2 {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.3px;
+}
+
+.h3 {
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.2px;
+}
+
+.h4 {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+}
+
+.body .xxlarge {
+    font-size: 44px;
+    line-height: 48px;
+    letter-spacing: -0.5px;
+}
+
+.body .xlarge {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.3px;
+}
+
+.body .large {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.3px;
+}
+
+.body .medium {
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.2px;
+}
+
+.body .small {
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: auto;
+}
+
+.body .xsmall {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: auto;
+}
+
+.body .xxsmall {
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: auto;
+}
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  src:url('https://cdn.nextretail.com/_fonts/MaterialIcons/regular.woff') format('woff'), 
+      url('https://cdn.nextretail.com/_fonts/MaterialIcons/regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Avenir-UltraLight';
+    src:url('https://cdn.nextretail.com/_fonts/AvenirNextLTPro/AvenirNextLTPro-UltLt.otf'), format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Avenir-Light';
+    src:url('https://cdn.nextretail.com/_fonts/AvenirNextLTPro/AvenirNextLTPro-Light.otf'), format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir-Regular';
+    src:url('https://cdn.nextretail.com/_fonts/AvenirNextLTPro/AvenirNextLTPro-Regular.otf'), format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir-Medium';
+    src:url('https://cdn.nextretail.com/_fonts/AvenirNextLTPro/AvenirNextLTPro-Medium.otf'), format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+/* ADD BOOK HERE */
+@font-face {
+    font-family: 'Avenir-Book';
+    src:url('https://cdn.nextretail.com/_fonts/AvenirNextLTPro/AvenirNextLTPro-Book.otf'), format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir-Bold';
+    src:url('https://cdn.nextretail.com/_fonts/AvenirNextLTPro/AvenirNextLTPro-Bold.otf'), format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir-Heavy';
+    src:url('https://cdn.nextretail.com/_fonts/AvenirNextLTPro/AvenirNextLTPro-Heavy.otf'), format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+/* ADD BOOK HERE */
+@font-face {
+    font-family: 'Avenir-Book';
+    src:url('https://cdn.nextretail.com/_fonts/AvenirNextLTPro/AvenirNextLTPro-Book.otf'), format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Didot-Roman';
+    src:url('https://cdn.nextretail.com/_fonts/DidotLH/DidotLH-Roman.ttf'), format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Didot-Italic';
+    src:url('https://s3.amazonaws.com/cdn.nextretail.com/_fonts/DidotLH/DidotLH-Italic.ttf'), format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham-Bold';
+    src:url('https://cdn.nextretail.com/_fonts/Gotham-Bold/Gotham-Bold.eot'),
+        url('https://cdn.nextretail.com/_fonts/Gotham-Bold/Gotham-Bold.eot') format('embedded-opentype'), 
+        url('https://cdn.nextretail.com/_fonts/Gotham-Bold/Gotham-Bold.woff') format('woff'),
+        url('https://cdn.nextretail.com/_fonts/Gotham-Bold/Gotham-Bold.ttf') format('truetype'), 
+        url('https://cdn.nextretail.com/_fonts/Gotham-Bold/Gotham-Bold.svg#PFDinTextProMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FontAwesome';
+    src:url('https://cdn.nextretail.com/_fonts/FontAwesome/fontawesome-webfont.eot'),
+        url('https://cdn.nextretail.com/_fonts/FontAwesome/fontawesome-webfont.eot') format('embedded-opentype'),
+        url('https://cdn.nextretail.com/_fonts/FontAwesome/fontawesome-webfont.woff') format('woff'),
+        url('https://cdn.nextretail.com/_fonts/FontAwesome/fontawesome-webfont.ttf') format('truetype'),
+        url('https://cdn.nextretail.com/_fonts/FontAwesome/fontawesome-webfont.svg#PFDinTextProMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham-Book';
+    src:url('https://cdn.nextretail.com/_fonts/Gotham-Book/Gotham-Book.eot'),
+        url('https://cdn.nextretail.com/_fonts/Gotham-Book/Gotham-Book.eot') format('embedded-opentype'),
+        url('https://cdn.nextretail.com/_fonts/Gotham-Book/Gotham-Book.woff') format('woff'), 
+        url('https://cdn.nextretail.com/_fonts/Gotham-Book/Gotham-Book.ttf') format('truetype'), 
+        url('https://cdn.nextretail.com/_fonts/Gotham-Book/Gotham-Book.svg#PFDinTextProMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MonodBrun-Regular';
+    src:url('https://cdn.nextretail.com/_fonts/MonodBrun-Regular/MonodBrun-Regular.eot'),
+        url('https://cdn.nextretail.com/_fonts/MonodBrun-Regular/MonodBrun-Regular.eot') format('embedded-opentype'), 
+        url('https://cdn.nextretail.com/_fonts/MonodBrun-Regular/MonodBrun-Regular.woff') format('woff'),
+        url('https://cdn.nextretail.com/_fonts/MonodBrun-Regular/MonodBrun-Regular.ttf') format('truetype'), 
+        url('https://cdn.nextretail.com/_fonts/MonodBrun-Regular/MonodBrun-Regular.svg#PFDinTextProMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GothamNarrow-Book';
+    src:url('https://cdn.nextretail.com/_fonts/GothamNarrow-Book/GothamNarrow-Book.eot'),
+        url('https://cdn.nextretail.com/_fonts/GothamNarrow-Book/GothamNarrow-Book.eot') format('embedded-opentype'), 
+        url('https://cdn.nextretail.com/_fonts/GothamNarrow-Book/GothamNarrow-Book.woff') format('woff'),
+        url('https://cdn.nextretail.com/_fonts/GothamNarrow-Book/GothamNarrow-Book.ttf') format('truetype'), 
+        url('https://cdn.nextretail.com/_fonts/GothamNarrow-Book/GothamNarrow-Book.svg#PFDinTextProMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham-Medium';
+    src:url('https://cdn.nextretail.com/_fonts/Gotham-Medium/Gotham-Medium.eot'),
+        url('https://cdn.nextretail.com/_fonts/Gotham-Medium/Gotham-Medium.eot') format('embedded-opentype'), 
+        url('https://cdn.nextretail.com/_fonts/Gotham-Medium/Gotham-Medium.woff') format('woff'),
+        url('https://cdn.nextretail.com/_fonts/Gotham-Medium/Gotham-Medium.ttf') format('truetype'), 
+        url('https://cdn.nextretail.com/_fonts/Gotham-Medium/Gotham-Medium.svg#PFDinTextProMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GothamNarrow-Medium';
+    src:url('https://cdn.nextretail.com/_fonts/GothamNarrow-Medium/GothamNarrow-Medium.eot'),
+        url('https://cdn.nextretail.com/_fonts/GothamNarrow-Medium/GothamNarrow-Medium.eot') format('embedded-opentype'), 
+        url('https://cdn.nextretail.com/_fonts/GothamNarrow-Medium/GothamNarrow-Medium.woff') format('woff'),
+        url('https://cdn.nextretail.com/_fonts/GothamNarrow-Medium/GothamNarrow-Medium.ttf') format('truetype'), 
+        url('https://cdn.nextretail.com/_fonts/GothamNarrow-Medium/GothamNarrow-Medium.svg#PFDinTextProMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Georgia';
+    src:url('https://cdn.nextretail.com/_fonts/Georgia/Georgia.eot'),
+        url('https://cdn.nextretail.com/_fonts/Georgia/Georgia.eot') format('embedded-opentype'), 
+        url('https://cdn.nextretail.com/_fonts/Georgia/Georgia.woff') format('woff'),
+        url('https://cdn.nextretail.com/_fonts/Georgia/Georgia.ttf') format('truetype'), 
+        url('https://cdn.nextretail.com/_fonts/Georgia/Georgia.svg#PFDinTextProMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham-Light';
+    src:url('https://cdn.nextretail.com/_fonts/Gotham-Light/Gotham-Light.eot'),
+        url('https://cdn.nextretail.com/_fonts/Gotham-Light/Gotham-Light.eot') format('embedded-opentype'),
+        url('https://cdn.nextretail.com/_fonts/Gotham-Light/Gotham-Light.woff') format('woff'), 
+        url('https://cdn.nextretail.com/_fonts/Gotham-Light/Gotham-Light.ttf') format('truetype'), 
+        url('https://cdn.nextretail.com/_fonts/Gotham-Light/Gotham-Light.svg#PFDinTextProMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Medium';
+    src:url('https://cdn.nextretail.com/_fonts/Roboto-Medium/Roboto-Medium.eot'),
+        url('https://cdn.nextretail.com/_fonts/Roboto-Medium/Roboto-Medium.eot') format('embedded-opentype'), 
+        url('https://cdn.nextretail.com/_fonts/Roboto-Medium/Roboto-Medium.woff') format('woff'),
+        url('https://cdn.nextretail.com/_fonts/Roboto-Medium/Roboto-Medium.ttf') format('truetype'), 
+        url('https://cdn.nextretail.com/_fonts/Roboto-Medium/Roboto-Medium.svg#PFDinTextProMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src:url('https://cdn.nextretail.com/_fonts/Roboto-Regular/Roboto-Regular.eot'),
+        url('https://cdn.nextretail.com/_fonts/Roboto-Regular/Roboto-Regular.eot') format('embedded-opentype'), 
+        url('https://cdn.nextretail.com/_fonts/Roboto-Regular/Roboto-Regular.woff') format('woff'),
+        url('https://cdn.nextretail.com/_fonts/Roboto-Regular/Roboto-Regular.ttf') format('truetype'), 
+        url('https://cdn.nextretail.com/_fonts/Roboto-Regular/Roboto-Regular.svg#PFDinTextProMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Caslon-Bold';
+    src: url('https://cdn.nextretail.com/_fonts/ITC-Caslon224/ITCCaslonBold.ttf');
+    src: url('https://cdn.nextretail.com/_fonts/ITC-Caslon224/ITCCaslonBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: bold;
+}
+@font-face {
+    font-family: 'Caslon-Medium';
+    src: url('https://cdn.nextretail.com/_fonts/ITC-Caslon224/ITCCaslonMedium.ttf');
+    src: url('https://cdn.nextretail.com/_fonts/ITC-Caslon224/ITCCaslonMedium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'BrandonGrotesque-Light';
+    font-weight: normal;
+    src: url("https://cdn.nextretail.com/_fonts/Brandon-Grotesque-Regular/BrandonGrotesque-Light.otf") format("opentype");
+}
+@font-face {
+    font-family: 'BrandonGrotesque-bld';
+    font-weight: bold;
+    src: url("https://cdn.nextretail.com/_fonts/Brandon-Grotesque-Regular/BrandonGrotesque-bld.otf") format("opentype");
+}
+@font-face {
+    font-family: 'BrandonGrotesque-med';
+    font-weight: normal;
+    src: url("https://cdn.nextretail.com/_fonts/Brandon-Grotesque-Regular/BrandonGrotesque-med.otf") format("opentype");
+}
+@font-face {
+    font-family: 'BrandonGrotesque-medit';
+    font-weight: italic;
+    src: url("https://cdn.nextretail.com/_fonts/Brandon-Grotesque-Regular/BrandonGrotesque-med_it.otf") format("opentype");
+}
+@font-face {
+    font-family: 'BrandonGrotesque-reg';
+    font-weight: normal;
+    src: url("https://cdn.nextretail.com/_fonts/Brandon-Grotesque-Regular/BrandonGrotesque-reg.otf") format("opentype");
+}
+@font-face {
+    font-family: 'BrandonGrotesque-regit';
+    font-weight: italic;
+    src: url("https://cdn.nextretail.com/_fonts/Brandon-Grotesque-Regular/BrandonGrotesque-reg_it.otf") format("opentype");
+}
+@font-face {
+    font-family: 'BrandonGrotesque-thin';
+    font-weight: normal;
+    src: url("https://cdn.nextretail.com/_fonts/Brandon-Grotesque-Regular/BrandonGrotesque-thin.otf") format("opentype");
+}
+
+@media (min-width: 768px) {
+    
+    .fs-md14{
+        font-size:14px;
+    }
+    
+    .fs-md16{
+        font-size:16px;
+    }
+    
+    .fs-md18{
+        font-size:18px;
+    }
+}
+
+@media (min-width: 992px) {
+    
+    .fs-lg16{
+        font-size:16px;
+    }
+    
+    .fs-lg14{
+        font-size:14px;
+    }
+    
+    .fs-lg18{
+        font-size:18px;
+    }
+}
